@@ -19,7 +19,7 @@
 
 - EBS is provided during the instance creation and can be assigned extra to the instance after instance creation also.
 - Windows OS 30GB for C:/ drive, Linux OS 8GB for /root drive.
-  ![362](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/.png)
+  ![362](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/362.png)
 
 ## 15.1. Instance Store (IS):
 
