@@ -1,0 +1,5 @@
+- Cloud9
+- CodeCommit for Version Control
+- CodeBuildfor bulding theapplication from thecode
+- CodeDeployto deploy theapplication to EC2 or ECS orEKS
+- CodePipelineto run everythingabove as a Pipeline.
