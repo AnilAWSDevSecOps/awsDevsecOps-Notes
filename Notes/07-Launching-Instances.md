@@ -1,19 +1,20 @@
 # 7. Launching Instances:
 
-  1. Click on Launch Instances button.
-     ![38](https://github.com/user-attachments/assets/5b3736a0-c9f2-4ddf-bde8-36ae9e6fabeb)
+1. Click on Launch Instances button.
+   ![38](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/38.jpg)
 
-  2. Fill in the details like Name, Amazon Machine     <IMAGE>, Instance type, Key pair name, VPC, Subnet (Public), Auto-assign public IP, security groups & Configure storage.
-     ![39](https://github.com/user-attachments/assets/1025e503-d6ee-48b4-83d6-5ec48e0e171c)     
+2. Fill in the details like Name, Amazon Machine     <IMAGE>, Instance type, Key pair name, VPC, Subnet (Public),
+   Auto-assign public IP, security groups & Configure storage.
+   ![39](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/39.jpg)
 
-     ![40](https://github.com/user-attachments/assets/0203f4d4-53df-4ee0-9bb1-850dcd68e5c7)
-     
-     ![41](https://github.com/user-attachments/assets/cf1bdc18-d68e-42ef-8335-8f35301c4d09)
+   ![40](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/40.jpg)
 
-  4. Click on ```Launch Instance```button.
-     ![42](https://github.com/user-attachments/assets/3be15f8a-eca9-48be-9638-4da3abe106bd)
-     
-     ![43](https://github.com/user-attachments/assets/a8d5751d-98fa-44a9-b394-21c7ebd9300d)
+   ![41](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/41.jpg)
 
-  6. Similarly Launch Instance in Private subnet which makes instances private.
-     ![44](https://github.com/user-attachments/assets/2ac45a45-c1fa-4339-8168-fb866e0a0dfd)
+4. Click on ```Launch Instance```button.
+   ![42](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/42.jpg)
+
+   ![43](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/43.jpg)
+
+6. Similarly Launch Instance in Private subnet which makes instances private.
+   ![44](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/01-499/44.jpg)
