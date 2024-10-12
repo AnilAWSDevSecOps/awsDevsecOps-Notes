@@ -1,8 +1,10 @@
 # 21. Global Load Balancers:
-  1. AWS Route53 routing policies
-  2. Global Accelerators
+
+1. AWS Route53 routing policies
+2. Global Accelerators
 
 ## 21.1 AWS Route53 routing policies:
+
 - Failover (One fails another)
 - Latency (Nearest Location)
 - Weighted (0 to 255)
@@ -10,9 +12,12 @@
 - Multi-Value
 
 ### Infrastructure Setup:
-- For this we use the terraform code to build 3 VPCs in India, Ireland and US to do the Global Load Balancing, Below is the code
+
+- For this we use the terraform code to build 3 VPCs in India, Ireland and US to do the Global Load Balancing, Below is
+  the code
 
 ### 1. providers.tf
+
 ```
 #This Terraform Code Deploys Basic VPC Infra.
 provider "aws" {
@@ -42,6 +47,7 @@ terraform {
 ```
 
 ### 2. variables.tf
+
 ```
 variable "aws_region" {}
 variable "amis" {
@@ -81,6 +87,7 @@ variable "instance_type" {
 ```
 
 ### 3. terraform.tfvars
+
 ```
 aws_region          = "us-east-1"
 vpc_cidr            = "10.1.0.0/16"
@@ -100,6 +107,7 @@ environment         = "dev"
 ```
 
 ### 4. india.tf
+
 ```
 resource "aws_vpc" "default-india" {
   provider             = aws.india
@@ -231,6 +239,7 @@ resource "aws_instance" "web-1-india" {
 ```
 
 ### ireland.tf
+
 ```
 resource "aws_vpc" "default-ireland" {
   provider             = aws.ireland
@@ -362,6 +371,7 @@ resource "aws_instance" "web-1-ireland" {
 ```
 
 ### 5. us.tf
+
 ```
 resource "aws_vpc" "default" {
   provider             = aws.eastus
@@ -544,11 +554,13 @@ resource "aws_instance" "web-1" {
 ```
 
 ### 6. July2024 Public Key:
+
 ```
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCqYZ8N68h3MrIxGm+ajIacWxPr885BQReNDep5/JJqVoed32qe5sWxtE24MScqz21arXGFUCwSx43g+gOxdSStDc1thuJrdFXmBbDzNmIVHSWHiQgmaR9N04zjmiHhXk/hoswjSQimGzUwZvegHQXQjXK+4rDbEFwi+FNTbZN6IA3X2fz2iedoHPWXoWsjdz6RaEUTyYKs0PnSN5jQDf7WEeE1jfE6boPEC7OPmesugQ0iM8nt/FIZ1vLcf7IG4EgrGfKYpG64k/NcUy25gfbdkG5PtIsH8gVN2ZenmwXFccq2dCxOSqw0jLStBCX9540dT1UKBFBYPTub9Aj4wARZ
 ```
 
 ### 7. July2024 Private Key:
+
 ```
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEAqmGfDevIdzKyMRpvmoyGnFsT6/POQUEXjQ3qefySalaHnd9q
@@ -578,120 +590,137 @@ YwQDI1gDQzuRZqv527ryFWYbEnHmGcqMt3SnyfOAvVreFc/jc5P0gKYSTpjgKkql
 CnezK1FBoN3k7b0Xbkyg1+lfOh2kWs4oye7E7ptHa1PHqR6JI8Eekg==
 -----END RSA PRIVATE KEY-----
 ```
+
 ## 21.2. Testing the Nginx in all 3 servers
+
 - India Server
-  
-  ![602](https://github.com/user-attachments/assets/aa7ab8dd-fc7a-48c2-814a-9618e6a1d2a8)
-  
+
+  ![602](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/602.png)
+
 - US server
-  
-  ![603](https://github.com/user-attachments/assets/467eaa64-9b63-4c3e-b91e-cefca2c6c809)
+
+  ![603](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/603.png)
 
 - Ireland Server
-  
-  ![604](https://github.com/user-attachments/assets/550814f8-7192-4ccf-9d55-9ac0d9dba872)
-  
+
+  ![604](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/304.png)
+
 ## 21.3. Health Check Creation:
+
 - Create Health Checks under Route 53 > Health Checks.
 - Click on Create Health Checks button to create it for US Server, India Server and Ireland Server
-  ![605](https://github.com/user-attachments/assets/11496949-a78f-4955-be34-38dfec3e3ecb)
+  ![605](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/605.png)
 
-- Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```US Server Public IP```, Port, Request interval and Failure threshold
+- Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```US Server Public IP```, Port,
+  Request interval and Failure threshold
 - Click on Next Button to proceed.
-  ![606](https://github.com/user-attachments/assets/7d315f60-0de2-47d3-8713-867f8e44ace2)
+  ![606](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/606.png)
 
-- If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is created in Auto scaling Groups
+- If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is
+  created in Auto scaling Groups
 - Click on Create health check button.
-  ![607](https://github.com/user-attachments/assets/478c6a44-6b5f-4a67-8647-fe1ca00901e7)
+  ![607](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/607.png)
 
-- Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```Ireland Server Public IP```, Port, Request interval and Failure threshold
+- Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```Ireland Server Public IP```, Port,
+  Request interval and Failure threshold
 - Click on Next Button to proceed.
-  ![608](https://github.com/user-attachments/assets/7111b9db-9bf8-4db2-a6b6-cdf3f474e600)
+  ![608](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/608.png)
 
-- If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is created in Auto scaling Groups
+- If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is
+  created in Auto scaling Groups
 - Click on Create health check button.
-  ![607](https://github.com/user-attachments/assets/478c6a44-6b5f-4a67-8647-fe1ca00901e7)
+  ![607](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/607.png)
 
-- Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```India Server Public IP```, Port, Request interval and Failure threshold
+- Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```India Server Public IP```, Port,
+  Request interval and Failure threshold
 - Click on Next Button to proceed.
-  ![609](https://github.com/user-attachments/assets/dce72a38-d021-48b9-99b4-236adfc9c4e9)
+  ![609](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/609.png)
 
-- If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is created in Auto scaling Groups
+- If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is
+  created in Auto scaling Groups
 - Click on Create health check button.
-  ![607](https://github.com/user-attachments/assets/478c6a44-6b5f-4a67-8647-fe1ca00901e7)
+  ![607](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/607.png)
 
-- 3 health Checks created successfully and Initially Status will be unknown and after some time it will change to healthy if servrs are healthy.
-  ![610](https://github.com/user-attachments/assets/95784335-1873-4308-abcf-6636812dd4e0)
+- 3 health Checks created successfully and Initially Status will be unknown and after some time it will change to
+  healthy if servrs are healthy.
+  ![610](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/610.png)
 
 - Healthy status.
-  ![611](https://github.com/user-attachments/assets/9f380d91-573e-418d-9d9d-6f586f6c811c)
-  
+  ![611](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/611.png)
+
 ## 21.4 Failover:
+
 ### 21.4.1 Failover Records Creation in Hosted Zones
+
 - Now we will create the failover record in our Route53 > Hosted Zones, A Record. for US server as primary.
-  ![612](https://github.com/user-attachments/assets/1b115542-4b23-425e-9680-86cc663ff77e)
+  ![612](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/612.png)
 
 - Now we will create the failover record in our Route53 > Hosted Zones, A Record. for Ireland server as seccondary.
-  ![613](https://github.com/user-attachments/assets/4f48a81e-0ea7-40ba-ad1e-b05764d872c3)
+  ![613](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/613.png)
 
 - After adding records.
-  ![614](https://github.com/user-attachments/assets/19d19c12-f0bb-4d28-a51c-0416785be250)
+  ![614](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/614.png)
 
 - Now when we browse ```failover.madireddyanil.in``` in browser it go to the primary i.e US Server record.
-  ![615](https://github.com/user-attachments/assets/d4d9d400-ae27-4aae-9a22-b67ba2fa3ec9)
+  ![615](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/615.png)
 
 - If failover occour for US server then the it will route to the Ireland server
 - If require login to the US Server try stopping the nginx with ```service nginx stop``` command.
 - Now failover works and routes to Ireland server which is secondary
-  ![616](https://github.com/user-attachments/assets/4e19f1d2-0467-4821-a77c-97ae9f6939e9)
+  ![616](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/616.png)
 
 - Suddenly it will not route to failover if health check fails only it will route to secondary.
-  ![617](https://github.com/user-attachments/assets/5061e526-f5f1-478a-be8b-b7862d9e8b1c)
+  ![617](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/617.png)
 
 - After health failure it routed to secondary when we browse the  ```failover.madireddyanil.in``` in browser
-  ![618](https://github.com/user-attachments/assets/8dcfbffa-e544-4538-a58e-8567c3514b00)
+  ![618](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/618.png)
 
 - Now again we will start the service in US Server.
-  ![619](https://github.com/user-attachments/assets/8a78a05a-31d2-4f56-b851-793baffda73d)
+  ![619](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/619.png)
 
 - Now traffic again routed to primary i.e US server
-  ![615](https://github.com/user-attachments/assets/d4d9d400-ae27-4aae-9a22-b67ba2fa3ec9)
+  ![615](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/615.png)
 
 - Health Check recovery after starting the service in US server.
-  ![620](https://github.com/user-attachments/assets/4d17d614-1477-40e8-8aa2-7a1cb90467a7)
+  ![620](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/620.png)
 
 ## 21.5 Latency:
+
 ### 21.5.1. Latency Records Creation in Hosted Zones
+
 - Now we will create the Latency record in our Route53 > Hosted Zones, A Record. for US server as primary.
-  ![621](https://github.com/user-attachments/assets/ae3eff6e-ed67-418b-b6ec-6b70e2a62e95)
+  ![621](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/621.png)
 
 - Now we will create the Latency record in our Route53 > Hosted Zones, A Record. for India server as primary.
-  ![622](https://github.com/user-attachments/assets/771267aa-77e0-4b3f-b11b-b9f2e02a159f)
+  ![622](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/622.png)
 
 - After creating latency records.
-  ![623](https://github.com/user-attachments/assets/9a468cf3-5542-44d8-85aa-472b0991245c)
+  ![623](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/623.png)
 
 - Now when we browse ```latency.madireddyanil.in``` in browser it go to the nearest Server
 - here i browsed from india so i will get india server.
-  ![624](https://github.com/user-attachments/assets/66b64e34-9800-423e-aaa6-1e266a2fba49)
+  ![624](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/624.png)
 
 - Now when we browse ```latency.madireddyanil.in``` in browser it go to the nearest Server
 - here i browsed from America by using VPN so i will get US server.
-  ![625](https://github.com/user-attachments/assets/ff6fa498-20e2-4939-97cf-3b313398fab6)
+  ![625](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/625.png)
 
 ## 21.6. Weighted:
+
 ### 21.6.1 Weighted Records Creation in Hosted Zones
-- Now we will create the Weighted record in our Route53 > Hosted Zones, A Record. for US, India and Ireland, by clicking on add another record button.
+
+- Now we will create the Weighted record in our Route53 > Hosted Zones, A Record. for US, India and Ireland, by clicking
+  on add another record button.
 - Weight 1(it will distribute among all 3 servrs).
 - Record-1
-  ![626](https://github.com/user-attachments/assets/f8a62e2e-4f82-4f34-8537-2c1bbea54ec5)
+  ![626](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/626.png)
 - Record-2
-  ![627](https://github.com/user-attachments/assets/90ef17ff-97be-4588-9059-c4efe2e82a24)
+  ![627](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/627.png)
 - Record-3, and click on create record button.
-  ![628](https://github.com/user-attachments/assets/8af6357c-dced-4582-b8b3-e119728caf5f)
+  ![628](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/628.png)
 
 - After creating Weighted records.
-  ![629](https://github.com/user-attachments/assets/dadb5d39-f0b8-4f46-86b5-abd7a258463a)
+  ![629](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/629.png)
 
 - Now by below Command you can ping the url.
   ```
@@ -703,88 +732,91 @@ CnezK1FBoN3k7b0Xbkyg1+lfOh2kWs4oye7E7ptHa1PHqR6JI8Eekg==
 - or you can browse with ```weighted.madireddyanil.in``` so that weight will get distributed.
 
 ## 21.7. Geo-Location
+
 ### 21.7.1 Geo-Location Records Creation in Hosted Zones
-- Now we will create the Geolocation records in our Route53 > Hosted Zones, A Record. for US, India and Ireland, by clicking on add another record button.
+
+- Now we will create the Geolocation records in our Route53 > Hosted Zones, A Record. for US, India and Ireland, by
+  clicking on add another record button.
 - Geolocatio (Request of that country will route to that Servers).
 - Record-1
-  ![630](https://github.com/user-attachments/assets/7c6e08fd-6c41-462e-bfa6-3994d7509d28)
+  ![630](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/630.png)
 - Record-2
-  ![631](https://github.com/user-attachments/assets/b39ee186-e6d2-4f7c-b95a-ce54d8aab59b)
+  ![631](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/631.png)
 - Record-3, and click on create record button.
-  ![632](https://github.com/user-attachments/assets/2216da43-20f9-4c0f-95b3-9866d32c2f35)
+  ![632](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/632.png)
 
 - After creating Weighted records.
-  ![633](https://github.com/user-attachments/assets/faffe5a3-7c29-46a8-a68d-9debc1b36331)
+  ![633](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/633.png)
 
 - Now you can browse with ```geo.madireddyanil.in``` so that weight will get distributed.
 - As i am in India it give India Server
-  ![634](https://github.com/user-attachments/assets/c7c6f4aa-38e0-425f-8a46-5747bfb94aa9)
+  ![634](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/500-939/634.png)
 
 - As when you do lookup for all Global Load balancers
-	### Command:
-	```
-	madireddydevops@MadireddyOmen:~$ nslookup failover.madireddyanil.in
-	```
-	### Output:
-	```
-	Server:         10.255.255.254
-	Address:        10.255.255.254#53
-	
-	Non-authoritative answer:
-	Name:   failover.madireddyanil.in
-	Address: 44.205.16.101
-	Name:   failover.madireddyanil.in
-	Address: 64:ff9b::2ccd:1065
-	```
-	### Command:
-	```
-	madireddydevops@MadireddyOmen:~$ nslookup latency.madireddyanil.in
-	```
-	### Output:
-	```
-	Server:         10.255.255.254
-	Address:        10.255.255.254#53
-	
-	Non-authoritative answer:
-	Name:   latency.madireddyanil.in
-	Address: 13.201.62.237
-	Name:   latency.madireddyanil.in
-	Address: 64:ff9b::dc9:3eed
-	```
-	### Command:
-	```
-	madireddydevops@MadireddyOmen:~$ nslookup geo.madireddyanil.in
-	```
-	### Output:
-	```
-	Server:         10.255.255.254
-	Address:        10.255.255.254#53
-	
-	Non-authoritative answer:
-	Name:   geo.madireddyanil.in
-	Address: 13.201.62.237
-	Name:   geo.madireddyanil.in
-	Address: 64:ff9b::dc9:3eed
-	```
-	### Command:
-	```
-	madireddydevops@MadireddyOmen:~$ nslookup weighted.madireddyanil.in
-	```
-	### Output:
-	```
-	Server:         10.255.255.254
-	Address:        10.255.255.254#53
-	
-	Non-authoritative answer:
-	Name:   weighted.madireddyanil.in
-	Address: 13.201.62.237
-	Name:   weighted.madireddyanil.in
-	Address: 64:ff9b::34d6:fdbe
-	```
- - Same way you can create Routes for multi value records.
- - But for MultiValue Routes it will display all server when you do look up.
+  ### Command:
+  ```
+  madireddydevops@MadireddyOmen:~$ nslookup failover.madireddyanil.in
+  ```
+  ### Output:
+  ```
+  Server:         10.255.255.254
+  Address:        10.255.255.254#53
+  
+  Non-authoritative answer:
+  Name:   failover.madireddyanil.in
+  Address: 44.205.16.101
+  Name:   failover.madireddyanil.in
+  Address: 64:ff9b::2ccd:1065
+  ```
+  ### Command:
+  ```
+  madireddydevops@MadireddyOmen:~$ nslookup latency.madireddyanil.in
+  ```
+  ### Output:
+  ```
+  Server:         10.255.255.254
+  Address:        10.255.255.254#53
+  
+  Non-authoritative answer:
+  Name:   latency.madireddyanil.in
+  Address: 13.201.62.237
+  Name:   latency.madireddyanil.in
+  Address: 64:ff9b::dc9:3eed
+  ```
+  ### Command:
+  ```
+  madireddydevops@MadireddyOmen:~$ nslookup geo.madireddyanil.in
+  ```
+  ### Output:
+  ```
+  Server:         10.255.255.254
+  Address:        10.255.255.254#53
+  
+  Non-authoritative answer:
+  Name:   geo.madireddyanil.in
+  Address: 13.201.62.237
+  Name:   geo.madireddyanil.in
+  Address: 64:ff9b::dc9:3eed
+  ```
+  ### Command:
+  ```
+  madireddydevops@MadireddyOmen:~$ nslookup weighted.madireddyanil.in
+  ```
+  ### Output:
+  ```
+  Server:         10.255.255.254
+  Address:        10.255.255.254#53
+  
+  Non-authoritative answer:
+  Name:   weighted.madireddyanil.in
+  Address: 13.201.62.237
+  Name:   weighted.madireddyanil.in
+  Address: 64:ff9b::34d6:fdbe
+  ```
+- Same way you can create Routes for multi value records.
+- But for MultiValue Routes it will display all server when you do look up.
 
-   ### Things not possible in Route53 Routing Policies.
-   - We cannot Select the Port pr Protocol
-   - No SSL Termination
-   - Firewall Whitelisting is not possible for DNS.
+  ### Things not possible in Route53 Routing Policies.
+    - We cannot Select the Port pr Protocol
+    - No SSL Termination
+    - Firewall Whitelisting is not possible for DNS.
