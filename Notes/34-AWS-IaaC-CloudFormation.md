@@ -1,7 +1,10 @@
 # AWS Infrastructure As A Code:
+
 - AWS Cloud Fromation Templates - JSON & YAML
 - Terraform.
+
 ### Stack-01.json
+
   ```
   {
   	"AWSTemplateFormatVersion": "2010-09-09",
@@ -260,21 +263,21 @@
   	}
   }
   ```
-  ![1257](https://github.com/user-attachments/assets/93c883da-c925-4b7f-aa12-7077ffd7e85e)
-  ![1258](https://github.com/user-attachments/assets/87b65cad-2877-478d-ae6f-1b0580456fc1)
-  ![1259](https://github.com/user-attachments/assets/a1d28d1a-b6fd-4b60-9a44-9bde936d81d2)
-  ![1260](https://github.com/user-attachments/assets/11ac41d4-8312-434c-aba6-5b140d99dfad)
-  ![1261](https://github.com/user-attachments/assets/14038df8-efef-4710-ae58-e241a199353f)
-  ![1262](https://github.com/user-attachments/assets/865490e6-7cc7-45b4-b074-a57ee56e696c)
-  ![1263](https://github.com/user-attachments/assets/6325510b-0395-4337-9366-d0f346ae3cf3)
-  ![1264](https://github.com/user-attachments/assets/7323b245-7e0a-4c43-b4d1-a748a8646dc9)
-  ![1265](https://github.com/user-attachments/assets/12bf4d1e-faf6-4212-93ed-4bb16acdd606)
-  ![1266](https://github.com/user-attachments/assets/85f57122-083a-4e1e-9f1c-b908a68cfc99)
-  ![1267](https://github.com/user-attachments/assets/4f57b11c-c566-4e2c-ad30-cc8a34a5a08e)
-  ![1268](https://github.com/user-attachments/assets/1e9cae45-b071-4e3f-8167-06179b9e619e)
-  ![1269](https://github.com/user-attachments/assets/7cd6e232-4588-4608-8d88-7853c70b4971)
-  ![1270](https://github.com/user-attachments/assets/394b7b9b-4ff2-44b4-a7e2-a0a37e2c4896)
 
+![1257](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1257.png)
+![1258](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1258.png)
+![1259](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1259.png)
+![1260](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1260.png)
+![1261](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1261.png)
+![1262](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1262.png)
+![1263](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1263.png)
+![1264](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1264.png)
+![1265](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1265.png)
+![1266](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1266.png)
+![1267](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1267.png)
+![1268](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1268.png)
+![1269](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1269.png)
+![1270](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1270.png)
 
 - Now we have added one subnet additionally
   ### Updated-Stack-o1.json
@@ -570,15 +573,16 @@
   }
   ```
 
-  ![1271](https://github.com/user-attachments/assets/d51ebbfe-ad99-445d-94fd-2b12c372b1a4)
-  ![1272](https://github.com/user-attachments/assets/26a15685-4fa5-48ed-a90e-becd61d90cb4)
-  ![1273](https://github.com/user-attachments/assets/f00cf404-1e7e-49d9-9521-5637a7fed30a)
-  ![1274](https://github.com/user-attachments/assets/abfdad4a-274d-46c9-a35f-61e5c119b405)
-  ![1275](https://github.com/user-attachments/assets/51796b06-8bf8-43f7-968b-cba9ebac0874)
-  ![1276](https://github.com/user-attachments/assets/a1bb8b5a-350f-4dd1-856e-9a45528ae8aa)
-  ![1277](https://github.com/user-attachments/assets/341689b4-50e8-4b84-a179-927d41492187)
+  ![1271](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1271.png)
+  ![1272](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1272.png)
+  ![1273](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1273.png)
+  ![1274](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1274.png)
+  ![1275](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1275.png)
+  ![1276](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1276.png)
+  ![1277](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1277.png)
 
 # StackSets in CloudFormation:
+
 - Cloud Formation Template deploying among the accounts.
 - For this we need to create the role or you can use the below link for role.
   ### AWSCloudFormationStackSetAdministrationRole.yml
@@ -586,48 +590,50 @@
   https://s3.amazonaws.com/cloudformation-stackset-sample-templates-us-east-1/AWSCloudFormationStackSetAdministrationRole.yml
   ```
 - We need to do this in Master account.
-  ![1278](https://github.com/user-attachments/assets/5a250247-cd55-413b-ae63-cf6dba9a5626)
-  ![1279](https://github.com/user-attachments/assets/b209ac73-fdde-43af-92d2-25a548a229b7)
-  ![1280](https://github.com/user-attachments/assets/299d9591-e56d-4f6b-aa9e-fda86befdb95)
-  ![1281](https://github.com/user-attachments/assets/59df9fa1-4222-4ff2-93c1-e7d6b1fa325f)
-  ![1282](https://github.com/user-attachments/assets/7b3f57e0-ea7d-49f8-ae9a-1e85d7e7cee7)
-  ![1283](https://github.com/user-attachments/assets/6c9573fa-a3f8-457b-b590-3a167ce5621e)
-  ![1284](https://github.com/user-attachments/assets/81eadf4e-050b-4abe-babb-9242b567ae27)
+  ![1278](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1278.png)
+  ![1279](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1279.png)
+  ![1280](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1280.png)
+  ![1281](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1281.png)
+  ![1282](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1282.png)
+  ![1283](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1283.png)
+  ![1284](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1284.png)
 
 - Now Do it in Slave2 Account
   ### AWSCloudFormationStackSetExecutionRole.yml
   ```
   https://s3.amazonaws.com/cloudformation-stackset-sample-templates-us-east-1/AWSCloudFormationStackSetExecutionRole.yml
   ```
-  ![1286](https://github.com/user-attachments/assets/5fdf59fa-3b8c-4f94-bbd2-1163468f992c)
-  ![1285](https://github.com/user-attachments/assets/50e5497f-bf4e-4f0a-80b3-21e13befa6ee)
-  ![1284](https://github.com/user-attachments/assets/81eadf4e-050b-4abe-babb-9242b567ae27)
+  ![1286](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1286.png)
+  ![1285](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1285.png)
+  ![1284](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1284.png)
 
 - Similarly Now Do it in Slave1 Account
   ### AWSCloudFormationStackSetExecutionRole.yml
   ```
   https://s3.amazonaws.com/cloudformation-stackset-sample-templates-us-east-1/AWSCloudFormationStackSetExecutionRole.yml
   ```
-  ![1286](https://github.com/user-attachments/assets/5fdf59fa-3b8c-4f94-bbd2-1163468f992c)
-  ![1287](https://github.com/user-attachments/assets/e7df6506-6d4f-4091-ba6a-7f771ec13b90)
-  ![1284](https://github.com/user-attachments/assets/81eadf4e-050b-4abe-babb-9242b567ae27)
-  
+  ![1286](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1286.png)
+  ![1287](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1287.png)
+  ![1284](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1284.png)
+
 - EXTRA
-  ![1288](https://github.com/user-attachments/assets/e45fb1e3-af5e-4ac2-89d3-db64a67334a9)
-  ![1289](https://github.com/user-attachments/assets/673b40ce-62e4-431d-b976-65a54319f11d)
-  ![1290](https://github.com/user-attachments/assets/d0d37bed-658f-4b42-90a2-1ab9ecf58dcd)
-  ![1291](https://github.com/user-attachments/assets/697133e0-999f-4cb7-97b6-45ecf519bb48)
-  ![1292](https://github.com/user-attachments/assets/493fa348-8403-4a08-b8f2-43db80118012)
-  ![1293](https://github.com/user-attachments/assets/1f5333c7-5ad5-4fb1-ad37-9c77c1da9048)
-  ![1294](https://github.com/user-attachments/assets/1e78db2b-8712-427a-9f04-1d74c2198e41)
-  ![1295](https://github.com/user-attachments/assets/8c4fd8a5-f8ba-4eea-8c0d-4db2eee688fe)
-  ![1296](https://github.com/user-attachments/assets/562a5da3-4959-44ae-83fd-4453242b54eb)
-  ![1297](https://github.com/user-attachments/assets/b94b4233-9fda-4da2-bc18-f1f163ec875e)
+  ![1288](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1288.png)
+  ![1289](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1289.png)
+  ![1290](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1290.png)
+  ![1291](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1291.png)
+  ![1292](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1292.png)
+  ![1293](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1293.png)
+  ![1294](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1294.png)
+  ![1295](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1295.png)
+  ![1296](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1296.png)
+  ![1297](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1297.png)
 
 ## Creating Stack Set In Root Account.
-  ![1298](https://github.com/user-attachments/assets/d5292dd0-ae84-4226-957a-66959428608b)
 
-  ### AWS-Sample-Infra.json
+![1298](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1298.png)
+
+### AWS-Sample-Infra.json
+
   ```
   {
   	"AWSTemplateFormatVersion": "2010-09-09",
@@ -935,16 +941,18 @@
   	}
   }
   ```
-  ![1299](https://github.com/user-attachments/assets/6123d7da-d0ba-4db8-a65e-2a416b4d48f6)
-  ![1300](https://github.com/user-attachments/assets/3d487a59-cb96-4995-b0ad-510a3177d386)
-  ![1301](https://github.com/user-attachments/assets/d17edf82-fa5d-464a-9a23-d6fd4134cb76)
-  ![1302](https://github.com/user-attachments/assets/e188aade-9409-4ba6-92a2-92644a5c13c2)
-  ![1303](https://github.com/user-attachments/assets/efa20cd4-7c94-42f7-8193-d6dea07740b6)
-  ![1304](https://github.com/user-attachments/assets/293be4ef-996a-4115-858f-74fbb298b664)
+
+![1299](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1299.png)
+![1300](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1300.png)
+![1301](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1301.png)
+![1302](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1302.png)
+![1303](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1303.png)
+![1304](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1304.png)
 
 - Now your VPC and Instace will get created in 2 account please check.
 
 ## NESTED STACKS:
+
 - These are useful in code grater than 1MB coz Stackset will handle code size upto 1MB
 - Copy the two nested files in the s3
   ### vpc-childstack.json
@@ -1299,8 +1307,8 @@
       }
   }
   ```
-  
-  ### ec2-childstack.json 
+
+  ### ec2-childstack.json
   ```
   {
       "AWSTemplateFormatVersion": "2010-09-09",
@@ -1436,11 +1444,11 @@
       }
   }
   ```
-  ![1304-01](https://github.com/user-attachments/assets/15bbd716-79dc-4a10-af05-a22533dbf47d)
+  ![1304-01](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1304-01.png)
 
 - Now create Stack
-  ![1305](https://github.com/user-attachments/assets/75cb52bc-7987-4e20-ba24-4be01555273a)
-  ![1306](https://github.com/user-attachments/assets/b9dd10c0-24c5-487f-a7c6-5f388023fbd0)
+  ![1305](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1305.png)
+  ![1306](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1306.png)
 
   ### vpc-ec2-parent-nested.json
   ```
@@ -1497,19 +1505,21 @@
       }
   }
   ```
-  ![1307](https://github.com/user-attachments/assets/b0098996-8326-4c5e-ad3a-bce40ace7c46)
-  ![1308](https://github.com/user-attachments/assets/9e59202b-5e33-4e87-9466-dfe367c8ee21)
-  ![1309](https://github.com/user-attachments/assets/7413c887-692d-4e3d-83e6-8b3ff95e8f50)
-  ![1310](https://github.com/user-attachments/assets/391f43ee-0191-4aea-99b0-1ae9c322b6a5)
-  ![1311](https://github.com/user-attachments/assets/363c1d1a-9c3d-4362-b56a-2cbf4f5eaa5d)
-  ![1312](https://github.com/user-attachments/assets/b5667ae2-ed5d-4651-bb40-236303c41c08)
-  ![1313](https://github.com/user-attachments/assets/d736be55-4482-47c9-92f2-ce1eb7756e56)
-  ![1314](https://github.com/user-attachments/assets/ae0962f3-327f-4e98-a631-81c30ca6e6b4)
-  ![1315](https://github.com/user-attachments/assets/a3db6bca-a1bd-496f-a246-73b53b7d66ce)
-  ![1316](https://github.com/user-attachments/assets/942aeaf1-3b94-47ba-92ef-32f333f5b238)
+  ![1307](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1307.png)
+  ![1308](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1308.png)
+  ![1309](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1309.png)
+  ![1310](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1310.png)
+  ![1311](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1311.png)
+  ![1312](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1312.png)
+  ![1313](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1313.png)
+  ![1314](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1314.png)
+  ![1315](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1315.png)
+  ![1316](https://github.com/DevopsAllInOne/01-AWS-2024/blob/main/Notes-Images/940-1407/1316.png)
 
 ### DISADVANTAGES:
-Limitations with Cloudformation: 
+
+Limitations with Cloudformation:
+
 1. Keeping all the code base in singefile and manging is cumbersome.
 2. Only works with AWS.
 3. Dry run is not that effective.
