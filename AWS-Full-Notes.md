@@ -9988,14 +9988,14 @@ Limitations with Cloudformation:
 - If any user creates EBS VOlume other than gp2 & gp3, it should be deleted.(Event Driven)
 - If any user creates EBS Volume and dont attach in a min, it should be deleted. (Scheduled Lambda run)
 
-## 40.1. EventBridge:
+## 32.1. EventBridge:
 
 - Open Event Bridge
   ![1398](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1398.png)
 - If you see in cloud Trail Every event will be recorded.
   ![1399](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1399.png)
 
-### 40.1.1. Volume Creation:
+### 32.1.1. Volume Creation:
 
 - Click on Create volume button
   ![1400](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1400.png)
@@ -10113,7 +10113,7 @@ Limitations with Cloudformation:
   
   ```
 
-### 40.1.2. AWS Lambda Creation:
+### 32.1.2. AWS Lambda Creation:
 
 - Click on ```Create a function``` button
   ![1405](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1405.png)
@@ -10145,7 +10145,7 @@ Limitations with Cloudformation:
   ```
   ![1407](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1407.png)
 
-### 40.1.3. Lambda Role Permission providing:
+### 32.1.3. Lambda Role Permission providing:
 
 - Giving permissions to the role which is attached to lambda.
   ![1408](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1408.png)
@@ -10153,7 +10153,7 @@ Limitations with Cloudformation:
   ![1410](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1410.png)
   ![1411](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1411.png)
 
-### 40.1.4. Amazon EventBridge Rules Creation:
+### 32.1.4. Amazon EventBridge Rules Creation:
 
 - Click on ```Create rule``` button
   ![1412](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1412.png)
@@ -10173,7 +10173,7 @@ Limitations with Cloudformation:
   ![1426](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1426.png)
   ![1427](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1427.png)
 
-### 40.1.5. Testing the Event Bridge:
+### 32.1.5. Testing the Event Bridge:
 
 - Now create a volume and see then the volume will get deleted
   ![1421](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1421.png)
@@ -10181,9 +10181,9 @@ Limitations with Cloudformation:
   ![1423](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1423.png)
   ![1428](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1428.png)
 
-## 40.2. Scheduled Events:
+## 32.2. Scheduled Events:
 
-### 40.2.1 Lambda Function Creation:
+### 32.2.1 Lambda Function Creation:
 
 - Click on ```Create function``` button.
   ![1429](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1429.png)
@@ -10228,7 +10228,7 @@ Limitations with Cloudformation:
   ![1433](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1433.png)
   ![1434](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1434.png)
 
-### 40.2.2 Scheduling the Function:
+### 32.2.2 Scheduling the Function:
 
 - Click on create rule.
   ![1435](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1435.png)
