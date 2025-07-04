@@ -5279,7 +5279,7 @@ Now we will discuss about the users & Groups.
 
 
 
-# Databases:
+# 25. Databases:
 
 ## Structured Data:
 
@@ -5293,7 +5293,7 @@ Now we will discuss about the users & Groups.
 
 - ElastiCache
 
-# 25. AWS RDS:
+# 25.1 AWS RDS:
 
 - Before Creating Database we need to create the ```Subnetgroup```
 - Come to Amazon RDS > Subnetgroup > Create DB Subnet group
@@ -5766,7 +5766,7 @@ Now we will discuss about the users & Groups.
 
 
 
-# AWS DynamoDB:
+# 25.2 AWS DynamoDB:
 
 - DynamoDB Home
   ![1032](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1032.png)
@@ -6191,7 +6191,7 @@ Now we will discuss about the users & Groups.
   ![1106](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1106.png)
 
 
-# Amazon DocumentDB or MangoDB
+# 25.3 Amazon DocumentDB or MangoDB
 
 - it is like RDS DB only but few changes. Documetn based NoSQL Solution.
 
@@ -6358,7 +6358,7 @@ Now we will discuss about the users & Groups.
 
     
 
-# Systems Manager:
+# 26. Systems Manager:
 
 - Sessions Manager
 - Run Commands
@@ -6604,7 +6604,7 @@ Now we will discuss about the users & Groups.
   ![1255](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1255.png)
 
 
-# AWS Infrastructure As A Code:
+# 27. AWS Infrastructure As A Code:
 
 - AWS Cloud Fromation Templates - JSON & YAML
 - Terraform.
@@ -8135,7 +8135,7 @@ Limitations with Cloudformation:
 
 
 
-# Terraform:
+# 28. Terraform:
 
 ## 1. AWS CLI Configuration in Windows Power Shell:
 - Download the below link and install in Windows.
@@ -8379,7 +8379,7 @@ Limitations with Cloudformation:
 
 
 
-# AWS Elastic Container Services (ECS):
+# 29. AWS Elastic Container Services (ECS):
 
 ### 1. Virtual machines vs Containers
 
@@ -8784,7 +8784,7 @@ Limitations with Cloudformation:
 
 
 
-# Elastic Kubernetes Services:
+# 30. Elastic Kubernetes Services:
 
 ### 1. Install The Kubectl
 
@@ -9357,7 +9357,7 @@ Limitations with Cloudformation:
 
 
 
-# Basics of Python 
+# 31. Basics of Python 
 ## Using Boto3 Library
   1. Python 3 Download and Install it.
   2. VS Code.
@@ -9983,7 +9983,7 @@ Limitations with Cloudformation:
 
   
 
-# 40. Amazon EventBridge
+# 32. Amazon EventBridge
 
 - If any user creates EBS VOlume other than gp2 & gp3, it should be deleted.(Event Driven)
 - If any user creates EBS Volume and dont attach in a min, it should be deleted. (Scheduled Lambda run)
