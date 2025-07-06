@@ -810,6 +810,34 @@
   Listing VPCs in region us-west-2
   vpc-08815e8601b5dfb89
   ```
+  ***Command:*** To print vpc list with line numbers
+  ```
+  Shell_Scripts $ ./06-ListVpcs-allReg.sh us-east-1 us-west-1 us-east-2 us-west-2|awk '{print NR,$0}'
+
+  ```
+  ***Output:***
+  ```
+  1 Listing VPCs in region us-east-1
+  2 vpc-015a92ad1076c1fba
+  3 Listing VPCs in region us-west-1
+  4 vpc-08a19485a98b6b441
+  5 Listing VPCs in region us-east-2
+  6 vpc-028a70445745a1c8c
+  7 Listing VPCs in region us-west-2
+  8 vpc-02ed782285e5ff28d
+  ```
+  ***Command:*** To print vpc list with line numbers
+  ```
+  Shell_Scripts $ ./06-ListVpcs-allReg.sh us-east-1 us-west-1 us-east-2 us-west-2|awk 'NR % 2 == 0 { print ++count,$0 }'
+
+  ```
+  ***Output:***
+  ```
+  1 vpc-015a92ad1076c1fba
+  2 vpc-08a19485a98b6b441
+  3 vpc-028a70445745a1c8c
+  4 vpc-02ed782285e5ff28d
+  ```
 
 ## 2.4 Shell Data Operators
 
