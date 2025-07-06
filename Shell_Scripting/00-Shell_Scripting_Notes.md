@@ -545,6 +545,15 @@
 
   ***Command:***
   ```
+  # Download the latest direnv release
+  curl -sfL https://github.com/direnv/direnv/releases/latest/download/direnv.linux-amd64 -o direnv
+  
+  # Make it executable and move to /usr/local/bin
+  chmod +x direnv
+  sudo mv direnv /usr/local/bin/
+  ```
+  ***Command:***
+  ```
   sudo apt-get install direnv
   
   ```
