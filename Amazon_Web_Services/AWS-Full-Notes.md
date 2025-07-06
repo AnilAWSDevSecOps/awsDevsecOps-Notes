@@ -1,74 +1,74 @@
 # 1. VPC Creation:
 
 1. Click on Create VPC button.
-   ![01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/01.jpg)
+   ![01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/01.jpg)
 
 3. Fill the required details like Name tag, IPv4 CIDR block, IPv4 CIDR and Tenancy etc., and click on Create VPC button.
-   ![02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/02.jpg)
+   ![02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/02.jpg)
 
 4. After VPC creation by default Route Table, Network ACLs & Security groups will be created.
-   ![03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/03.jpg)
+   ![03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/03.jpg)
 
 
 # 2. Subnet Creation:
 
 1. Click on Create subnet button.
-   ![04](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/04.jpg)
+   ![04](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/04.jpg)
 
 2. Fill the details like VPC ID, Subnet name, Availability Zone, IPv4 VPC CIDR block & IPv4 subnet CIDR block. Click on
    Create subnet button. Similarly create any number of subnets.
-   ![05](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/05.jpg)
+   ![05](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/05.jpg)
    
 
 # 3. Route Table Creation:
 
 1. By default, one route table will be created while VPC Creation, click on Create route table button.
-   ![06](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/06.jpg)
+   ![06](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/06.jpg)
 
 2. Fill the details like Name and VPC, click on Create route table button.
-   ![07](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/07.jpg)
+   ![07](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/07.jpg)
 
 3. Details after creating Route table successfully. By default, local routes will be given in the route table with which
    connections will be established between servers within given IP Destination range
-   ![08](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/08.jpg)
+   ![08](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/08.jpg)
 
 
 # 4. Internet Gateway Creation:
 
 1. Click on Create internet gateway button.
-   ![09](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/09.jpg)
+   ![09](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/09.jpg)
 
 2. Fill in the details like Name tag and click on Create internet gateway button.
-   ![10](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/10.jpg)
+   ![10](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/10.jpg)
 
 3. IGW created successfully, by default after internet gateway creation it will be in Detached state, click on Attach to
    a VPC if you want to attach it to VPC now.
-   ![11](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/11.jpg)
+   ![11](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/11.jpg)
 
 4. Select VPC that you want to attach in the dropdown and click on Attach internet gateway button, by this internet
    gateway is attached to the VPC so we can use this internet gateway with in VPC.
-   ![12](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/12.jpg)
+   ![12](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/12.jpg)
 
 5. Alternatively, you can attach Internet gateway to VPC as below.
-   ![13](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/13.jpg)
+   ![13](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/13.jpg)
 
 6. After VPC attachment it looks like below.
-   ![14](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/14.jpg)
+   ![14](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/14.jpg)
 
 ## 4.1. Attaching the Internet Gateway to Route table:
 
 1. Adding Internet Gateway in Route table’s Routes, click on Edit routes button.
-   ![15](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/15.jpg)
+   ![15](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/15.jpg)
 
 2. Click on Add route button.
-   ![16](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/16.jpg)
+   ![16](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/16.jpg)
 
 3. Fill the details like Destination & Target, click on Save Changes button.
-   ![17](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/17.jpg)
+   ![17](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/17.jpg)
 
 4. By doing this we can access the instances under this route can be accessed over the internet and instances can access
    the internet from inside.
-   ![18](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/18.jpg)
+   ![18](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/18.jpg)
 
 
 
@@ -80,42 +80,42 @@
   ## 5.1. Steps to create Elastic Ips:
 
     1. Click on Allocate Elastic IP address button.
-       ![19](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/19.jpg)
+       ![19](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/19.jpg)
 
     2. Select the Network border group and Click on Allocate button, by doing this we have created the Elastic IP in the
        us-east-1 region which must be used in the same region.
-       ![20](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/20.jpg)
+       ![20](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/20.jpg)
 
-       ![21](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/21.jpg)
+       ![21](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/21.jpg)
 
   ## 5.2. Steps to create NAT Gateway:
 
     1. Click on Create NAT gateway button.
-       ![22](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/22.jpg)
+       ![22](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/22.jpg)
 
     2. Fill in the details like Name, Subnet (Public Subnet: Which has Internet Gateway attached), Connectivity type and
        Elastic IP allocation ID. Here we allocate the above created Elastic IP for this NAT gateway.
-       ![23](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/23.jpg)
+       ![23](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/23.jpg)
 
     3. Click on Create NAT gateway button.
-       ![24](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/24.jpg)
+       ![24](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/24.jpg)
 
     4. After NAT Gateway Creation it looks like below.
-       ![25](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/25.jpg)
+       ![25](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/25.jpg)
 
   ## 5.3. Attaching NAT Gateway to Route table:
 
     1. Adding NAT Gateway in Route table’s Routes, click on Edit routes button
-       ![26](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/26.jpg)
+       ![26](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/26.jpg)
 
     2. Click on Add route button.
-       ![27](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/27.jpg)
+       ![27](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/27.jpg)
 
     3. Fill the details like Destination & Target, click on Save Changes button.
-       ![28](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/28.jpg)
+       ![28](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/28.jpg)
 
     4. After adding NAT gateway to the Route table it looks like below.
-       ![29](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/29.jpg)
+       ![29](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/29.jpg)
 
 
 
@@ -127,112 +127,112 @@
 
 1. Assigning the Subnet into the Route table which has Internet Gateway in it makes public subnet, instances under this
    subnet can access the internet. Open the Internet Gateway route table.
-   ![30](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/30.jpg)
+   ![30](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/30.jpg)
 
 2. Click on ```Subnet association``` then ```Edit subnet associations``` under ```Explicit subnet associations```.
-   ![31](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/31.jpg)
+   ![31](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/31.jpg)
 
 3. Select the Subnet that you want to make Public and click on Save associations.
-   ![32](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/32.jpg)
+   ![32](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/32.jpg)
 
 4. After subnet association in the route table which has internet gateway in it, it looks like below. and that subnet
    becoms the Public Subnet.
-   ![33](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/33.jpg)
+   ![33](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/33.jpg)
 
 ## 6.2. Private Subnet Association in Rout tables:
 
 1. Assigning the Subnet into the Route table which has NAT Gateway in it makes private subnet, instances under this
    subnet can behave as private instances. Open the NAT Gateway route table.
-   ![34](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/34.jpg)
+   ![34](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/34.jpg)
 
 2. Click on ```Subnet association``` then ```Edit subnet associations``` under ```Explicit subnet associations```.
-   ![35](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/35.jpg)
+   ![35](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/35.jpg)
 
 3. Select the Subnet that you want to make Public and click on Save associations
-   ![36](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/36.jpg)
+   ![36](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/36.jpg)
 
 4. After subnet association in the route table which has NAT gateway in it, it looks like below. and that subnet becoms
    the Private Subnet.
-   ![37](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/37.jpg)
+   ![37](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/37.jpg)
 
 
 
 # 7. Launching Instances:
 
 1. Click on Launch Instances button.
-   ![38](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/38.jpg)
+   ![38](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/38.jpg)
 
 2. Fill in the details like Name, Amazon Machine     <IMAGE>, Instance type, Key pair name, VPC, Subnet (Public),
    Auto-assign public IP, security groups & Configure storage.
-   ![39](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/39.jpg)
+   ![39](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/39.jpg)
 
-   ![40](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/40.jpg)
+   ![40](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/40.jpg)
 
-   ![41](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/41.jpg)
+   ![41](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/41.jpg)
 
 4. Click on ```Launch Instance```button.
-   ![42](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/42.jpg)
+   ![42](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/42.jpg)
 
-   ![43](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/43.jpg)
+   ![43](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/43.jpg)
 
 6. Similarly Launch Instance in Private subnet which makes instances private.
-   ![44](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/44.jpg)
+   ![44](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/44.jpg)
 
 
 
 # 8. Security Group Changes:
 
 1. Open the Security Group tab and click on our ```security group```.
-   ![45](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/45.jpg)
+   ![45](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/45.jpg)
 
 2. Click on ```Edit inbound rules```.
-   ![46](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/46.jpg)
+   ![46](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/46.jpg)
 
 3. Click on ```Add rule```. By default, all traffic will be enabled within security group range, as per our requirement
    we can add rules and restrict the incoming traffic by editing inbound rules of security group.
-   ![47](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/47.jpg)
+   ![47](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/47.jpg)
 
 4. Allowing all traffic to my IP but you should assign traffic according to the requirement and click on
    ```Save rules``` button.
-   ![48](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/48.jpg)
+   ![48](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/48.jpg)
 
 
 
 # 9. Connecting to Instances:
 
 1. Download putty & Install Putty, click on next.
-   ![49](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/49.jpg)
+   ![49](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/49.jpg)
 
-   ![50](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/50.jpg)
+   ![50](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/50.jpg)
 
 3. Open Puttygen and click on load button, before this you need to convert the pem file into ppk file so that you can
    access it here.
-   ![51](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/51.jpg)
+   ![51](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/51.jpg)
 
 4. Select Our Pem Key File in the load options.
-   ![52](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/52.jpg)
+   ![52](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/52.jpg)
 
 5. After loading click on save as private key button and save it in some name.ppk, Open Putty and load the .ppk file in
    the credentials section.
-   ![53](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/53.jpg)
+   ![53](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/53.jpg)
 
 6. Save the settings in putty.
-   ![54](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/54.jpg)
+   ![54](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/54.jpg)
 
 7. Collect the Public IP of the instance and connect now.
-   ![55](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/55.jpg)
+   ![55](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/55.jpg)
 
-   ![56](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/56.jpg)
+   ![56](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/56.jpg)
 
-   ![57](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/57.jpg)
+   ![57](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/57.jpg)
 
-   ![58](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/58.jpg)
+   ![58](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/58.jpg)
 
 9. Now connect to the Private server using private IP through the Public server which we connected above. Bring pem data
    into the public server and save it as .pem file
-   ![59](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/59.jpg)
+   ![59](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/59.jpg)
 
-   ![60](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/60.jpg)
+   ![60](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/60.jpg)
    ### ***Commands***
     ```
     vi july2024.pem
@@ -269,7 +269,7 @@
     CnezK1FBoN3k7b0Xbkyg1+lfOh2kWs4oye7E7ptHa1PHqR6JI8Eekg==
     -----END RSA PRIVATE KEY-----
     ```
-   ![61](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/61.jpg)
+   ![61](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/61.jpg)
 
 
 
@@ -290,100 +290,100 @@
 ## 10.1. Peering between VPC in different account and different region:
 
 1. Create New VPC with VPC and more
-   ![62](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/62.jpg)
-   ![63](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/63.jpg)
+   ![62](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/62.jpg)
+   ![63](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/63.jpg)
 
 2. Click on ```Create VPC``` button.
-   ![64](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/64.jpg)
+   ![64](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/64.jpg)
 
 3. Following details are Created in VPC.
-   ![65](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/65.jpg)
-   ![66](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/66.jpg)
+   ![65](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/65.jpg)
+   ![66](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/66.jpg)
 
 5. VPC with Subnets, Route tables amd Gateways created successfully.
 6. Subnets:
-   ![67](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/67.jpg)
+   ![67](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/67.jpg)
 
 7. Route Tables:
-   ![68](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/68.jpg)
+   ![68](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/68.jpg)
 
-   ![69](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/69.jpg)
+   ![69](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/69.jpg)
 
-   ![70](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/70.jpg)
+   ![70](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/70.jpg)
 
-   ![71](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/71.jpg)
+   ![71](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/71.jpg)
 
 8. Security Group:
-   ![72](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/72.jpg)
+   ![72](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/72.jpg)
 
 9. Adding Routes in Security Group.
-   ![73](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/73.jpg)
+   ![73](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/73.jpg)
 
 10. Now we can peer the VPC-01 and sample-Vpc. Now come to VPC-01 Account, click on Peering connections.
-    ![74](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/74.jpg)
+    ![74](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/74.jpg)
 
 11. Click on ```create Peering Connection```.
-    ![75](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/75.jpg)
+    ![75](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/75.jpg)
 
 12. Fill in the details like Name, VPC ID (Requester), Account, Account ID(Accepter), Region (Accepter), VPC ID (
     Accepter) and click on Create peering connection button.
-    ![76](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/76.jpg)
+    ![76](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/76.jpg)
 
-    ![77](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/77.jpg)
+    ![77](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/77.jpg)
 
 13. VPC Peering created successfully.
-    ![78](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/78.jpg)
-    ![79](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/79.jpg)
+    ![78](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/78.jpg)
+    ![79](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/79.jpg)
 
 14. Now in the acceptors account you need to accept the request.
-    ![80](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/80.jpg)
+    ![80](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/80.jpg)
 
-    ![81](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/81.jpg)
+    ![81](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/81.jpg)
 
 15. Pop up after clicking accept button.
-    ![82](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/82.jpg)
+    ![82](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/82.jpg)
 
 16. After accepting request, Your VPC peering connection has been established. To send and receive traffic across this
     VPC peering connection, you must add a route to the peered VPCs in one or more of your VPC's route tables.
-    ![83](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/83.jpg)
+    ![83](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/83.jpg)
 
 17. Now in the both the Public Route tables, add the CIDR range, In Acceptors Public Route tables, click on Edit routes
     and Add route, add the Requester CIDR.
-    ![84](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/84.jpg)
+    ![84](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/84.jpg)
 
 18. Click on Save changes.
-    ![85](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/85.jpg)
+    ![85](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/85.jpg)
 
 19. After adding the routes it looks like below.
-    ![86](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/86.jpg)
+    ![86](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/86.jpg)
 
 20. Now In Requesters Public Route tables, click on Edit routes and Add route, add the Acceptors CIDR, click on Save
     changes.
-    ![87](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/87.jpg)
+    ![87](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/87.jpg)
 
-    ![88](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/88.jpg)
+    ![88](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/88.jpg)
 
-    ![89](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/89.jpg)
+    ![89](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/89.jpg)
 
 21. After adding routes it looks like below.
-    ![90](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/90.jpg)
+    ![90](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/90.jpg)
 
 22. If requires you need to add the routes in the security group also as below. Sample-vpc security group
-    ![91](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/91.jpg)
+    ![91](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/91.jpg)
 
 23. VPC-01 Security group.
-    ![92](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/92.jpg)
+    ![92](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/92.jpg)
 
 24. Now Launch Some Public Instances in Acceptors VPC.
-    ![93](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/93.jpg)
+    ![93](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/93.jpg)
 
 25. Now Launch Some Public Instances in Requesters VPC.
-    ![94](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/94.jpg)
+    ![94](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/94.jpg)
 
 26. Now ping both instances with both instances and check if the connection exist or not.
-    ![95](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/95.jpg)
+    ![95](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/95.jpg)
 
-    ![96](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/96.jpg)
+    ![96](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/96.jpg)
 
 27. Similarly, we can establish VPC Peering between:
     - Same account and same region.
@@ -391,7 +391,7 @@
     - Different account and same region.
 
 28. VPC Peering diagram.
-    ![97](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/97.jpg)
+    ![97](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/97.jpg)
 
 
 
@@ -400,7 +400,7 @@
 - Launch two instances public and private and assign roles to them and transfer packets in s3 using the public and
   private subnets via internet, which will cost in AWS so we use end Points to transfer packets via AWS intranet.
 - VPC Endpoints are used to access other AWS services from VPC internally
-  ![98](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/98.jpg)
+  ![98](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/98.jpg)
 
 ## 11.1. Gateway Endpoints:
 
@@ -409,75 +409,75 @@
 ### 11.1.1. Creating Gateway Endpoint:
 
 - Click Create endpoint button.
-  ![99](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/99.jpg)
+  ![99](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/99.jpg)
 
 - Specify the name and service category
-  ![100](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/100.jpg)
+  ![100](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/100.jpg)
 
 - Specify the service and the service name and VPC name in the below.
-  ![101](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/101.jpg)
+  ![101](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/101.jpg)
 
 - Select the Private Route table and policy
-  ![102](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/102.jpg)
+  ![102](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/102.jpg)
 
 - Click on create button.
-  ![103](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/103.jpg)
+  ![103](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/103.jpg)
 
 ### 11.1.2. Creating S3 Bucket:
 
 - Now to test the S3 Gateway endpoint we need to create the s3 bucket. Click on Create bucket button.
-  ![104](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/104.jpg)
+  ![104](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/104.jpg)
 
 - Fill in the details like Bucket type & Bucket name and rest are defaults as photo.
-  ![105](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/105.jpg)
-  ![106](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/106.jpg)
+  ![105](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/105.jpg)
+  ![106](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/106.jpg)
 
 - Click on Create bucket for creating the s3 bucket.
-  ![107](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/107.jpg)
+  ![107](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/107.jpg)
 
 - S3 bucket created successfully.
-  ![108](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/108.jpg)
+  ![108](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/108.jpg)
 
 ### 11.1.3. Launching Connecting to Private Instance:
 
 - Connect to the Public Instance using putty
-  ![109](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/109.jpg)
+  ![109](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/109.jpg)
 
 - Then Connect to the private instance through public instance
-  ![110](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/110.jpg)
+  ![110](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/110.jpg)
 
 - Connected to Private instance 10.20.0.115 using putty
-  ![111](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/111.jpg)
+  ![111](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/111.jpg)
 
 - Unable to locate credentials. You can configure credentials by runnin ```aws configure ``` Command.
-  ![112](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/112.jpg)
+  ![112](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/112.jpg)
 
 ### 11.1.4. User Access key Creation:
 
 - Before configuring aws cli we need to create the access key by going in security credentials under account name. Click
   on Security credentials button.
-  ![113](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/113.png)
+  ![113](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/113.png)
 
 - Click on Create access key button
-  ![114](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/114.png)
+  ![114](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/114.png)
 
 - For Root user access keys are not recommended but create now no issue. Click on Create access key button.
-  ![115](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/115.png)
+  ![115](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/115.png)
 
 - Download the .csv file and save it for future AWS CLI configuring. Click on Done button once creds are saved..
-  ![116](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/116.png)
+  ![116](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/116.png)
 
 ### 11.1.5. Configuring the CLI Using the Access key and testing the S3 file transfer:
 
 - Now configure the aws cli by updating the access key creds.
-  ![117](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/117.png)
+  ![117](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/117.png)
 
 - Uploaded one dummy file for testing into s3 bucket by clicking on Upload button.
-  ![118](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/118.png)
+  ![118](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/118.png)
 
 - By this way we have downloaded by configuring the root access key but this happened due to internet but our goal using
   end point without internet only locally this should happen.
-  ![119](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/119.png)
+  ![119](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/119.png)
 
 - To use of Gateway endpoint data transfer we need to launch the new private server in the private subnet and assign the
   role to the server
@@ -490,48 +490,48 @@
 ### 11.2.1 Private Subnet Creation:
 
 - Click on Create subnet button.
-  ![120](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/120.png)
+  ![120](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/120.png)
 
 - Creating the new route table fully private, and will associate the new subnet.
 - Fill the details like Name and VPC, click on Create route table button
-  ![121](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/121.png)
+  ![121](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/121.png)
 
 ### 11.2.2 Private Subnet Explicit Association:
 
 - Explicit subnet association of new subnet VPC-01-Subnet-03 was done successfully into the VPC-01-Rtb-01-FullPrivate
   route table.
-  ![122](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/122.png)
+  ![122](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/122.png)
 
 - Launching the new instance under VPC-01-Subnet-03, Click on the Launch button and create the instance
-  ![123](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/123.png)
-  ![124](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/124.png)
-  ![125](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/125.png)
+  ![123](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/123.png)
+  ![124](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/124.png)
+  ![125](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/125.png)
 
 ### 11.2.3 IAM Role Creation:
 
 - Creating New role to assign to the Private instance ubuntu-03. Click on Create role button
-  ![126](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/126.png)
+  ![126](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/126.png)
 
 - Select the AWS service and EC2 and click on next button
-  ![127](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/127.png)
-  ![128](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/128.png)
+  ![127](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/127.png)
+  ![128](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/128.png)
 
 - For now, I have given the admin access rights for this role but generally we should give the below given roles and
   click on Next button
 
-  ![129](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/129.png)
+  ![129](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/129.png)
 
 - These are the roles in general for EC2 should be given but not admin rights.
-  ![130](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/130.png)
+  ![130](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/130.png)
 
 - Fil in the details like Role name
-  ![131](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/131.png)
+  ![131](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/131.png)
 
 - By leaving the remaining to defaults click on Create role button.
-  ![132](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/132.png)
+  ![132](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/132.png)
 
 - Role EC2-AdminAccess created
-  ![133](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/133.png)
+  ![133](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/133.png)
 
 - Assign this role to the Private server
 
@@ -540,109 +540,109 @@
 - Initially when I tried the download from s3 it did not happen as no NAT in it thereafter. When I changed the
   routable (VPC-01-Rtb-01-FullPrivate) details in the Gateway endpoint which I have created earlier then the download
   completed without any NAT of IGW
-  ![134](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/134.png)
+  ![134](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/134.png)
 
 - By clicking on Manage route table button I have changed the route table so that subnet details also changed
   automatically as that subnet is Explicitly associated to the same route table. Thereafter packets are getting
   downloaded using the Gateway endpoint.
-  ![135](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/135.png)
+  ![135](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/135.png)
 
 - This way upload and download are happening using Gateway endpoints.
-  ![136](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/136.png)
+  ![136](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/136.png)
 
 - Sample Diagram describing Gateway Endpoints, the red line indicates gateway endpoint to s3 bucket.
-  ![137](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/137.png)
+  ![137](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/137.png)
 
 ## 11.3. Process to upload a new key into AWS Public instances when old key lost:
 
 - Click on Session Manager under AWS Systems Manager.
-  ![138](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/138.png)
+  ![138](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/138.png)
 
 - Click on Start Session button
-  ![139](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/139.png)
+  ![139](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/139.png)
 
 - By default, you will not see any instances here as default permissions for the instance will not grand access here.
 - So, we need to assign the IAM role which we have created above so that the public instances will be appeared here.
-  ![140](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/140.png)
+  ![140](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/140.png)
 
 - Right Click on Instance and under security > Modify IAM role
 - Assign the Role to the instance so that you can see the instance under AWS System Manager > Session Manager
-  ![141](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/141.png)
+  ![141](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/141.png)
 
 - Again, I have attached few policy Names to the IAM role so that instances can appear under Session manager.
 - Note: This Role Should be assigned to the Private servers also if not they won’t be seen in the session manager
   section for system Management.
 
-  ![142](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/.142png)
+  ![142](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/.142png)
 
 - Select the Server and click on the Start Session button
-  ![143](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/143.png)
+  ![143](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/143.png)
 
 - Now generate the Public and private keys in Puttygen and public key should be added into the server under highlighted
   path in the screenshot below.
-  ![144](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/144.png)
+  ![144](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/144.png)
 
 - So, you need to add the public key generated in the Puttygen can be added along with the existing public key so that
   you can login to the instance which you lost the access key.
-  ![145](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/145.png)
+  ![145](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/145.png)
 
 ## 11.4. Process to upload a new key into AWS Private instances when old key lost:
 
 - Now we must create 3 interface endpoints to make private server available in the AWS Systems Manager.
-  ![146](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/146.png)
+  ![146](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/146.png)
 
 ### 11.4.1. 1st Interface Endpoint Creation.
 
 - Click on Create endpoint button
-  ![147](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/147.png)
+  ![147](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/147.png)
 
 - Fill in the details like Name Tag, Service category (AWS Services)
-  ![148](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/148.png)
+  ![148](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/148.png)
 
 - Fill in the Details like Service name = com.amazonaws.us-east-1.ssm, VPC, Subnets, Security Groups.
-  ![149](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/149.png)
+  ![149](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/149.png)
 
 - Select the Full access Policy.
-  ![150](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/150.png)
+  ![150](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/150.png)
 
 - Click on Create endpoint button
-  ![151](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/151.png)
+  ![151](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/151.png)
 
 ### 11.4.2. 2nd Interface Endpoint Creation:
 
 - Click on Create endpoint button
-  ![152](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/152.png)
+  ![152](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/152.png)
 
 - Fill in the Details like Name, Service name = com.amazonaws.us-east-1.ssmmessages, VPC, Subnets, Security Groups.
-  ![153](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/153.png)
+  ![153](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/153.png)
 
 - Select Full access Policy.
-  ![154](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/154.png)
+  ![154](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/154.png)
 
 - Click on Create endpoint button.
-  ![155](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/155.png)
+  ![155](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/155.png)
 
 ### 11.4.3. 3rd Interface Endpoint Creation:
 
 - Click on Create endpoint button
-  ![156](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/156.png)
+  ![156](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/156.png)
 
 - Fill in the Details like Name, Service name = com.amazonaws.us-east-1.ec2messages, VPC, Subnets, Security Groups.
   Select Full access Policy, Click on Create endpoint button.
-  ![157](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/157.png)
-  ![158](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/158.png)
-  ![159](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/159.png)
-  ![160](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/160.png)
+  ![157](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/157.png)
+  ![158](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/158.png)
+  ![159](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/159.png)
+  ![160](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/160.png)
 
 - Once all the Interface Endpoints are in available status, we must reboot the servers.
-  ![161](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/161.png)
+  ![161](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/161.png)
 
 - Now Under AWS Systems Manager  Session Manager  Start a session, you can find the all-Private server’s session
   Manager is available, you can select once and can login and can make changes as required..
-  ![162](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/162.png)
+  ![162](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/162.png)
 
 - Diagram Elaborating the Endpoints.
-  ![163](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/163.png)
+  ![163](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/163.png)
 
   
 
@@ -651,478 +651,478 @@
 ## 12.1. Creating Virtual Network in AZURE:
 
 - Go to Home > Virtual Networks > Create virtual network
-  ![164](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/164.png)
+  ![164](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/164.png)
 
 - Fill in the details like Resource group, Virtual network name. Click on Next button.
-  ![165](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/165.png)
-  ![166](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/166.png)
+  ![165](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/165.png)
+  ![166](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/166.png)
 
 - Click on Next button.
 
-  ![167](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/167.png)
+  ![167](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/167.png)
 
 - Fill in the details like IP Range, and click on Add a subnet to add subnets here.
-  ![168](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/168.png)
+  ![168](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/168.png)
 
 - Fill in the details like Name, IPv4 address range, size and click on add Subnet button. Rest of details leave it with
   defaults
-  ![169](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/169.png)
+  ![169](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/169.png)
 
 - One subnet added successfully and click on Add a subnet and add another subnet
-  ![170](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/170.png)
+  ![170](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/170.png)
 
 - Fill in the details like Subnet purpose, IPv4, Size. Click on Add button, rest of details leave it with defaults.
-  ![171](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/171.png)
+  ![171](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/171.png)
 
 - Gateway subnet created successfully, click on Next button, skip the tags menu, click on next, click on create button.
-  ![172](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/172.png)
+  ![172](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/172.png)
 
 - Review the content and click on create button to create the Virtual network.
-  ![173](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/173.png)
+  ![173](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/173.png)
 
 - After creating the VNET we will deploy the virtual network gateway in it and it will take 15 min to get deployed.
   Click on got to resource button.
-  ![174](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/174.png)
+  ![174](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/174.png)
 
 ## 12.2. DNS Servers creation in AZURE:
 
 - Under Settings go to DNS Servers.
 
-  ![175](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/175.png)
+  ![175](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/175.png)
 
 - Fill in the details like DNS servers, IP Address (10.56.1.100 and 8.8.8.8 (google DNS)) and save it, usually it might
   take 30 min to create it. Meanwhile we will create the rest.
 
-  ![176](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/176.png)
+  ![176](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/176.png)
 
 - Created Virtual Network.
-  ![177](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/177.png)
+  ![177](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/177.png)
 
 - You can view the created subnets under Virtual network > Subnets.
-  ![178](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/178.png)
+  ![178](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/178.png)
 
 ## 12.3. Virtual Machine creation in AZURE:
 
 - Go to virtual machines Column and create one windows Virtual Machine by clicking on Create button
-  ![179](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/179.png)
+  ![179](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/179.png)
 
 - Fill in the details like Resource group, Virtual machine name, Security type, Image.
-  ![180](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/180.png)
+  ![180](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/180.png)
 
 - Fill in the details like Size, Username, Password, confirm password and click on Next: Disk button.
-  ![181](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/181.png)
+  ![181](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/181.png)
 
 - Fill in the details like OS disk type and click on Next: Networking button.
-  ![182](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/182.png)
+  ![182](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/182.png)
 
 - Fill in the details like Virtual Network, Subnet, Public IP, NIC network security group and Configure network security
   group and click on Next: Management, button and click on Next: Monitoring button.
-  ![183](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/183.png)
+  ![183](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/183.png)
 
 - Fill in the details like Boot diagnostics and click on Next: Advanced button. And click on Review and create. And
   click on create button finally to create Virtual Machine.
-  ![184](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/184.png)
+  ![184](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/184.png)
 
 - Now meanwhile we will try to deploy Virtual Network Gateway.
-  ![185](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/185.png)
+  ![185](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/185.png)
 
 ## 12.4. Virtual Network gateway creation in AZURE:
 
 - Fill the Details as marked and click on Review + create button.
-  ![186](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/186.png)
+  ![186](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/186.png)
 
 - This will take 18 to 30 min to get deployed.
-  ![187](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/187.png)
+  ![187](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/187.png)
 
 - Now login to the Azure virtual machine which we created
 - Home > Virtual Machines > Windows-01 > Public IP, here copy the public IP and login using Creds.
-  ![188](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/188.png)
+  ![188](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/188.png)
 
 ## 12.5. Launching the Instances in AWS:
 
 - New Instance
 
-  ![189](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/189.png)
-  ![190](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/190.png)
+  ![189](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/189.png)
+  ![190](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/190.png)
 
 - Assigning the Primary IP to the Server, so that we can add it in AZURE DNS
-  ![191](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/191.png)
-  ![192](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/192.png)
+  ![191](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/191.png)
+  ![192](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/192.png)
 
 - Now we will login to the Windows instance. Click on Connect by selecting the Server.
-  ![193](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/193.png)
+  ![193](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/193.png)
 
 - After clicking on connect button, go to RDP Client and click on Get password button.
-  ![194](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/194.png)
+  ![194](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/194.png)
 
 - Click on Upload and upload a private key and click on Decrypt Password Button.
-  ![195](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/195.png)
+  ![195](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/195.png)
 
 - After clicking the get password you will get the password then copy the password. Connect using the Remote Desktop
   Connection. After Connecting we need to create the active directory in the server.
-  ![196](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/196.png)
+  ![196](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/196.png)
 
 ## 12.6. Active Directory Creation in AWS Instance:
 
 - Now follow the screenshot and right click on Ethernet 2 > Properties select properties button and enter the below
   details.
-  ![197](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/197.png)
+  ![197](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/197.png)
 
 - By typing command ipconfig /all you will get the details enter the DNS details in the above screenshot properties.
-  ![198](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/198.png)
+  ![198](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/198.png)
 
 - Fill preferred DNS and alternate DNS Server and click on ok.
 
-  ![199](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/199.png)
+  ![199](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/199.png)
 
 - Click on Server Manager button. And configure the Active Directory.
-  ![200](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/200.png)
+  ![200](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/200.png)
 
 - Click on manage > Add Roles and Feature.
-  ![201](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/201.png)
+  ![201](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/201.png)
 
 - Click on Next.
-  ![202](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/202.png)
+  ![202](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/202.png)
 
 - Select the Role-based on feature and click on Next.
-  ![203](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/203.png)
+  ![203](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/203.png)
 
 - Select our Server and click on next.
 
-  ![204](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/204.png)
+  ![204](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/204.png)
 
 - Click on Active Directory Role shown in Picture.
-  ![205](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/205.png)
+  ![205](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/205.png)
 
 - Click on Add Feature.
 
-  ![206](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/206.png)
+  ![206](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/206.png)
 
 - Click on Next.
 
-  ![207](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/207.png)
+  ![207](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/207.png)
 
 - Select the Telnet client and click on Next.
-  ![208](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/208.png)
+  ![208](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/208.png)
 
 - Click on Next.
 
-  ![209](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/209.png)
+  ![209](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/209.png)
 
 - Click on Install.
 
-  ![210](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/210.png)
+  ![210](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/210.png)
 
 - Click on Promote this server.
-  ![211](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/211.png)
+  ![211](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/211.png)
 
 - Click on Add a new Forest, fill in Root Domain name and Click Next.
-  ![212](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/212.png)
+  ![212](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/212.png)
 
 - Fill the Password and click on Next.
-  ![213](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/213.png)
+  ![213](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/213.png)
 
 - Click on Next.
 
-  ![214](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/214.png)
+  ![214](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/214.png)
 
 - Click on Next. Then Next, Then Next and Then Install.
-  ![215](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/215.png)
+  ![215](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/215.png)
 
 - Click on Install. After installation server will automatically reboots
-  ![216](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/216.png)
+  ![216](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/216.png)
 
 - After creating the active directory, we need to login to the AWS windows server with Admnistrator @ madireddy.xyz id
   as we configured root domain name while configuring the active directory in the AWS windows server.
-  ![217](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/217.png)
+  ![217](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/217.png)
 
 - We need to disable the local firewall in the servers.
-  ![218](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/218.png)
+  ![218](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/218.png)
 
 - This way we can disable the firewalls. Follow the same process in the azure server also. To disable the firewalls.
-  ![219](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/219.png)
+  ![219](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/219.png)
 
 - After Active directory creation Domain will change. Like in screenshot. That which we added while creating the active
   directory. ```sysdm.cpl``` Command.
 
-  ![220](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/220.png)
+  ![220](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/220.png)
 
 - Now we will go to the path shown in the screenshot.
-  ![221](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/221.png)
+  ![221](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/221.png)
 
 - We will create new users in here by clicking on users > New Users.
-  ![222](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/222.png)
+  ![222](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/222.png)
 
 - We will enter the names and click on next to create users.
-  ![223](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/223.png)
+  ![223](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/223.png)
 
 - After password entered click on next. And click on finish button.
-  ![224](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/224.png)
+  ![224](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/224.png)
 
 - The created user is arrowed here.
-  ![225](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/225.png)
+  ![225](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/225.png)
 
 - Click on Created user go to member of and click on add, Enter the Object name and click on ok.
 - Same way by right click and copy the anilkumar user and create new user reddy and its password Anil@1201
-  ![226](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/226.png)
+  ![226](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/226.png)
 
 ## 12.7. Virtual private gateway creation in AWS:
 
 - Now we need to create the VPG in the AWS VPC  
-  ![227](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/227.png)
+  ![227](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/227.png)
 
 - Click on the Create virtual private gateway button and create it.
-  ![228](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/228.png)
+  ![228](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/228.png)
 
 - Fill in the Name and click on Create virtual private gateway button
-  ![229](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/229.png)
+  ![229](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/229.png)
 
 - You should attach the VPG to the VPC by this way.
-  ![230](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/230.png)
+  ![230](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/230.png)
 
 - Attach out VPG to our VPC.
-  ![231](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/231.png)
+  ![231](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/231.png)
 
 - Successfully attached.
-  ![232](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/232.png)
+  ![232](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/232.png)
 
 ## 12.8. Customer gateways creation in AWS:
 
 - Now we need to establish the VPN connection by providing the azure IP address in Customer gateway under VPN.
-  ![233](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/233.png)
+  ![233](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/233.png)
 
 - Now Click on Create Customer gateway button.
-  ![234](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/234.png)
+  ![234](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/234.png)
 
 - Now you should copy the VNG01-PIP IP and should enter in the below Customer gateway creation.
-  ![235](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/235.png)
+  ![235](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/235.png)
 
 - Now copy the IP address.
-  ![236](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/236.png)
+  ![236](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/236.png)
 
 - Now fill in the details and click on Click on Create Customer gateway button.
-  ![237](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/237.png)
-  ![238](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/238.png)
+  ![237](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/237.png)
+  ![238](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/238.png)
 
 - Now we need to establish the Site-to-site VPN Connection in AWS
-  ![239](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/239.png)
+  ![239](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/239.png)
 
 ## 12.9. Site-to-Site VPN connections creation in AWS:
 
 - Now click on Create VPN Connection Button and Fill in the details as marked and leave rest to defaults.
 - Here Static IP prefixes range should be azures IP range.
 - Now click on Create VPN Connection Button to create.
-  ![240](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/240.png)
+  ![240](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/240.png)
 
 - Once this VPN is Available, we need to edit the Route table to shoe the way to Azure.
-  ![241](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/241.png)
+  ![241](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/241.png)
 
 - Go to the Private route table of AWS windows server and click on Edit routes and add the Azure IP Range.
-  ![242](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/242.png)
+  ![242](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/242.png)
 
 - Now here we have added the Azure IP range in the AWS route table. Now Click on Save Changes button.
-  ![243](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/243.png)
+  ![243](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/243.png)
 
 - After adding the Routes in AWS route table.
-  ![244](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/244.png)
+  ![244](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/244.png)
 
 - Now after long time Virtual Network Gateway has deployed in AZURE, Click on Goto resource button.
-  ![245](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/245.png)
+  ![245](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/245.png)
 
 - Now in AWS go to Site-to-Site VPN and Click on Download configuration by selecting the VPN.
-  ![246](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/246.png)
+  ![246](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/246.png)
 
 - Fill details as shown and click on download button you will get one file downloaded now open the file in notepad.
-  ![247](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/247.png)
+  ![247](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/247.png)
 
 - Now in the file Line 55 pre-shared-key address and line 200 pre-shared-key address should be placed in the azure to
   establish the connection between from azure to AWS.
-  ![248](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/248.png)
+  ![248](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/248.png)
 
 ## 12.10. Local Network Gateway creation iin AZURE:
 
 - Now go to Local Network Gateway in AZURE and start creating the New Local Network Gateway by clicking.
-  ![249](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/249.png)
+  ![249](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/249.png)
 
 - Fill in the details Resource group, Name, IP address (First IP From Downloaded file in the above) and Address Space(
   s).
 - Click on Review and Create. And then click on create.
-  ![250](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/250.png)
+  ![250](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/250.png)
 
 - Now we should create the one more Local network gateways.    
-  ![251](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/251.png)
+  ![251](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/251.png)
 
 - Fill in the details Resource group, Name, IP address (Second IP From Downloaded file in the above) and Address Space(
   s)
 - Click on Review and Create. And then click on create
-  ![252](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/252.png)
+  ![252](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/252.png)
 
 - Created Successfully
 - Still there won’t be any ping between AZURE and AWS Servers in command prompt.
-  ![253](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/253.png)
+  ![253](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/253.png)
 
 - Now if you see in aws VPN two tunnels will be in down.
 - We need to bring them up, for that
-  ![254](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/254.png)
+  ![254](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/254.png)
 
 - Come to Virtual Network Gateway (VNG01) which we created and under settings go to Connections
-  ![255](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/255.png)
+  ![255](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/255.png)
 
 - Click on Add button to add connections.
-  ![256](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/256.png)
+  ![256](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/256.png)
 
 - Fill in the details like Resource group, Connection type and Name. and click on Next: Setting.
-  ![257](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/257.png)
+  ![257](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/257.png)
 
 - Fill in the details like Virtual network gateway (Which created earlier and select in drop down), Local network
   gateway (Which created earlier and select in drop down), Shared Key (PSK) {which is from aws downloaded file from line
   55 key} and click on Next: tag and Click Review and Create and then Click Create buttons.
-  ![258](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/258.png)
+  ![258](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/258.png)
 
 - Now Create one more by clicking Our VNG > Connections button
-  ![259](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/259.png)
+  ![259](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/259.png)
 
 - Fill in the details like Resource group, Connection type and Name. and click on Next: Setting.
-  ![260](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/260.png)
+  ![260](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/260.png)
 
 - Fill in the details like Virtual network gateway (Which created earlier and select in drop down), Local network
   gateway (Which created earlier and select in drop down), Shared Key (PSK) {which is from aws downloaded file from line
   200 key} and click on Next: tag and Click Review and Create and then Click Create buttons.
-  ![261](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/261.png)
+  ![261](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/261.png)
 
 - Now test the connection between Azure windows and AWS Windows servers.
 - Test From Azure to AWS Servers.
 
-  ![262](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/262.png)
+  ![262](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/262.png)
 
 - Now test the connection between Azure windows and AWS Windows servers.
 - Test From AWS to Azure Servers.
 
-  ![263](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/263.png)
+  ![263](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/263.png)
 
 - Note: Check Security Group inbound rules if possible.
 - Now our goal is to connect to Azure Server from Laptop and from that we need to connect to AWS server.
 - Now first login to Azure Server.
 
-  ![264](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/264.png)
+  ![264](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/264.png)
 
 - Now sysdm.cpl > change > domain (madireddy.xyz), Click on Ok button
-  ![265](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/265.png)
+  ![265](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/265.png)
 
 - Now Enter the AWS Username @ Domain Name and fill the password
-  ![266](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/266.png)
+  ![266](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/266.png)
 
 - You should get the Welcome message and click on OK button.
 - Changes will affect only after restarting the server.
 - Now you will use the reddy id (Which is created in AWS Domain users) to login to the Azure server
-  ![267](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/267.png)
+  ![267](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/267.png)
 
 - Now we have connected to the Azure Server using the Aws Server userid and Password
 - NOTE: Check in Azure server after changing domain name, we need to turn off the domain firewall to communicate from
   aws server to azure server.
 - Delete All the services in AWS and Azure in the Reverse order
-  ![268](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/268.png)
+  ![268](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/268.png)
 
 - Overview AZURE
-  ![269](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/269.png)
+  ![269](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/269.png)
 
 - Overview AWS.
-  ![270](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/270.png)
+  ![270](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/270.png)
 
 ## 12.11. Process to connect Multiple VPCs to the Azure
 
 - Create 3 Extra VPCs
-  ![271](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/271.png)
+  ![271](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/271.png)
 
 - Create 3 Extra instances in each VPC
-  ![272](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/272.png)
+  ![272](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/272.png)
 
 ## 12.12. Transit Gateway creation:
 
 - This is used to connect Multiple VPCs in AWS and then connect to VNG in Azure so that VPN Connection is established.
-  ![273](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/273.png)
+  ![273](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/273.png)
 
 - Fill the details like Name and Description.
-  ![274](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/274.png)
+  ![274](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/274.png)
 
 - Click on Create transit gateway.
-  ![275](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/275.png)
-  ![276](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/276.png)
+  ![275](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/275.png)
+  ![276](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/276.png)
 
 - Fill in the details like name, Transit gateway ID, Attachment type and Subnet id.
-  ![277](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/277.png)
+  ![277](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/277.png)
 
 - Click on create button.
-  ![278](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/278.png)
+  ![278](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/278.png)
 
 - Similarly, you create for VPC 3 and 4
 - Listing all 3 Transit Gateways.
-  ![279](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/279.png)
+  ![279](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/279.png)
 
 - Attachment for Azure VPN, fill in the details like Transit Gateway ID and Attachment Type and IP address (Azure
   Virtual Network Gateway PIP).
 
-  ![280](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/280.png)
+  ![280](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/280.png)
 
 - Click on Create button.  
-  ![281](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/281.png)
+  ![281](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/281.png)
 
 - Now showing all 4 attachments. Including azure Virtual Network Gateway attachment.  
-  ![282](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/282.png)
+  ![282](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/282.png)
 
 - Now login to all 4 servers using the putty, before this you need to create one Linux VM in azure.
 - Now when we see here no ping connection for one another
-  ![283](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/283.png)
-  ![284](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/284.png)
+  ![283](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/283.png)
+  ![284](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/284.png)
 -
 - Here in the all 3 VPC’s route tables we will add the other three VPCs IP ranges so that routes will get establish and
   ping happens each other for all VPCs except the Azure Server.
-  ![285](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/285.png)
+  ![285](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/285.png)
 
 - Now after adding routes in route table ping happens successfully in all 3 Servers.
 - But in azure server no ping.
-  ![286](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/286.png)
-  ![287](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/287.png)
+  ![286](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/286.png)
+  ![287](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/287.png)
 
 - Under site-to-site VPN Connections you will get one VPN Automatically go to that and download the Configuration file
   and add the data into the azure gateways.
-  ![288](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/288.png)
+  ![288](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/288.png)
 
 - Download the file and go to azure Gateways and add the IP and Keys as we did earlier in Local Network gateway and
   Virtual Network gateway.
 
-  ![289](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/289.png)
+  ![289](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/289.png)
 
 - Add the configuration in the Azure Local Network Gateway
 - Fill in the details like Name, IP address and Address Spaces (All 3 VPC’s range added in here)
 - Click on Create button
-  ![290](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/290.png)
+  ![290](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/290.png)
 
 - Fill in the details like Name, IP address and Address Spaces (All 3 VPC’s range added n here), Click on Create Button
-  ![291](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/291.png)
+  ![291](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/291.png)
 
 - Fill in the details like Resource group, Connection type and Name. and click on Next: Setting.
-  ![292](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/292.png)
+  ![292](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/292.png)
 
 - Fill in the details like Virtual network gateway (Which created earlier and select in drop down), Local network
   gateway (Which created earlier and select in drop down), Shared Key (PSK) {which is from aws downloaded file from line
   200 key} and click on Next: tag and Click Review and Create and then Click Create buttons.
-  ![293](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/293.png)
+  ![293](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/293.png)
 
 - Fill in the details like Resource group, Connection type and Name. and click on Next: Setting
-  ![294](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/294.png)
+  ![294](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/294.png)
 
 - Fill in the details like Virtual network gateway (Which created earlier and select in drop down), Local network
   gateway (Which created earlier and select in drop down), Shared Key (PSK) {which is from aws downloaded file from line
   200 key} and click on Next: tag and Click Review and Create and then Click Create buttons.
-  ![295](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/295.png)
+  ![295](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/295.png)
 
 - You need to add the Azure IP range in the Transit gateway route tables
-  ![296](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/296.png)
+  ![296](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/296.png)
 
 - Now you will be able to ping the Azure server from AWS Servers.
 - This way you can get the communication between multiple VPC and one Azure VPN
-  ![297](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/297.png)
+  ![297](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/297.png)
 
 
 
@@ -1133,7 +1133,7 @@
       Security Groups.
     - Stateless Firewall: Stateless Firewall will not allow Request’s Response either in or out. Stateless Firewall are
       AWS Network Access Control List (NACL)
-      ![299](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/299.png)
+      ![299](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/299.png)
 
 - AWS Security Groups:
   Most of the services in AWS like EC2, Load balancers, Data Base, Lambda...Etc., uses the Security Groups except the
@@ -1146,30 +1146,30 @@
 - Security Groups are VPC scoped i.e. they work only within the VPCs but Firewalls can be Implemented for multiple VPCs
   i.e. network level we can implement security using firewalls.
 - For implementing this firewall, we will Create One VPC with Two Subnets Private and Public
-  ![300](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/300.png)
+  ![300](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/300.png)
 
 - VPC Created successfully.
-  ![301](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/301.png)
+  ![301](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/301.png)
 
 - We will rename subnets Public Subnet as Firewall-subnet and private subnet as Protected-subnet.
-  ![302](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/302.png)
+  ![302](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/302.png)
 
 - Now we will launch one windows server in Protected Subnet to block the websites but Sg and NACL will never block the
   websites.
-  ![303](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/303.png)
+  ![303](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/303.png)
 
 - Fill in the details in screenshot
-  ![304](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/304.png)
+  ![304](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/304.png)
 
 - Fill the details in screenshot and we are creating new Security group and then launch the instance.
-  ![305](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/305.png)
+  ![305](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/305.png)
 
 ## 13.1.1 Rule Groups Creation:
 
 ### 13.1.1.1 Doamin List Rule Group Format:
 
 - Goto Network Firewall: Rule groups and create one.
-  ![306](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/306.png)
+  ![306](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/306.png)
 
 - AWS Network Firewall will disable all traffic by default. Create Firewall Rule Group and select Domain list and
   provide the domain names which need to be Allowed.
@@ -1177,189 +1177,189 @@
     - amazon.com
     - flipkart.com
 - Fill in the details as shown in screenshot.
-  ![307](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/307.png)
+  ![307](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/307.png)
 
 - Fill in the details as shown
-  ![308](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/308.png)
+  ![308](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/308.png)
 
 - Fill in the details as shown. And Next
-  ![309](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/309.png)
+  ![309](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/309.png)
 
 - Click Next.
 
-  ![310](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/310.png)
+  ![310](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/310.png)
 
 - Click Next. And then click on Create Rule Group button.
-  ![311](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/311.png)
+  ![311](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/311.png)
 
 - This is what which we created and create new one by clicking the Create button.
-  ![312](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/312.png)
+  ![312](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/312.png)
 
 ### 13.1.1.2 Standard Stateful Rule Group Format:
 
 - Fill in the details. Click on Next.
-  ![313](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/313.png)
+  ![313](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/313.png)
 
 - Fill in the details and Next.
 - Note: Capacity value is 100 not 1.
-  ![314](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/314.png)
+  ![314](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/314.png)
 
 - Fill in the details as shown. And add rule.
-  ![315](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/315.png)
+  ![315](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/315.png)
 
 - Add another rule by filling the details shown.
-  ![316](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/316.png)
+  ![316](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/316.png)
 
 - After adding rules check and click Next.
 
-  ![317](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/317.png)
+  ![317](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/317.png)
 
 - Click Next.
 
-  ![318](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/318.png)
+  ![318](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/318.png)
 
 - Click Next.
 
-  ![319](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/319.png)
+  ![319](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/319.png)
 
 - Click on create button.
-  ![320](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/320.png)
+  ![320](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/320.png)
 
 - Created two rule Groups.
-  ![321](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/321.png)
+  ![321](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/321.png)
 
 ## 13.2 Firewall Policy Creation:
 
 - Now come to Firewall Policies create one.
-  ![322](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/322.png)
+  ![322](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/322.png)
 
 - Fill in the details shown. Click Next.
-  ![323](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/323.png)
+  ![323](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/323.png)
 
 - Scroll down to Stateful rule group and click on Add Stateful rule group button.
-  ![324](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/324.png)
+  ![324](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/324.png)
 
 - Add both rules which we created earlier, click on Add rule groups.
-  ![325](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/325.png)
+  ![325](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/325.png)
 
 - Click on Next, Next, Next, Create Firewall Policy buttons.
-  ![326](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/326.png)
+  ![326](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/326.png)
 
 - Firewall policy that we created.
-  ![327](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/327.png)
+  ![327](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/327.png)
 
 ## 13.3 Firewall Creation:
 
 - Now we will create the firewall
-  ![328](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/328.png)
+  ![328](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/328.png)
 
 - Fill in the details.
 
-  ![329](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/329.png)
+  ![329](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/329.png)
 
 - Fill in the details.
 
-  ![330](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/330.png)
+  ![330](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/330.png)
 
 - Fill in the details.
 
-  ![331](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/331.png)
+  ![331](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/331.png)
 
 - Attaching the firewall policy which created earlier. Next and Create Firewall.
 - It Will take few min to get firewall deployed.
-  ![332](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/332.png)
+  ![332](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/332.png)
 
 - Sample Firewall Demo Diagram
-  ![333](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/333.png)
+  ![333](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/333.png)
 
 - It is still in provisioning will take time to create firewall.
-  ![334](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/334.png)
+  ![334](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/334.png)
 
 - This will create end point.
-  ![335](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/335.png)
-  ![336](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/336.png)
+  ![335](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/335.png)
+  ![336](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/336.png)
 
 - Firewall is ready now go to route tables.
-  ![337](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/337.png)
+  ![337](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/337.png)
 
 ## 13.4 Route table Creation for IGW Ingress:
 
 - We will just rename route tables and create new one for IGW ingress for allowing traffic from outside to inside.
-  ![338](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/338.png)
+  ![338](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/338.png)
 
 - Fill the Name, VPC and click on Create button.
-  ![339](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/339.png)
+  ![339](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/339.png)
 
 - Now we need to add routes in all route tables for our vpc.
 - First, we will open the Protected-rtb and add the routes.
 - Here in this route table, we will add the network interface route
-  ![340](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/340.png)
+  ![340](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/340.png)
 
 - Collect the Network Interface ID and add it in the above route table. Protected-rtb.
-  ![341](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/341.png)
+  ![341](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/341.png)
 
 - Here we are adding the Network Interface ID which is created automatically while mail firewall creation and, in that
   firewall, it is attached and we collect that ID and associate here.
-  ![342](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/342.png)
+  ![342](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/342.png)
 
 - After adding Network Interface ID in Routetables.
-  ![343](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/343.png)
+  ![343](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/343.png)
 
 - For Firewall-rtb no need to change anything it already in good shape.
-  ![344](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/344.png)
+  ![344](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/344.png)
 
 - Now for IGW-Ingress-rtb we need to edit routes and add the same network interface ID here also and also need to edit
   edge associations.
-  ![345](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/345.png)
+  ![345](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/345.png)
 
 - Here we are adding the Network Interface ID which is created automatically while mail firewall creation and, in that
   firewall, it is attached and we collect that ID and associate here
-  ![346](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/346.png)
+  ![346](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/346.png)
 
 - After adding Network Interface ID in Routetables
 - Now we will edit edge associations in the IGW-Ingress-rtb.
-  ![347](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/347.png)
+  ![347](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/347.png)
 
 - Click on Edit Edge associations button
-  ![348](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/348.png)
+  ![348](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/348.png)
 
 - Select the IGW and save changes.
-  ![349](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/349.png)
+  ![349](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/349.png)
 
 - Now connect to the Protected windows server and check the
 - Here in windows browser, you will be able to access only website which you give in the rule group only.
 - Here amazon is not given in rule group.
-  ![350](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/350.png)
+  ![350](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/350.png)
 
 - Now we will add amazon in the Firewall rule group
-  ![351](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/351.png)
+  ![351](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/351.png)
 
 - Click on edit and add ```.amazon.com ```
-  ![352](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/352.png)
-  ![353](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/353.png)
+  ![352](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/352.png)
+  ![353](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/353.png)
 
 - Added amazon website.
-  ![354](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/354.png)
+  ![354](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/354.png)
 
 - Now amazon is loading.
-  ![355](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/355.png)
+  ![355](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/355.png)
 
 - Parallelly we will launch one Linux server in the VPC
-  ![356](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/356.png)
+  ![356](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/356.png)
 
 - Launched the Linux server
-  ![357](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/357.png)
+  ![357](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/357.png)
 
 - We have connected but not able to access the internet, as it is in protected subnet.
-  ![358](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/358.png)
+  ![358](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/358.png)
 
 - So, if you want to enable the traffic out bound you can do that in firewall rule group.
 - Click on save rule group after adding the rule.
-  ![359](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/359.png)
+  ![359](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/359.png)
 
 - For multiple AZ we will see sample diagram
-  ![360](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/360.png)
-  ![361](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/361.png)
+  ![360](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/360.png)
+  ![361](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/361.png)
 
 
 
@@ -1384,7 +1384,7 @@
 
 - EBS is provided during the instance creation and can be assigned extra to the instance after instance creation also.
 - Windows OS 30GB for C:/ drive, Linux OS 8GB for /root drive.
-  ![362](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/362.png)
+  ![362](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/362.png)
 
 ## 14.1. Instance Store (IS):
 
@@ -1397,65 +1397,65 @@
 
 - For demonstrating Instance Store, we will launch on C5xlarge instance which has 75GB of IS
 - Command: ```lsblk``` > to list the disks in the server
-  ![363](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/363.png)
+  ![363](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/363.png)
 
 - Here we will use command: ```fdisk /dev/nvme1n1``` > to format the disk and partition the disk
-  ![364](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/364.png)
+  ![364](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/364.png)
 
 - Image after partition the IS i.e. 75GB (nvme1n1p1)
-  ![365](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/365.png)
+  ![365](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/365.png)
 
 - Creating Filesystem by command: ```mkfs.ext4 /dev/nvme1m1p1```
-  ![366](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/366.png)
+  ![366](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/366.png)
 
 - Creating new volume, mounting the new volume to nvme1n1p1 so that 75GB is assigned to new volume ```/isvol1```.
-  ![367](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/367.png)
+  ![367](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/367.png)
 
 - As this is an instance store whatever the data exist in it will get deleted once server is stopped.
-  ![368](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/368.png)
+  ![368](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/368.png)
 
 - After stopping and starting the server all IS store data deleted and partition also deleted.
-  ![369](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/369.png)
+  ![369](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/369.png)
 
 # 14.2. AWS EBS Volumes:
 
 - Attached new EBS volume to server
 - Follow the same partition process to make the 5 GB partition available.
-  ![370](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/370.png)
+  ![370](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/370.png)
 
 - Same Commands to make FS
-  ![371](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/371.png)
+  ![371](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/371.png)
 
 - After partition collecting ```blkid```
-  ![372](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/372.png)
+  ![372](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/372.png)
 
 - Mounting the 5gb EBS to /appdata in fstab
-  ![373](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/373.png)
+  ![373](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/373.png)
 
 - in fstab assigning the volume.
-  ![374](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/374.png)
+  ![374](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/374.png)
 
 - Use ```mount -a``` to mount
 - maybe this 5gb won’t be sufficient if we want to extend the volume there are two ways.
-  ![375](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/375.png)
+  ![375](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/375.png)
 
 - right click on volume and modify.
-  ![376](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/376.png)
+  ![376](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/376.png)
 
 - Extending 5 as 8
-  ![377](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/377.png)
+  ![377](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/377.png)
 
 - Extended the volume and not partitioned yet.
-  ![378](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/378.png)
+  ![378](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/378.png)
 
 - We use growpart command to extend.
-  ![379](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/379.png)
+  ![379](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/379.png)
 
 - and we need to extend the filesystem too.
-  ![380](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/380.png)
+  ![380](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/380.png)
 
 - After extending.
-  ![381](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/381.png)
+  ![381](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/381.png)
 
 
 
@@ -1465,36 +1465,36 @@
 - Fix the Security Issues which can after scanning.
 - Rescan the system and create Custom AMI with the machine.
 - Connect to the Linux Machine, install nginx in it.
-  ![382](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/382.png)
+  ![382](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/382.png)
 
 - Download the AWS Inspector using
   ```
   curl -O https://inspector-agent.amazonaws.com/linux/latest/install
   ```
 - Install using the ```sudo bash install``` command.
-  ![383](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/383.png)
+  ![383](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/383.png)
 
 - Create tag.
 
-  ![384](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/384.png)
+  ![384](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/384.png)
 
 - Click on Create button
-  ![385](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/385.png)
+  ![385](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/385.png)
 
 - Fill name and Tag which you have created for the server above and click on save button.
-  ![386](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/386.png)
+  ![386](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/386.png)
 
 - Created.
-  ![387](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/387png)
+  ![387](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/387png)
 
 - Goto Assessment templates and create one.
-  ![388](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/388.png)
+  ![388](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/388.png)
 
 - Fill in the name, target name, duration, rules Packages. And click on create and run
-  ![389](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/389.png)
+  ![389](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/389.png)
 
 - Now go to Assessment runs and check your run.
-  ![390](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/390.png)
+  ![390](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/390.png)
 
   ## 15.1. Steps involved in Creating Custom AMI:
     1. Create a EC2 Machine.
@@ -1519,71 +1519,71 @@
 - Diff between Layer 4 vs Layer 7 Load Balancers
 
 - To establish the connection, we use asymmetric encryption and during data transfer we use symmetric encryption.
-  ![391](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/391.png)
+  ![391](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/391.png)
 
 ## 16.1 Route53 Domain Creation:
 
 - Provide the Domain name as the GoDaddy domain name and type and click on create button
-  ![392](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/392.png)
-  ![393](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/393.png)
+  ![392](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/392.png)
+  ![393](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/393.png)
 
 - After Hosted Zone creation we need to add the nameservers in the Domain Website.
-  ![394](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/394.png)
+  ![394](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/394.png)
 
 ## 16.2 AWS Cetificate Creation:
 
 - Click on Request button to create new cert.
-  ![395](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/395.png)
+  ![395](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/395.png)
 
 - Select Public and Next
 
-  ![396](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/396.png)
+  ![396](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/396.png)
 
 - Fill in Fully qualified domain name with, validation method DNS, Key algorithm RSA and click on Request.
-  ![397](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/397.png)
+  ![397](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/397.png)
 
 - After Cert Creation Status will be pending until you validate it in your Domain by adding simple route with CNAME Name
   and CNAME Value.
 
-  ![398](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/398.png)
+  ![398](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/398.png)
 
 - After Cert Creation Status will be pending until you validate it in your Domain by adding simple route with CNAME Name
   and CNAME Value
 
-  ![399](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/399.png)
+  ![399](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/399.png)
 
 - Fill Record name with CNAME Name and Value with CNAME Value with Simple routing in Routing and click on Create button.
-  ![400](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/400.png)
+  ![400](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/400.png)
 
 - Once the validation complete it shows the Issued Status.
 - These certificates we can only use with in AWS but to use out we need to get 3rd party certificates imported.
-  ![401](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/401.png)
+  ![401](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/401.png)
 
 ## 16.3. Third Party Cert Creation:
 
 - We need to launch one new Ubuntu for that.
-  ![402](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/402.png)
+  ![402](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/402.png)
 
 - Install the Certbot.
   ```
   sudo snap install --classic certbot
   ```
-  ![403](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/403.png)
+  ![403](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/403.png)
 
 - Cert creation command for wildcard domain, type yes to continue.
   ```
   certbot certonly --manual --preferred-challenges=dns --key-type rsa --email anilreddy.m8@gmail.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.devopsbymak.xyz
   ```
-  ![404](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/404.png)
+  ![404](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/404.png)
 
 - Here before creating cert, it will ask to validate domain by creating the text record in hosted zones by given name
   and value. And press enter to continue.
-  ![405](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/405.png)
+  ![405](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/405.png)
 
 - Cert created successfully.
 - Public and private keys are saved at location given in screenshot.
 - We will save the ```fullchain.pem``` as ```wc_any_file.crt``` and ```privkey.pem``` as ```wc_any_file.key```
-  ![406](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/406.png)
+  ![406](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/406.png)
 
 - Cert creation command for Naked domain, type yes to continue
   ```
@@ -1591,65 +1591,65 @@
   ```
 - Here before creating cert, it will ask to validate domain by creating the text record in hosted zones by given name
   and value. And press enter to continue
-  ![407](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/407.png)
+  ![407](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/407.png)
 
 - Cert created successfully.
 - Public and private keys are saved at location given in screenshot.
 - We will save the fullchain.pem as any_file.crt and privkey.pem as any_file.key
-  ![408](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/408.png)
+  ![408](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/408.png)
 
 ### 16.3.1 Third Party Certs import into AWS:
 
 - Now we need to import the certs in the AWS
 - Click on Import button. To import naked certificates
-  ![409](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/409.png)
+  ![409](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/409.png)
 
 
 - Fill in the details with Certificate body(fullchain.pem first key), Certificate private key(privkey.pem) and
   Certificate chain(fullchain.pem second key) and click on Import certificate button.
-  ![410](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/410.png)
+  ![410](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/410.png)
 
 
 - Cert imported successfully and status should be in issued state.
-  ![411](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/411.png)
+  ![411](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/411.png)
 
 - Now we need to import the certs in the AWS
 - Click on Import button. To import wild card certificates
-  ![412](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/412.png)
+  ![412](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/412.png)
 
 - Fill in the details with Certificate body(fullchain.pem first key), Certificate private key(privkey.pem) and
   Certificate chain(fullchain.pem second key) and click on Import certificate button.
-  ![413](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/413.png)
+  ![413](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/413.png)
 
 - Certificates imported two certificates successfully
-  ![414](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/414.png)
+  ![414](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/414.png)
 
 ### 16.3.2 Nginx Installation in Server:
 
 - Installing Nginx in the server.
-  ![415](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/415.png)
+  ![415](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/415.png)
 
 - Finding the public IP
 
-  ![416](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/416.png)
+  ![416](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/416.png)
 
 - If you want to do the simple routing for one server you can do it without any Load Balancer, by adding the simple
   route A record in the Hosted zone.
-  ![417](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/417.png)
+  ![417](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/417.png)
 
 - Routed the nginx in our server to ```nginx.devopsbymak.xyz``` to make this secure we will run the cert bot command.
-  ![418](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/418.png)
+  ![418](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/418.png)
 
 - After running the ```certbot --nginx``` command we should give the domain name (nginx.devopsbymak.xyz) then enter you
   nginx will be secure now.
-  ![419](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/419.png)
+  ![419](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/419.png)
 
 - Now nginx is secured.
 - This way you can create, import and use the certificates in AWS or outside AWS.
-  ![420](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/420.png)
+  ![420](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/420.png)
 
 - Command to check the website details.
-  ![421](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/421.png)
+  ![421](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/421.png)
 
 
 
@@ -1659,7 +1659,7 @@
 - Load balancers are in Application layer and in the Transport layer, in transport layer we have Network Loan Balancer(
   NLB) and in Application layer we have Application Load Balancer(ALB).
 - If require please study here
-  ![422](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/422.png)
+  ![422](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/422.png)
 
 0. OSI Layers
 1. Types of Load Balancers
@@ -1673,7 +1673,7 @@
         - Global Accelerator
 2. Deploying Network Load Balancer(NLB)
 3. Configuring http & https.
-   ![423](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/423.png)
+   ![423](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/423.png)
 
 ### Amazon Linux Nginx Installation:
 
@@ -1700,149 +1700,149 @@
 ### 17.1.1 Launching Instances:
 
 - Now launch the 3 instances with below optional data
-  ![424](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/424.png)
+  ![424](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/424.png)
 
 - Now before creating load balancer, we need to create target group.
 
 ### 17.1.2 Target Group Creation:
 
 - Click on Create target Group.
-  ![425](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/425.png)
+  ![425](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/425.png)
 
 - Select Instances
-  ![426](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/426.png)
+  ![426](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/426.png)
 
 - Fill in the details like name, Protocol : Port, IP address type, VPC and Health check protocol. And click on Next.
-  ![427](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/427.png)
+  ![427](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/427.png)
 
 - Select the target group set of instances and click on Include as pending below.
-  ![428](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/428.png)
+  ![428](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/428.png)
 
 - Click on Create target group
-  ![429](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/429.png)
-  ![430](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/430.png)
+  ![429](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/429.png)
+  ![430](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/430.png)
 
 ### 17.1.3 NLB Creation:
 
 - Now we will create NLB Network Load Balancer, by clicking on Create load balancer button.
-  ![431](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/431.png)
+  ![431](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/431.png)
 
 - Click on NLB create button.
-  ![432](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/432.png)
+  ![432](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/432.png)
 
 - Fill in the details like Name, Scheme, IP,
-  ![433](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/433.png)
+  ![433](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/433.png)
 
 - Select VPC and Public Subnets for NLB, no private Subnets for NLB selected.
-  ![434](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/434.png)
+  ![434](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/434.png)
 
 - Select the Sg, TLS, Target group, Security Policy
 - Now click on Create Load Balancer button
-  ![435](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/435.png)
-  ![436](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/436.png)
+  ![435](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/435.png)
+  ![436](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/436.png)
 
 - NLB created successfully still it is in provisioning after some time it will be in available state.
-  ![437](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/437.png)
+  ![437](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/437.png)
 
 - Now it’s Active. Once the Load balancer is active the target group servers should be healthy.
-  ![438](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/438.png)
+  ![438](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/438.png)
 
 - Take the DNS name and if you browse in browser the load balancer will work.
-  ![439](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/439.png)
+  ![439](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/439.png)
 
 - This way all target group servers will be in healthy state
-  ![440](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/440.png)
+  ![440](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/440.png)
 
 ### 17.1.4 Domain Creation in Route53
 
 - Now we will create route53 domain in AWS. Click on Create hosted zone.
-  ![441](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/441.png)
+  ![441](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/441.png)
 
 - Under Route53 Hosted Zones > Create hosted zone
 - Name should be GoDaddy domain name, Type should be Public
-  ![442](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/442.png)
+  ![442](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/442.png)
 
 - Once Hosted Zone is created, we need to add the Nameservers in GoDaddy site
-  ![443](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/443.png)
+  ![443](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/443.png)
 
 - This way we can add the name servers in GoDaddy.
-  ![444](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/444.png)
+  ![444](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/444.png)
 
 - Now in madireddyanil.in Hosted Zone we need to create the record, Click on Create record button.
-  ![445](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/445.png)
+  ![445](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/445.png)
 
 - Fill in the Record name, Record type and Value (LB DNS Name) and click on Create record button.
-  ![446](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/446.png)
+  ![446](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/446.png)
 
 ### 17.1.5 Testing the Application in NLB:
 
 - Now once the record is added we can fetch the nginx through ```nginx.madireddyanil.in```
 - Now you will get response from any of 3 servers which are grouped in target group.
-  ![447](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/447.png)
+  ![447](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/447.png)
 
 - Here application is not secure to make secure we need to do TLS
-  ![448](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/448.png)
+  ![448](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/448.png)
 
 ### 17.1.6 Redirecting Application to HTTPS:
 
 - Click on Add Listener button.
-  ![449](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/449.png)
+  ![449](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/449.png)
 
 - Select TLS and Target Group.
-  ![450](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/450.png)
+  ![450](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/450.png)
 
 - Select From ACM and Select the created certificate.
 - Here certificate we selected is created below.
-  ![451](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/451.png)
+  ![451](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/451.png)
 
 - Once the Listener is added now after some time, we are able to login with ```https://nginx.madireddyanil.in```
-  ![452](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/452.png)
+  ![452](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/452.png)
 
 ## 17.2. Process Of Certificate Creation:
 
 - Click on Request a certificate button.
-  ![453](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/453.png)
+  ![453](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/453.png)
 
 - Select request a public certificate and click on next button.
-  ![454](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/454.png)
+  ![454](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/454.png)
 
 - Fill the domain name which is in GoDaddy Domain name
-  ![455](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/455.png)
+  ![455](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/455.png)
 
 - Select the details shown and click Request button.
-  ![456](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/456.png)
+  ![456](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/456.png)
 
 - Once the certificate is created it is pending for validation. Open it Certificate.
-  ![457](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/457.png)
+  ![457](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/457.png)
 
 - Use CNAME Name and CNAME Value to validate the certificate.
-  ![458](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/458.png)
+  ![458](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/458.png)
 
 - Click on Create Record button
-  ![459](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/459.png)
+  ![459](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/459.png)
 
 - Record Name as Cert's CNAME Name, and Value is Cert's CNAME Value.
-  ![460](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/460.png)
+  ![460](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/460.png)
 
 - Once the record is created and it is in SYNC now certificate status will turn into Issued.
-  ![461](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/461.png)
+  ![461](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/461.png)
 
 ## 17.3. Enabling the logs in the Load balancer:
 
 - Enabling the logs in the NLB to check for errors.
-  ![462](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/462.png)
+  ![462](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/462.png)
 
 - Created one new s3 bucket and go to permissions.
-  ![463](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/463.png)
+  ![463](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/463.png)
 
 - Click edit button.
-  ![464](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/464.png)
+  ![464](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/464.png)
 
 - Uncheck Block all public access and save changes.
-  ![465](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/465.png)
+  ![465](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/465.png)
 
 - Click on edit button under bucket policy.
-  ![466](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/466.png)
+  ![466](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/466.png)
 
 ### We will paste the below code in the Policy:
 
@@ -1913,14 +1913,14 @@
   ```
 
 - In the above code change the bucket name and the account id and click on save changes
-  ![467](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/467.png)
+  ![467](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/467.png)
 
 - Under attributes in load balancer, we will enable logs this way
 - Enable Access logs button, S3 URL and save changes.
-  ![468](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/468.png)
+  ![468](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/468.png)
 
 - Now start using the NLB logs will get generated, as shown in image.
-  ![469](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/469.png)
+  ![469](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/469.png)
 
 ### Things not possible in NLB:
 
@@ -1934,68 +1934,68 @@
 ### 17.4.1 Target Group Creation:
 
 - Create the new target group for ALB
-  ![470](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/470.png)
+  ![470](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/470.png)
 
 - Select Instances.
 
-  ![471](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/471.png)
+  ![471](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/471.png)
 
 - Fill the Name, Protocol, IP and VPC details.
-  ![472](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/472.png)
+  ![472](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/472.png)
 
 - Fill in the details and select Next.
-  ![473](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/473.png)
+  ![473](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/473.png)
 
 - Select the target server and click on include as pending below.
-  ![474](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/474.png)
+  ![474](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/474.png)
 
 - Now select Create target group button
-  ![475](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/475.png)
+  ![475](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/475.png)
 
 - Target group created successfully but still it is None associated that means we need to add to a load balancer so that
   we can use this target group.
-  ![476](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/476.png)
+  ![476](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/476.png)
 
 ### 17.4.2 ALB Creation:
 
 - Now Click on Create button
-  ![477](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/477.png)
+  ![477](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/477.png)
 
 - Now select the ALB
 
-  ![478](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/478.png)
+  ![478](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/478.png)
 
 - Fill Name, Scheme, IP and VPC and their subnets.
-  ![479](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/479.png)
-  ![480](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/480.png)
+  ![479](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/479.png)
+  ![480](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/480.png)
 
 - Select HTTPS and Certificate for that.
-  ![481](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/481.png)
+  ![481](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/481.png)
 
 - Click on create button.
-  ![482](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/482.png)
+  ![482](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/482.png)
 
 ### 17.4.3 Http to Https Redirection in ALB:
 
 - Now open the ALB and add listener 80 and redirect it to 443
 - Click on Add button
-  ![483](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/483.png)
+  ![483](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/483.png)
 
 - Now select 80 port and redirect to URL, full URL and click on Add button
-  ![484](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/484.png)
+  ![484](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/484.png)
 
 - Added the Listener
-  ![485](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/485.png)
+  ![485](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/485.png)
 
 - Now we will create a record in the hosted zones and add the ALB DNS Name
-  ![486](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/486.png)
+  ![486](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/486.png)
 
 - Adding record name(appnginx), record type(CNAME ), Value (ALB DNS Name) and click on create button
-  ![487](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/487.png)
+  ![487](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/487.png)
 
 - Now we will test the application in the browser.
 - Even though we give http now it will automatically redirect to the https.
-  ![488](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/488.png)
+  ![488](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/488.png)
 
 ## 17.5. Configuring Path Based/URL based routing in Hosted Zones:
 
@@ -2032,77 +2032,77 @@ Launch two more instances with below user data
   ```
 
 - Thes are the two servers which we created for path-based testing
-  ![489](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/489.png)
+  ![489](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/489.png)
 
 - we browse these with Public IPv4 DNS/netflix, Public IPv4 DNS/hotstar
-  ![490](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/490.png)
+  ![490](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/490.png)
 
 - Now we will create two target groups with two servers for Netflix and Hotstar. Same as we created previously but only
   change is in Health check path. for Netflix Server.
 
-  ![491](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/491.png)
+  ![491](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/491.png)
 
 - For Hotstar server
 
-  ![492](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/492.png)
+  ![492](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/492.png)
 
 - The two created Target groups.
 - Target group created successfully but still it is None associated that means we need to add to a load balancer so that
   we can use this target group.
-  ![493](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/493.png)
+  ![493](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/493.png)
 
 - So, we need to add this in our ALB which we have created earlier. Click on rule for HTTPS
-  ![494](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/494.png)
+  ![494](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/494.png)
 
 - Click on Add rule.
-  ![495](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/495.png)
+  ![495](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/495.png)
 
 - Fill Name and Click Next button.
-  ![496](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/496.png)
+  ![496](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/496.png)
 
 - Click on Add Condition button.
-  ![497](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/497.png)
+  ![497](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/497.png)
 
 - Select Path under Rule condition type, Path ```/netflix/*``` and click on Confirm.
-  ![498](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/498.png)
+  ![498](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/498.png)
 
 - Click on Next
 
-  ![499](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/01-499/499.png)
+  ![499](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/499.png)
 
 - Select Forward to target group, Target group(Netflix-TargetGroup) and click Next.
-  ![500](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/500.png)
+  ![500](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/500.png)
 
 - Set Priority to 1
 
-  ![501](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/501.png)
+  ![501](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/501.png)
 
 - Click on create Button.
 
-  ![502](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/502.png)
+  ![502](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/502.png)
 
 - Similarly add another rule for Hotstar Target Group by path = ```/hotstar/*```
-  ![503](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/503.png)
+  ![503](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/503.png)
 
 - Two rules added in the ALB Listeners Rules.
-  ![504](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/504.png)
+  ![504](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/504.png)
 
 - Now if you browse the apps ```/hotstar/```  will get the app with path-based Routing.
-  ![505](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/505.png)
+  ![505](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/505.png)
 
 - Now if you browse the apps ```/netflix/``` will get the app with path-based Routing.
-  ![506](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/506.png)
+  ![506](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/506.png)
 
 ## 17.6. Blue Green or Canary Based Deployment:
 
 - If we do any changes to the current Target group servers we remove one server, update, attach it to the new Target
   Group and Add that in the ALB’s HTTPS Listener’s default rule
-  ![507](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/507.png)
+  ![507](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/507.png)
 
 - Add the new target group by clicking on add target group button and add the weight 0 to old target group and 1 to new
   group if you wish to stop traffic to the old target group and start new updated traffic to the new target group or
   according to your requirement you can change the weightage so that traffic moves between old and new target groups.
-  ![508](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/508.png)
+  ![508](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/508.png)
 
 
 
@@ -2111,130 +2111,130 @@ Launch two more instances with below user data
 ## 18.1. Creating IP Set:
 
 - Click on the Create IP set button.
-  ![509](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/509.png)
+  ![509](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/509.png)
 
 - Fill in the details like IP set name and IP addresses.
 - Here we are adding some Public IPs to block or to allow in Web Application Firewall(WAF).
-  ![510](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/510.png)
+  ![510](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/510.png)
 
 - IP Set created successfully.
-  ![511](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/511.png)
+  ![511](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/511.png)
 
 ## 18.2. Creating Rule Groups:
 
 - Click on the Create rule group button to create rule group.
-  ![512](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/512.png)
+  ![512](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/512.png)
 
 - Fill in the details like Name, CloudWatch metric name and Region, click on Next.
-  ![513](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/513.png)
+  ![513](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/513.png)
 
 - Click on add rule button to add some rules.
-  ![514](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/514.png)
+  ![514](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/514.png)
 
 - Fill in the details like Name, Type, Inspect and Country codes.
-  ![515](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/515.png)
+  ![515](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/515.png)
 
 - Select Block if you want to block India, click on add rule.
-  ![516](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/516.png)
+  ![516](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/516.png)
 
 - Block India Rule added successfully.
 - Now Click on Add rule again to add the rate-based rule, as we have added one Regular rule before.
-  ![517](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/517.png)
+  ![517](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/517.png)
 
 - Fill in the details like Name and type.
-  ![518](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/518.png)
+  ![518](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/518.png)
 
 - Fill in Rate limit, and etc. and click on add rule button.
-  ![519](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/519.png)
+  ![519](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/519.png)
 
 - Rate based rule added successfully.
-  ![520](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/520.png)
+  ![520](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/520.png)
 
 - Fill in the Capacity, Click On Next.
-  ![521](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/521.png)
+  ![521](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/521.png)
 
 - Click On Next.
 
-  ![522](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/522.png)
+  ![522](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/522.png)
 
 - Click on Create button.
 
-  ![523](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/523.png)
+  ![523](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/523.png)
 
 - Rule group created successfully.
-  ![524](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/524.png)
+  ![524](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/524.png)
 
 - Now we will create the Web ACL
 
 ## 18.3. Creating the Web ACL:
 
 - Click on Create button.
-  ![525](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/525.png)
+  ![525](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/525.png)
 
 - Fill in the Details.
 
-  ![526](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/526.png)
+  ![526](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/526.png)
 
 - Click on Add AWS resources and add the ALB
 - ```Note:``` Post 20 min of ALB creation only you can add the ALB here.
-  ![527](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/527.png)
+  ![527](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/527.png)
 
 - Select Application Load Balancer and Name. and click on add button.
-  ![528](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/528.png)
+  ![528](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/528.png)
 
 - Click on Next Now.
 
-  ![529](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/529.png)
+  ![529](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/529.png)
 
 - Click on Add my own rules and rule group
-  ![530](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/530.png)
+  ![530](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/530.png)
 
 - Fill in the details, Select our IP List which we created earlier, Click on add rule
 
-  ![531](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/531.png)
+  ![531](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/531.png)
 
 - Again, Click on Add my own rules and rule group
-  ![532](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/532.png)
+  ![532](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/532.png)
 
 - Select Rule group. Fill the Name.
 - Select Rule Group which we created earlier.
 - Under rule group Enable the Override rulegroup action.
 - Click on Add rule button.
 
-  ![533](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/533.png)
+  ![533](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/533.png)
 
 - Added my own rules and Allow Default action, Click on Next.
-  ![534](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/534.png)
+  ![534](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/534.png)
 
 - Click Next
 
-  ![535](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/535.png)
+  ![535](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/535.png)
 
 - Click Next. And click on Create Web ACL button next.
-  ![536](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/536.png)
+  ![536](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/536.png)
 
 - Web ACL created successfully
-  ![537](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/537.png)
+  ![537](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/537.png)
 
 - Now when you browse from India it will come as forbidden. As we blocked India, try from outside India.
-  ![538](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/538.png)
+  ![538](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/538.png)
 
 - Some may use proxies for browsing to bold those IPs we do this.
 - Click on WebACL’s Add managed rule groups
-  ![539](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/539.png)
+  ![539](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/539.png)
 
 - Expand AWS managed rule groups
-  ![540](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/540.png)
+  ![540](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/540.png)
 
 - Enable Anonymous IP list, and click on Add rule button
-  ![541](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/541.png)
+  ![541](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/541.png)
 
 - After adding the AWS rule click on save button.
-  ![542](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/542.png)
-  ![543](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/543.png)
+  ![542](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/542.png)
+  ![543](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/543.png)
 
 - After adding AWS proxy rule now by VPN, we cannot browse it.
-  ![544](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/544.png)
+  ![544](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/544.png)
 
 
 
@@ -2244,7 +2244,7 @@ Launch two more instances with below user data
   ### 1. Vertical Scaling :
     - Changing instance type to (low to high) or (high to low) is called Vertical scaling. To do this instance stop and
       start is required. Good for database servers or file servers.
-      ![545](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/545.png)
+      ![545](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/545.png)
 
   ### 2. Horizontal scaling:
     - Increasing the instance number is called Horizontal scaling. To do this instance stop and start is not required.
@@ -2253,13 +2253,13 @@ Launch two more instances with below user data
   ### 3. Autoscaling:
     - Adding and removing the instances according to the load is called autoscaling. Adding machines(Scale Out),
       Removing Machines(Scale In).
-      ![546](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/546.png)
+      ![546](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/546.png)
 
 ## 19.1. Steps to Vertical Scaling:
 
 - Right click on Instance > Instance’s Settings > Change Instance Type.
 - Under New instance type change it to any.
-  ![547](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/547.png)
+  ![547](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/547.png)
 
 ## 19.2. Steps to Horizontal Scaling:
 
@@ -2267,7 +2267,7 @@ Launch two more instances with below user data
 
 - For testing the Horizontal Scaling, we need to launch one t2.medium instance and create one AMI for t2.medium instance
   with below user data.
-  ![548](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/548.png)
+  ![548](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/548.png)
 
 ### Ubuntu User Data:
 
@@ -2307,186 +2307,186 @@ ansible-playbook /myrepo/playbook-amazonLinux.yaml
 ```
 
 - Fill in details for Image creation. And click on Create button.
-  ![549](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/549.png)
+  ![549](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/549.png)
 
 - Once the machine image is in available status, we will deploy a machine using this AMI
-  ![550](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/550.png)
+  ![550](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/550.png)
 
 - Now run ```ansible-playbook /myrepo/playbook.yaml``` command to make nginx colourful.
 - Now delete the old server and launch the new server with New Updated image and test and see if nginx is working as
   here.
-  ![551](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/551.png)
+  ![551](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/551.png)
 
 ### 19.2.2 AMI Creation:
 
 - ASG comes under the Horizontal Scaling
 - We create one Image from One Instance.
 - Fill in the details and click on create image.
-  ![552](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/552.png)
+  ![552](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/552.png)
 
 - Created the Image successfully. In this Image we have Amazon Linux, t2.micro and Nginx with colour game
-  ![553](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/553.png)
+  ![553](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/553.png)
 
 ### 19.2.3 Launch Template Creation:
 
 - Creating One Launch Template with the above Amazon-Linux-Nginx-Image
 - Under Launch Templates click on Launch Template button.
 - Fill in the details like Name, Description, under My AMIs select the Amazon-Linux-Nginx-Image
-  ![554](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/554.png)
+  ![554](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/554.png)
 
 - Select Instance type
 
-  ![555](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/555.png)
+  ![555](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/555.png)
 
 - Fill in the details as shown.
 - ```Note``` : Don’t include Subnet now coz we need to add subnets in ASG
-  ![556](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/556.png)
+  ![556](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/556.png)
 
 - Add user data as shown in below.
 - Here in the image already we have used other user data related gitRepo.
 - Now click on Create a launch template button.
 
-  ![557](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/557.png)
+  ![557](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/557.png)
 
 - Enable the Detailed CloudWatch Monitoring
-  ![558](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/558.png)
+  ![558](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/558.png)
 
 - Created launch template successfully.
-  ![559](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/559.png)
+  ![559](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/559.png)
 
 ### 19.2.4 Auto Scaling Group Creation:
 
 - Now Come to Auto scaling groups under Auto Scaling
 - Click on Create Auto Scaling group button.
-  ![560](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/560.png)
+  ![560](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/560.png)
 
 - Fill in the Name, Select the Launch Template which we created with Amazon-Linux-Nginx-Image.
-  ![561](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/561.png)
+  ![561](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/561.png)
 
 - Click on next button.
 
-  ![562](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/562.png)
+  ![562](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/562.png)
 
 - Select the VPC and Subnets which you want to do Auto Scaling, Click on Next.
-  ![563](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/563.png)
+  ![563](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/563.png)
 
 - Fill in details as shown
 
-  ![564](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/564.png)
+  ![564](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/564.png)
 
 - Fill in details as shown
 
-  ![565](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/565.png)
+  ![565](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/565.png)
 
 - Health grace period 30 sec
 
-  ![566](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/566.png)
+  ![566](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/566.png)
 
 - Click on Next Button
 
-  ![567](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/567.png)
+  ![567](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/567.png)
 
 - Fill in details as shown, click on Next.
-  ![568](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/568.png)
+  ![568](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/568.png)
 
 - Click on Next, verify all and click on create button.
-  ![569](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/569.png)
+  ![569](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/569.png)
 
 - Auto Scaling Group created successfully
 - Now in instances one Machine will get deployed.
-  ![570](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/570.png)
+  ![570](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/570.png)
 
 - Auto Scaling Server Deployed successfully
-  ![571](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/571.png)
+  ![571](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/571.png)
 
 - On what basis the scaling should happen can be mentioned under ASG’s Automatic Scaling, before adding the Scaling we
   need to add the Notification under Application Integration’s Simple Notification Service. Under Amazon SNS’s Topics.
-  ![572](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/572.png)
+  ![572](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/572.png)
 
 ### 19.2.5 Notification Creation For Autoscaling:
 
 - Click on Create topic button.
-  ![573](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/573.png)
+  ![573](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/573.png)
 
 - Fill in details as shown, click on Create Topic button.
-  ![574](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/574.png)
+  ![574](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/574.png)
 
 - In Topics Create Subscription.
-  ![575](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/575.png)
+  ![575](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/575.png)
 
 - Select email and fill our email id, and click on create subscription.
-  ![576](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/576.png)
+  ![576](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/576.png)
 
 - Confirm Subscription.
-  ![577](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/577.png)
-  ![578](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/578.png)
+  ![577](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/577.png)
+  ![578](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/578.png)
 
 ### 19.2.6 Alarm Creation for AutoScaling:
 
 - Create a cloud watch alarm, click on Select metric button.
-  ![579](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/579.png)
+  ![579](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/579.png)
 
 - Select metric > EC2 > By Auto scaling group > ASG’s CPU Utilization. And click on select metrics button.
-  ![580](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/580.png)
+  ![580](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/580.png)
 
 - Fill in details as shown.
-  ![581](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/581.png)
+  ![581](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/581.png)
 
 - Fill in as shown, click Next.
-  ![582](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/582.png)
+  ![582](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/582.png)
 
 - Fill in as shown, click on next.
-  ![583](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/583.png)
+  ![583](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/583.png)
 
 - Fill name, click on Next.
 - Review and click on create Alarm Button.
-  ![584](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/584.png)
+  ![584](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/584.png)
 
 - Alarm Created Successfully.
 - You can see insufficient data once you add in scaling policy then data will come.
-  ![585](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/585.png)
+  ![585](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/585.png)
 
 ### 19.2.7 Dynamic scaling policy Creation in ASG:
 
 - Now come to ASG’s Automatic Scaling, click on Create Dynamic Scaling Policy
-  ![586](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/586.png)
+  ![586](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/586.png)
 
 - Fill in the details as shown, click on create button.
-  ![587](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/587.png)
+  ![587](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/587.png)
 
 - Now we will create another policy, before creating the policy we create new alarm for that.
 - Click on Create Alarm button.
 - Create a cloud watch alarm, click on Select metric button.
-  ![588](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/588.png)
+  ![588](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/588.png)
 
 - Select metric > EC2 > By Auto scaling group > ASG’s CPU Utilization. And click on select metrics button
-  ![589](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/589.png)
+  ![589](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/589.png)
 
 - Fill in details as shown.
-  ![590](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/590.png)
+  ![590](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/590.png)
 
 - Fill as shown, click Next.
-  ![591](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/591.png)
+  ![591](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/591.png)
 
 - Fill as shown.
 
-  ![592](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/592.png)
+  ![592](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/592.png)
 
 - Click on next after name fill and review and create alarm button.
-  ![593](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/593.png)
+  ![593](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/593.png)
 
 - Created alarm for deletion.
-  ![594](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/594.png)
+  ![594](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/594.png)
 
 - Now come to ASG’s Automatic Scaling, click on Create Dynamic Scaling Policy
-  ![595](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/595.png)
+  ![595](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/595.png)
 
 - Fill in the details as shown, click on create button
 - Now you can add the HTTPs and Route53 entry, then you can check the app access with ```asg.madireddyanil.in.```
-  ![596](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/596.png)
+  ![596](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/596.png)
 
 - please check if enabled or not. Right Click on Instance > Monitoring and troubleshooting > Manage Detailed monitoring.
-  ![597](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/597.png)
+  ![597](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/597.png)
 
 ### 19.2.8 Testing the AutoScaling:
 
@@ -2494,19 +2494,19 @@ ansible-playbook /myrepo/playbook-amazonLinux.yaml
   ```
   stress --cpu 8 --io 4 --vm 2 --vm-bytes 128M --timeout 15m
   ```
-  ![599](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/599.png)
+  ![599](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/599.png)
 
 - After sometime desired capacity will increase to 2 as we ran stress command.
-  ![598](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/598.png)
+  ![598](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/598.png)
 
 - Extra server launched.
 - Parallelly connect to new server and run stress and go on till 4 or 5 servers and then stop stress one by one so that
   instances will get deleted automatically.
-  ![600](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/600.png)
+  ![600](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/600.png)
 
 - Alarm triggered; AWS Autoscaling Groups(ASG) must be used with Stateless Applications Only. Like Frontend/Webservers
   and Backend/AppServer. ASG must not be used with Database server as the servers can be deleted any time.
-  ![601](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/601.png)
+  ![601](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/601.png)
 
 
 
@@ -3108,115 +3108,115 @@ CnezK1FBoN3k7b0Xbkyg1+lfOh2kWs4oye7E7ptHa1PHqR6JI8Eekg==
 
 - India Server
 
-  ![602](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/602.png)
+  ![602](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/602.png)
 
 - US server
 
-  ![603](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/603.png)
+  ![603](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/603.png)
 
 - Ireland Server
 
-  ![604](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/304.png)
+  ![604](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/304.png)
 
 ## 20.3. Health Check Creation:
 
 - Create Health Checks under Route 53 > Health Checks.
 - Click on Create Health Checks button to create it for US Server, India Server and Ireland Server
-  ![605](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/605.png)
+  ![605](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/605.png)
 
 - Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```US Server Public IP```, Port,
   Request interval and Failure threshold
 - Click on Next Button to proceed.
-  ![606](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/606.png)
+  ![606](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/606.png)
 
 - If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is
   created in Auto scaling Groups
 - Click on Create health check button.
-  ![607](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/607.png)
+  ![607](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/607.png)
 
 - Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```Ireland Server Public IP```, Port,
   Request interval and Failure threshold
 - Click on Next Button to proceed.
-  ![608](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/608.png)
+  ![608](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/608.png)
 
 - If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is
   created in Auto scaling Groups
 - Click on Create health check button.
-  ![607](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/607.png)
+  ![607](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/607.png)
 
 - Fill in the details like Name, What to monitor as Endpoint, Protocol, IP address ```India Server Public IP```, Port,
   Request interval and Failure threshold
 - Click on Next Button to proceed.
-  ![609](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/609.png)
+  ![609](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/609.png)
 
 - If require you can configure the alarm as we did it in Auto Scaling in AWS. and selected the Notification Which is
   created in Auto scaling Groups
 - Click on Create health check button.
-  ![607](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/607.png)
+  ![607](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/607.png)
 
 - 3 health Checks created successfully and Initially Status will be unknown and after some time it will change to
   healthy if servrs are healthy.
-  ![610](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/610.png)
+  ![610](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/610.png)
 
 - Healthy status.
-  ![611](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/611.png)
+  ![611](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/611.png)
 
 ## 20.4 Failover:
 
 ### 20.4.1 Failover Records Creation in Hosted Zones
 
 - Now we will create the failover record in our Route53 > Hosted Zones, A Record. for US server as primary.
-  ![612](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/612.png)
+  ![612](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/612.png)
 
 - Now we will create the failover record in our Route53 > Hosted Zones, A Record. for Ireland server as seccondary.
-  ![613](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/613.png)
+  ![613](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/613.png)
 
 - After adding records.
-  ![614](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/614.png)
+  ![614](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/614.png)
 
 - Now when we browse ```failover.madireddyanil.in``` in browser it go to the primary i.e US Server record.
-  ![615](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/615.png)
+  ![615](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/615.png)
 
 - If failover occour for US server then the it will route to the Ireland server
 - If require login to the US Server try stopping the nginx with ```service nginx stop``` command.
 - Now failover works and routes to Ireland server which is secondary
-  ![616](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/616.png)
+  ![616](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/616.png)
 
 - Suddenly it will not route to failover if health check fails only it will route to secondary.
-  ![617](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/617.png)
+  ![617](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/617.png)
 
 - After health failure it routed to secondary when we browse the  ```failover.madireddyanil.in``` in browser
-  ![618](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/618.png)
+  ![618](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/618.png)
 
 - Now again we will start the service in US Server.
-  ![619](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/619.png)
+  ![619](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/619.png)
 
 - Now traffic again routed to primary i.e US server
-  ![615](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/615.png)
+  ![615](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/615.png)
 
 - Health Check recovery after starting the service in US server.
-  ![620](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/620.png)
+  ![620](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/620.png)
 
 ## 20.5 Latency:
 
 ### 20.5.1. Latency Records Creation in Hosted Zones
 
 - Now we will create the Latency record in our Route53 > Hosted Zones, A Record. for US server as primary.
-  ![621](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/621.png)
+  ![621](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/621.png)
 
 - Now we will create the Latency record in our Route53 > Hosted Zones, A Record. for India server as primary.
-  ![622](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/622.png)
+  ![622](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/622.png)
 
 - After creating latency records.
-  ![623](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/623.png)
+  ![623](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/623.png)
 
 - Now when we browse ```latency.madireddyanil.in``` in browser it go to the nearest Server
 - here i browsed from india so i will get india server.
-  ![624](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/624.png)
+  ![624](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/624.png)
 
 - Now when we browse ```latency.madireddyanil.in``` in browser it go to the nearest Server
 - here i browsed from America by using VPN so i will get US server.
-  ![625](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/625.png)
+  ![625](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/625.png)
 
 ## 20.6. Weighted:
 
@@ -3226,14 +3226,14 @@ CnezK1FBoN3k7b0Xbkyg1+lfOh2kWs4oye7E7ptHa1PHqR6JI8Eekg==
   on add another record button.
 - Weight 1(it will distribute among all 3 servrs).
 - Record-1
-  ![626](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/626.png)
+  ![626](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/626.png)
 - Record-2
-  ![627](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/627.png)
+  ![627](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/627.png)
 - Record-3, and click on create record button.
-  ![628](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/628.png)
+  ![628](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/628.png)
 
 - After creating Weighted records.
-  ![629](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/629.png)
+  ![629](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/629.png)
 
 - Now by below Command you can ping the url.
   ```
@@ -3252,18 +3252,18 @@ CnezK1FBoN3k7b0Xbkyg1+lfOh2kWs4oye7E7ptHa1PHqR6JI8Eekg==
   clicking on add another record button.
 - Geolocatio (Request of that country will route to that Servers).
 - Record-1
-  ![630](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/630.png)
+  ![630](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/630.png)
 - Record-2
-  ![631](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/631.png)
+  ![631](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/631.png)
 - Record-3, and click on create record button.
-  ![632](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/632.png)
+  ![632](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/632.png)
 
 - After creating Weighted records.
-  ![633](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/633.png)
+  ![633](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/633.png)
 
 - Now you can browse with ```geo.madireddyanil.in``` so that weight will get distributed.
 - As i am in India it give India Server
-  ![634](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/634.png)
+  ![634](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/634.png)
 
 - As when you do lookup for all Global Load balancers
   ### Command:
@@ -3345,43 +3345,43 @@ CnezK1FBoN3k7b0Xbkyg1+lfOh2kWs4oye7E7ptHa1PHqR6JI8Eekg==
 ## 21.1. Configuring Global Accelerator:
 
 - Click on Create accelerator button
-  ![635](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/635.png)
+  ![635](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/635.png)
 
 - Fill in the details as shown below. Click on Next Button.
-  ![636](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/636.png)
+  ![636](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/636.png)
 
 - Under Listener 1 ports you can give multiple ports seperated by comma, select protocol TCP, Client Affinity as
   None/Sorce IP. Click on Next button.
 
-  ![637](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/637.png)
+  ![637](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/637.png)
 
 - Here we select the Regions Which we need to do Load Balancing. and click on Next button.
-  ![638](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/638.png)
+  ![638](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/638.png)
 
 - Here we need to select the Endpoint Type as EC2 as we are using EC2.
 - Under Endpoint we need to select the Endpoint which we created earlier for US, India and Ireland
 - Weight is same as we have only one server in it. Click on Create accelerator button
-  ![639](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/639.png)
-  ![640](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/640.png)
+  ![639](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/639.png)
+  ![640](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/640.png)
 
 - After creating Global Accelerator. you will get two static Public IPv4 address that you can share with your clients.
 - They will whitelist those IPv4 address in their firewall and use them.
-  ![641](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/641.png)
+  ![641](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/641.png)
 
 - We will take the Global Accelerator's DNS Name and create a ```CNAME record``` with ```Simple Routing``` Routing
   Policy in the Rootr53 > Hosted zones
-  ![642](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/642.png)
+  ![642](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/642.png)
 
 - Now we create a ```CNAME record``` with ```Simple Routing``` Routing Policy in the Rootr53 > Hosted zones
 - Click on Create record button.
-  ![643](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/643.png)
+  ![643](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/643.png)
 
 - After adding record.
-  ![644](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/644.png)
+  ![644](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/644.png)
 
 - Now if you do simple nslookup for ```global.madireddyanil.in``` you can see the two Public IPv4 of Global Accelerator.
   after accelerator status is in Deployed.
-  ![646](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/646.png)
+  ![646](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/646.png)
   ***Command:***
   ```
   madireddydevops@MadireddyOmen:~$ nslookup global.madireddyanil.in
@@ -3404,7 +3404,7 @@ CnezK1FBoN3k7b0Xbkyg1+lfOh2kWs4oye7E7ptHa1PHqR6JI8Eekg==
   ```
 - Now when you browse ```global.madireddyanil.in``` you will get with nearest server
 - Here i am browsing from India
-  ![645](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/645.png)
+  ![645](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/645.png)
 
 
 
@@ -3455,38 +3455,38 @@ Now we will discuss about the users & Groups.
 - Now we will create 2 ```test-user-01``` and ```test-user-02``` in IAM
   ### 22.1.1 User creation:
     - Click on Create user button under IAM > Users to create ```test-user-01``` user
-      ![647](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/647.png)
+      ![647](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/647.png)
 
     - Fill in the details like User name, tik in Provide user access to the AWS Management Console and provide the
       password.
     - Click on Next button to proceed.      
-      ![648](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/648.png)
+      ![648](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/648.png)
 
     - Lets skip Permissions for now. and Click on Next Button.
-      ![649](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/649.png)
+      ![649](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/649.png)
 
     - Verify and click on Create user button.
-      ![650](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/650.png)
+      ![650](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/650.png)
 
     - User ```test-user-01``` Created Successfully. If require download the cvs file or return to user list.
-      ![651](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/651.png)
+      ![651](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/651.png)
 
     - Similarly we create another user ```test-user-02```
-      ![652](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/652.png)
+      ![652](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/652.png)
 
     - Now we will launch the two servers
-      ![653](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/653.png)
+      ![653](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/653.png)
 
     - We create ```owner tags``` to the both istances
-      ![654](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/654.png)
-      ![655](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/655.png)
+      ![654](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/654.png)
+      ![655](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/655.png)
 
   ### 22.2. IAM Policies.
     - our goal is to make ```test-user-0l``` must be able to ```stop, start, reboot``` only ```Test-vm-0l```
     - ```test-user-02``` must be able to ```stop, start, reboot``` only ```Test-vm-02```.
     - For this we need to create policies in IAM , ``` IAM > Policies```
     - Click on create Policy for test-user-01
-      ![656](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/656.png)
+      ![656](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/656.png)
 
     - Select ```Json``` Code tab paste the below policy Json code in the Policy Editor.
       ***test-user-01.json***
@@ -3518,13 +3518,13 @@ Now we will discuss about the users & Groups.
           ]
         }       
       ```
-      ![657](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/657.png)
+      ![657](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/657.png)
 
     - Fill the Policy Name and Click on Create Policy button.
-      ![658](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/658.png)
+      ![658](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/658.png)
 
     - Click on create Policy for test-user-02
-      ![656](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/656.png)
+      ![656](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/656.png)
 
     - Select ```Json``` Code tab paste the below policy Json code in the Policy Editor.
       ***test-user-02.json***
@@ -3556,57 +3556,57 @@ Now we will discuss about the users & Groups.
           ]
         }       
       ```
-      ![659](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/659.png)
+      ![659](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/659.png)
 
     - Fill the Policy Name and Click on Create Policy button.
-      ![660](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/660.png)
+      ![660](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/660.png)
 
     - Policies Created Successfully.
-      ![661](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/661.png)
+      ![661](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/661.png)
 
     - Now we need to add these policies to the users ```test-user-0l``` & ```test-user-02```
     - Under IAM > Users, Click on test-user-01
-      ![662](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/662.png)
+      ![662](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/662.png)
 
     - Click on Add Permissions button
-      ![663](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/663.png)
+      ![663](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/663.png)
 
     - Select Attach Policies directly, select test-user-01 policy and click on next button.
-      ![664](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/664.png)
+      ![664](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/664.png)
 
     - Review and Click on Add Permissions button
-      ![665 1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/665.png)
+      ![665 1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/665.png)
 
     - After adding permission looks like below. for ```test-user-0l```
-      ![665 2](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/665.png)
+      ![665 2](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/665.png)
 
     - Under IAM > Users, Click on test-user-02
-      ![666](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/666.png)
+      ![666](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/666.png)
 
     - Click on Add Permissions button
-      ![667](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/667.png)
+      ![667](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/667.png)
 
     - Select Attach Policies directly, select test-user-02 policy and click on next button.
-      ![668](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/668.png)
+      ![668](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/668.png)
 
     - Review and Click on Add Permissions button
-      ![669](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/669.png)
+      ![669](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/669.png)
 
     - After adding permission looks like below. for ```test-user-02```
-      ![670](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/670.png)
+      ![670](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/670.png)
 
     - Now we will try to login with ```test-user-01``` & ```test-user-02```
     - To Login try using the URL which is under IAM > Dashboard
-      ![671](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/671.png)
+      ![671](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/671.png)
       ```
       https://905418264970.signin.aws.amazon.com/console
       ```
     - After login.
-      ![672](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/672.png)
+      ![672](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/672.png)
 
     - User will only be having the EC2 access as we defined in the Policy.
     - Policies will work as shown in below.
-      ![673](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/673.png)
+      ![673](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/673.png)
 
     - You can use the below url for policy generation
       ```
@@ -3661,7 +3661,7 @@ Now we will discuss about the users & Groups.
     - For test-user-02 we will assign the inline policy(EC2 full access) under IAM > Users > test-user-02, as shown in
       below image.
     - Click on Create inline policy button
-      ![674](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/674.png)
+      ![674](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/674.png)
 
     - Under Policy editor paste the below code. and click on Next button.
       ```
@@ -3677,24 +3677,24 @@ Now we will discuss about the users & Groups.
       }
       ```
     - Here in below diagram we should have been given ```ec2:*```
-      ![675](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/675.png)
+      ![675](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/675.png)
 
     - Fill in the name and click on Create Policy button.
-      ![676](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/676.png)
+      ![676](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/676.png)
 
     - After adding inline Policy it looks like below image.
-      ![677](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/677.png)
+      ![677](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/677.png)
 
     - Now when test-user-01 tries to stop Test-vm-02 it shows below error.
-      ![678](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/678.png)
+      ![678](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/678.png)
 
     - Now when test-user-01 tries to stop Test-vm-01 it Stops.
-      ![679](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/679.png)
+      ![679](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/679.png)
 
     - Now login with test-user-02 and Stop Test-vm-02 and Start Both Test-vm-02 and Test-vm-01 as we gave Ec2 full
       access to test-user-02.
-      ![680](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/680.png)
-      ![681](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/681.png)
+      ![680](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/680.png)
+      ![681](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/681.png)
 
   ## 22.3. Permission Boundaries:
     - Given ```admin access``` to test-user-02 Under IAM > Users > test-user-02 > Add Permissions > add
@@ -3732,35 +3732,35 @@ Now we will discuss about the users & Groups.
     - In the above code if you observer we denied only IAM and S3.
     - This user may consists of any other Admin or etc rights but IAM and S3 denied explicitly.
     - Click on Create Policy button under IAM > Policies
-      ![682](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/682.png)
+      ![682](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/682.png)
 
     - Fill the above code. Click on Next
-      ![683](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/683.png)
+      ![683](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/683.png)
 
     - Fill Names and click on Create Policy Button
-      ![684](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/684.png)
+      ![684](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/684.png)
 
     - Permission Boudary Created Successfully.
-      ![685](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/685.png)
+      ![685](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/685.png)
 
     - Now we should add that Permission Boundary into test-user-02.
     - Click on Set Permission Bounday Under IAM > Users > test-user-02 > Permission boundary
-      ![688](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/688.png)
+      ![688](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/688.png)
 
     - Now Select our Permission Boundary which we created earlier.
-      ![689](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/689.png)
+      ![689](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/689.png)
 
     - After adding.
-      ![690](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/690.png)
+      ![690](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/690.png)
 
     - Now when you login with test-user-02 you should be able to access everything except IAM and S3.
-      ![686](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/686.png)
-      ![687](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/687.png)
+      ![686](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/686.png)
+      ![687](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/687.png)
 
     - Make sure you have assigned admin policy before for user test-user-02.
     - Now we are able to access the All except IAM and S3 even though test-user-02 has ```admin rights``` enabled.
     - Because of Permission Boundry. S3 and IAM Not able to access.
-      ![691](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/691.png)
+      ![691](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/691.png)
 
 
 
@@ -3772,78 +3772,78 @@ Now we will discuss about the users & Groups.
   Management Purpose, Using IAM.
 - Now we take 3 accounts(```MadireddyMaster, MadireddySlave1 and MadireddySlave2```)
 - MadireddyMaster Account
-  ![692](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/692.png)
+  ![692](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/692.png)
 
 - MadireddySlave1 Account
-  ![693](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/693.png)
+  ![693](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/693.png)
 
 - MadireddySlave1 Account
-  ![694](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/694.png)
+  ![694](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/694.png)
 
 - here we create two users(```madireddy-01``` & ```madireddy-02```) in the Master account.
 - Under IAM > Users, Click on Create user button
-  ![699](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/699.png)
+  ![699](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/699.png)
 
 - Fill in the username, Provide console access and Password and click on Next.
-  ![695](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/695.png)
+  ![695](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/695.png)
 
 - No Permissions for now click on Next
-  ![696](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/696.png)
+  ![696](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/696.png)
 
 - Click on Create User button.
-  ![697](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/697.png)
+  ![697](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/697.png)
 
 - Check Password if possible.
-  ![698](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/698.png)
+  ![698](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/698.png)
 
 - Similarly Create another user.
 - After two users created looke like below.
-  ![700](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/700.png)
+  ![700](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/700.png)
 
 ### 2. Slave Accounts Role Creation:
 
 - Role Creation in ```MadireddySlave1``` account
 - Click on Create Role under IAM > Roles
-  ![701](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/701.png)
+  ![701](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/701.png)
 
 - Select AWS account, and Select another AWS account (Give master account details here), Click on Next button
-  ![702](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/702.png)
+  ![702](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/702.png)
 
 - Add Permissions , here we have added EC2 full Access and click on next button.
-  ![703](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/703.png)
+  ![703](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/703.png)
 
 - Fill Role name, Description and review & Create role.
-  ![704](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/704.png)
-  ![705](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/705.png)
+  ![704](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/704.png)
+  ![705](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/705.png)
 
 - After creating the role.
-  ![706](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/706.png)
-  ![707](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/707.png)
+  ![706](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/706.png)
+  ![707](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/707.png)
 
 - Role Creation in ```MadireddySlave2``` account
 - Click on Create Role under IAM > Roles
-  ![701](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/701.png)
+  ![701](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/701.png)
 
 - Select AWS account, and Select another AWS account (Give master account details here), Click on Next button
-  ![702](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/702.png)
+  ![702](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/702.png)
 
 - Add Permissions , here we have added ```EC2 full Access``` & ``` S3 Full Access``` and click on next button.
-  ![703](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/703.png)
+  ![703](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/703.png)
 
 - Fill Role name, Description and review & Create role.
-  ![704](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/704.png)
-  ![705](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/705.png)
+  ![704](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/704.png)
+  ![705](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/705.png)
 
 - After creating the role.
-  ![706](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/706.png)
-  ![708](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/708.png)
+  ![706](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/706.png)
+  ![708](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/708.png)
 
 - Now Collect the Two Slave accounts ARN numbers
 - MadireddySlave1
-  ![709](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/709.png)
+  ![709](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/709.png)
 
 - MadireddySlave2
-  ![710](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/710.png)
+  ![710](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/710.png)
 
 ## 3. Master Account AssumeRole Policy Creation
 
@@ -3862,31 +3862,31 @@ Now we will discuss about the users & Groups.
     }
   ```
 - Click on Create Policy under IAM > Policies in ```MadireddyMaster``` account
-  ![711](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/711.png)
+  ![711](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/711.png)
 
 - Pasting the above code in the Policy editor and click on Next button.
-  ![712](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/712.png)
+  ![712](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/712.png)
 
 - Fill Name and Description and Click on Create Policy Button.
-  ![713](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/713.png)
+  ![713](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/713.png)
 
 - After policy creation.
-  ![714](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/714.png)
-  ![715](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/715.png)
+  ![714](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/714.png)
+  ![715](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/715.png)
 
 - Now we will create the New group and add users anad Crossaccount policy in MasterMadireddy account.
 
 ## 4. User Group Creation in MadireddyMaster account:
 
 - Under IAM > UserGroups click on Create group button.
-  ![716](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/716.png)
+  ![716](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/716.png)
 
 - Fill in Name and Select Users and Assume Policy
-  ![717](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/717.png)
+  ![717](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/717.png)
 
 - After Group Creation.
-  ![718](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/718.png)
-  ![719](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/719.png)
+  ![718](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/718.png)
+  ![719](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/719.png)
 - Now aw should test the login to the Slave Accounts by two users in Master account by using the below master url
 
 ## 5. Testing login to Slave1 account with madireddy-01 user:
@@ -3896,30 +3896,30 @@ Now we will discuss about the users & Groups.
   https://559050220397.signin.aws.amazon.com/console
   ```
 - Sign in to ```Master account```
-  ![720](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/720.png)
+  ![720](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/720.png)
 
 - Initially We signed in to ```master``` account and ```no access``` at all.
 - As we did not give permission in MAster account to ```madireddy-01```
-  ![721](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/721.png)
+  ![721](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/721.png)
 
 - Now from here we will switch to ```Slave 1``` account
 - Click on Switch role button.
-  ![722](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/722.png)
+  ![722](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/722.png)
 
 - Fill in the Slave 1's (account ID and IAM Role and display name)
-  ![723](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/723.png)
+  ![723](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/723.png)
 
 - After login.
-  ![724](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/724.png)
+  ![724](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/724.png)
 
 - Here only ```EC2``` as we did same to user madireddy-01
-  ![725](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/725.png)
+  ![725](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/725.png)
 
 - No s3 access to user madireddy-01 as we not gave.
-  ![726](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/726.png)
+  ![726](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/726.png)
 
 - Check as below in whcih account you are in
-  ![727](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/727.png)
+  ![727](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/727.png)
 
 ## 6. Testing login to Slave2 account with madireddy-01 user:
 
@@ -3928,36 +3928,36 @@ Now we will discuss about the users & Groups.
   https://559050220397.signin.aws.amazon.com/console
   ```
 - Sign in to ```Master account```
-  ![720](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/720.png)
+  ![720](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/720.png)
 
 - Initially We signed in to ```master``` account and ```no access``` at all.
 - As we did not give permission in MAster account to ```madireddy-01```
-  ![721](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/721.png)
+  ![721](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/721.png)
 
 - Now from here we will switch to ```Slave 2``` account
 - Click on Switch role button.
-  ![722](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/722.png)
+  ![722](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/722.png)
 
 - Fill in the Slave 2's (account ID and IAM Role and display name)
-  ![728](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/728.png)
+  ![728](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/728.png)
 
 - After login.
-  ![729](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/729.png)
+  ![729](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/729.png)
 
 - Here only ```EC2``` and ```s3``` access as we did same to user madireddy-01
-  ![729](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/729.png)
-  ![730](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/730.png)
+  ![729](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/729.png)
+  ![730](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/730.png)
 
 - No Route53 access to user madireddy-01 as we not gave.
-  ![731](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/731.png)
+  ![731](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/731.png)
 
 - Check as below in whcih account you are in
-  ![732](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/732.png)
+  ![732](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/732.png)
 
 - Similarly do with the ```madireddy-02``` user in ```Slave1``` and ```Slave2``` accounts.
 - Only cahnge after switching to madireddy-02 is switching will show before only.
 - As we assigned same policy to madireddy-01 and madireddy-02 users
-  ![733](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/733.png)
+  ![733](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/733.png)
 
 ### Note:
 
@@ -3969,20 +3969,20 @@ Now we will discuss about the users & Groups.
 ## 22.5. AWS Organizations:
 
 - Click on Create an Organization.
-  ![734](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/734.png)
+  ![734](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/734.png)
 
 - Click on add AWS account button to add slaves 1 and 2.
-  ![735](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/735.png)
+  ![735](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/735.png)
 
 - Fill in the Account(Sub account1 and Sub account2) and Message and send invite
-  ![736](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/736.png)
+  ![736](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/736.png)
 
 - Accept the invitation in two aaccounts
-  ![737](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/737.png)
-  ![738](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/738.png)
+  ![737](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/737.png)
+  ![738](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/738.png)
 
 - After accepting in ```Master account```.
-  ![739](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/739.png)
+  ![739](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/739.png)
 
   ### Advantages of AWS Organisations:
     - centralised billing
@@ -3993,7 +3993,7 @@ Now we will discuss about the users & Groups.
 ## 22.6. Service Control Policies Under AWS Organisations.
 
 - Clcik on Policies Under AWS Organisations > Policies > Service control policies.
-  ![740](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/740.png)
+  ![740](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/740.png)
 
 - Fill in the Policy name and description, and paste the below code in the code section.
 - Click on Creste Policy button.
@@ -4070,38 +4070,38 @@ Now we will discuss about the users & Groups.
       ]
   }
   ```
-  ![741](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/741.png)
-  ![742](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/742.png)
+  ![741](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/741.png)
+  ![742](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/742.png)
 
 - After Policy creation
-  ![743](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/743.png)
+  ![743](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/743.png)
 
 - Now you should assign the policy to the both slave Accounts
 - Click on Slave1 account
-  ![744](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/744.png)
+  ![744](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/744.png)
 
 - Click on attach button under Slave1 > Policies > Attach
-  ![745](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/745.png)
+  ![745](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/745.png)
 
 - Select the Service control Policy which we created earlier resctricting the few features in the code.
 - Click on attach policy button.
-  ![746](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/746.png)
+  ![746](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/746.png)
 
 - Similarly do to the Slave2 account
 - Click on Slave2
-  ![747](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/747.png)
+  ![747](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/747.png)
 
 - Click on attach button under Slave2 > Policies > Attach
-  ![748](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/748.png)
+  ![748](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/748.png)
 
 - Select the Service control Policy which we created earlier resctricting the few features in the code.
 - Click on attach policy button.
-  ![749](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/749.png)
+  ![749](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/749.png)
 
 - Now test in Slave 1 nad 2 for access
 - IAM, Route53 should be denied and etc, specified in the above code.
-  ![750](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/750.png)
-  ![751](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/751.png)
+  ![750](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/750.png)
+  ![751](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/751.png)
 - Similarly there should be restrictions in many as above per code.
 - Testing might be long so ```skipping``` few tests.
 - NOw you can remove the policies if required for slave 1 and 2 accounts.
@@ -4114,30 +4114,30 @@ Now we will discuss about the users & Groups.
 
 - For single ```sign-on``` we use Active directory
 - Click on Set up directory under ```Directory Services > Active Directory.```
-  ![752](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/752.png)
+  ![752](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/752.png)
 
 - Select ```AWS Managed Microsoft AD``` click on next button.
-  ![753](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/753.png)
+  ![753](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/753.png)
 
 - Select Edition(```Standard edition```), DNS Name(```madireddy.com```) and BIOS name(```MADIREDDY```)
 - Create password and click on Next button.
-  ![754](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/754.png)
-  ![755](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/755.png)
+  ![754](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/754.png)
+  ![755](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/755.png)
 
 - Select the ```VPC``` and ```Subnets(Public Subnets)``` and click on Next button
-  ![756](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/756.png)
+  ![756](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/756.png)
 
 - Review and create directory.
-  ![757](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/757.png)
+  ![757](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/757.png)
 
 - It will take ```20 to 45``` min to create the Active directory.
-  ![758](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/758.png)
+  ![758](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/758.png)
 
 - Now its active after 45 min
-  ![759](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/759.png)
+  ![759](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/759.png)
 
 - Now Launch the Windows Server in Same VPC and Subnet. with t2.large as Instance Type.
-  ![766](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/766.png)
+  ![766](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/766.png)
 
 - Connect to the windows server above created and modify the Active Directory as shown
 - Create two users anilkumar and reddy
@@ -4146,114 +4146,114 @@ Now we will discuss about the users & Groups.
   ncpa.cpl
   ```
 - Goto IPV4 > Properties > DNS
-  ![767](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/767.png)
+  ![767](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/767.png)
 
 - Copy the Active directory DNS address
-  ![768](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/768.png)
+  ![768](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/768.png)
 
 - Enter the DNS servers IPs which are in Active directory
-  ![769](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/769.png)
+  ![769](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/769.png)
 
 - Go to Server Manager in Windows.
-  ![770](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/770.png)
+  ![770](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/770.png)
 
 - Click on Manage > Add Roles and Features
-  ![771](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/771.png)
+  ![771](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/771.png)
 
 - click on Next.
-  ![772](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/772.png)
+  ![772](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/772.png)
 
 - Select Role and Next.
 
-  ![773](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/773.png)
+  ![773](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/773.png)
 
 - click on Next.
 
-  ![774](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/774.png)
+  ![774](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/774.png)
 
 - click on Next.
 
-  ![775](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/775.png)
+  ![775](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/775.png)
 
 - Select AD DS and AD LDS Tools under Remote Server Administration Tools > Role Administration Tools
-  ![776](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/776.png)
+  ![776](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/776.png)
 
 - Click install
 
-  ![777](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/777.png)
+  ![777](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/777.png)
 
 - Now in Cmd again enter the below command.
   ```
   sysdm.cpl
   ```
 - Click on Change button
-  ![778](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/778.png)
+  ![778](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/778.png)
 
 - Give domain name as madireddy.com and click on ok
-  ![779](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/779.png)
+  ![779](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/779.png)
 
 - Now User name is admin and the password id Domain Creation Password.
-  ![780](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/780.png)
+  ![780](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/780.png)
 
 - After successful authentication welcome message wil come
-  ![781](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/781.png)
+  ![781](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/781.png)
 
 - click ok to restart
 
-  ![782](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/782.png)
+  ![782](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/782.png)
 
 - Login to Ad aserver now using admin@domain name and pwd is Domain Pwd
-  ![783](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/783.png)
+  ![783](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/783.png)
 
 - Now enter below command in cmd
   ```
   dsa.msc
   ```
-  ![784](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/784.png)
+  ![784](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/784.png)
 
 - under madireddy.com domain create the two users ```anilkumar``` and ```reddy```
-  ![785](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/785.png)
+  ![785](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/785.png)
 
-  ![786](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/786.png)
+  ![786](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/786.png)
 
-  ![787](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/787.png)
+  ![787](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/787.png)
 
 - Add Email also
 
-  ![788](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/788.png)
+  ![788](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/788.png)
 
-  ![789](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/789.png)
+  ![789](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/789.png)
 
-  ![790](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/790.png)
+  ![790](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/790.png)
 
 - Users added successfully.
 
-  ![791](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/791.png)
+  ![791](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/791.png)
 
 ## Permission Sets Creation
 
 - Now under IAM Identity Center > Permission Sets
 - Click on Create permission set button
-  ![806](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/806.png)
+  ![806](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/806.png)
 
 - Select Custom Permission Set, Click on Next Button.
-  ![807](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/807.png)
+  ![807](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/807.png)
 
 - Under AWS Managed Policies, Provide EC2 Full, S3 Read only and Route53 Read only.
 - Click on Next button
 
-  ![808](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/808.png)
+  ![808](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/808.png)
 
 - Fill in Name and Description.
 - Click on Next button.
-  ![809](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/809.png)
+  ![809](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/809.png)
 
 - Review and Click on Create button.
-  ![810](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/810.png)
-  ![811](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/811.png)
+  ![810](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/810.png)
+  ![811](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/811.png)
 
 - After permission set creation it looks.
-  ![812](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/812.png)
+  ![812](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/812.png)
 
 - Now we will test the Active directory by logging in to the console
 - under IAM Identity Center > Dashboard
@@ -4261,91 +4261,91 @@ Now we will discuss about the users & Groups.
   ```
   https://madireddy.awsapps.com/start
   ```
-  ![812-1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/812-1.png)
+  ![812-1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/812-1.png)
 
 - Now in the Browser paste the ```AWS access portal URL``` and use the ```reddy@madireddy.com``` to login and password
-  ![812-2](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/812-2.png)
-  ![812-3](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/812-3.png)
+  ![812-2](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/812-2.png)
+  ![812-3](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/812-3.png)
 
 - After logging in you will not ne having any permissions to work on any services.
 - We need to assign permission Set to the Accounts. under IAM Identity Center > AWS Accounts
 - Now under IAM Identity Center > AWS Organizations: AWS accounts add users and Permission set
 - Click on Slave1 and open
-  ![813](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/813.png)
+  ![813](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/813.png)
 
 - Under Users and Groups > Assign Users or Groups >
-  ![814](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/814.png)
+  ![814](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/814.png)
 
 - Under Users add the two users click on Next.
-  ![815](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/815.png)
+  ![815](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/815.png)
 
 - Now add the created Permission set here and click on next button.
-  ![816](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/816.png)
+  ![816](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/816.png)
 
 - Review and submit.
 
-  ![817](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/817.png)
+  ![817](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/817.png)
 
 - After submitting it looks this way.
-  ![817-1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/817-1.png)
+  ![817-1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/817-1.png)
 
 - Now when you refresh the browser which we logged in with ```reddy@madireddy.com```
 - You can see one acount added to the AWS access portal i.e ```Slave1``` account
-  ![818](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/818.png)
+  ![818](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/818.png)
 
 - Similarly we need to do it for Slave 2 account.
 - Now under IAM Identity Center > AWS Organizations: AWS accounts add users and Permission set
 - Click on Slave2 and open
-  ![819](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/819.png)
+  ![819](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/819.png)
 
 - Under Users and Groups > Assign Users or Groups >
-  ![820](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/820.png)
+  ![820](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/820.png)
 
 - Under Users add the two users click on Next.
-  ![821](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/821.png)
+  ![821](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/821.png)
 
 - Now add the created Permission set here and click on next button.
-  ![822](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/822.png)
+  ![822](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/822.png)
 
 - Review and submit.
 
-  ![823](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/823.png)
+  ![823](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/823.png)
 
 - After submitting it looks this way.
-  ![824](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/824.png)
+  ![824](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/824.png)
 
 - Now when you refresh the browser which we logged in with ```reddy@madireddy.com```
 - You can see one more acount added to the AWS access portal i.e ```Slave2``` account
-  ![825](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/825.png)
+  ![825](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/825.png)
 
 - Now click on Slave1 > Permission set to go to slave 1 Console
-  ![826](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/826.png)
+  ![826](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/826.png)
 
 - After in it looks.
-  ![827](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/827.png)
+  ![827](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/827.png)
 
 - As we gave EC2 Full , S3 Read only and Route53 Readonly we can access them only
-  ![828](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/828.png)
+  ![828](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/828.png)
 
-  ![829](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/829.png)
+  ![829](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/829.png)
 
-  ![830](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/830.png)
+  ![830](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/830.png)
 
 - Others we dont have access give so it will give denied.
-  ![831](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/831.png)
+  ![831](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/831.png)
 
 - Similarly goto Slave2 > Permission set
-  ![832](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/832.png)
+  ![832](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/832.png)
 
 - As we gave EC2 Full , S3 Read only and Route53 Readonly we can access them only
-  ![833](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/833.png)
+  ![833](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/833.png)
 
-  ![834](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/834.png)
+  ![834](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/834.png)
 
-  ![835](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/835.png)
+  ![835](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/835.png)
 
 - Others we dont have access give so it will give denied.
-  ![836](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/836.png)
+  ![836](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/836.png)
 
 - This way by using active directory users we can manage the Single sign on in the AWS Accounts.
 - Now by using same active Directories we can use FSx also in AWS
@@ -4353,208 +4353,208 @@ Now we will discuss about the users & Groups.
 ## 22.8. AWS FSX CReation:
 
 - Click on Crterate file system under Amazon FSX > Filesystems
-  ![760](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/760.png)
+  ![760](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/760.png)
 
 - Select Amazon FSx for Windows File Server and click on Next.
-  ![761](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/761.png)
+  ![761](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/761.png)
 
 - Select Quick Create, Name, Singlr AZ, SSD(32), VPC, Subnet.
 - Finally selsct our Active directory Whcich created earlier
-  ![762](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/762.png)
+  ![762](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/762.png)
 
 - Review and select create.
-  ![763](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/763.png)
-  ![764](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/764.png)
+  ![763](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/763.png)
+  ![764](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/764.png)
 
 - After creation it will take some time to create.
-  ![765](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765.png)
+  ![765](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765.png)
 
 - Once the FSX is in Available, open the FSx
-  ![765-1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-1.png)
+  ![765-1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-1.png)
 
 - Copy the FSx DNS Name.
-  ![765-2](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-2.png)
+  ![765-2](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-2.png)
 
 - paste in run you will get shared location
   ```
   \\fs-08cd78bfa94551000.madireddy.com
   ```
-  ![765-3](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-3.png)
+  ![765-3](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-3.png)
 
 - Open the share Folder
-  ![765-4](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-4.png)
+  ![765-4](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-4.png)
 
 - Create 3 folders ```Commondata, anikumar and reddy```
-  ![765-5](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-5.png)
+  ![765-5](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-5.png)
 
 - Disable inheritance for common Data coz we can delete other users in decurity
-  ![765-6](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-6.png)
+  ![765-6](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-6.png)
 
 - Now click on Add button
 
-  ![765-7](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-7.png)
+  ![765-7](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-7.png)
 
 - Now Click on Select a principal link
-  ![765-8](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-8.png)
+  ![765-8](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-8.png)
 
 - Add ```anilkumar``` user and click on ok
-  ![765-9](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-9.png)
+  ![765-9](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-9.png)
 
 - Next Give full control to anilkumar for common data
-  ![765-10](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-10.png)
+  ![765-10](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-10.png)
 
 - again click on Add button
 
-  ![765-11](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-11.png)
+  ![765-11](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-11.png)
 
 - Now Click on Select a principal link
-  ![765-12](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-12.png)
+  ![765-12](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-12.png)
 
 - Add ```reddy``` user and click on ok
-  ![765-13](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-13.png)
+  ![765-13](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-13.png)
 
 - Next Give full control to reddy for common data
-  ![765-14](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-14.png)
+  ![765-14](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-14.png)
 
 - Now remove all except ```anilkumar``` and ```reddy```
-  ![765-15](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-15.png)
+  ![765-15](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-15.png)
 
 - Now click on Apply and ok and ok
-  ![765-16](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-16.png)
+  ![765-16](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-16.png)
 
 - Now For anilkumar folder
-  ![765-17](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-17.png)
+  ![765-17](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-17.png)
 
 - Add anilkumar user id
 
-  ![765-18](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-18.png)
+  ![765-18](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-18.png)
 
 - Added anilkumar by checking names button
-  ![765-19](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-19.png)
+  ![765-19](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-19.png)
 
 - Provided full control to ```anilkumar folder``` for ```anilkumar``` user
-  ![765-20](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-20.png)
+  ![765-20](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-20.png)
 
 - Disable inheritance for anilkumar dir
-  ![765-21](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-21.png)
-  ![765-22](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-22.png)
+  ![765-21](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-21.png)
+  ![765-22](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-22.png)
 
 - Remove all except anilkumar as it is personal folder for anilkumar
 - click on ok. and apply
 
-  ![765-23](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-23.png)
+  ![765-23](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-23.png)
 
 - Now For reddy folder
 
-  ![765-24](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-24.png)
+  ![765-24](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-24.png)
 
 - Disable inheritance
 
-  ![765-25](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-25.png)
-  ![765-26](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-26.png)
+  ![765-25](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-25.png)
+  ![765-26](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-26.png)
 
 - click on add button
 
-  ![765-27](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-27.png)
+  ![765-27](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-27.png)
 
 - Click on select principal button
-  ![765-28](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-28.png)
+  ![765-28](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-28.png)
 
 - Add reddy user id by checking names
-  ![765-29](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-29.png)
+  ![765-29](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-29.png)
 
 - Provide the full access for reddy
-  ![765-30](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-30.png)
+  ![765-30](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-30.png)
 
 - Remoe all except reddy as it is personal folder for reddy user
-  ![765-31](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-31.png)
+  ![765-31](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-31.png)
 
 - click on ok. and apply
 
-  ![765-32](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-32.png)
+  ![765-32](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-32.png)
 
 - Now in power shell run below command
   ```
   lusrmgr.msc
   ```
 - open remote desktop users
-  ![765-33](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-33.png)
+  ![765-33](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-33.png)
 
 - Click on add button
 
-  ![765-34](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-34.png)
+  ![765-34](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-34.png)
 
 - Add users ```anilkumar``` and ```reddy``` as they should login to the Windows AD instance
-  ![765-35](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-35.png)
+  ![765-35](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-35.png)
 
 - Click on ok and apply
-  ![765-36](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-36.png)
+  ![765-36](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-36.png)
 
 - NOw login to AD instance with ```anilkumar@madireddy.com``` as username
-  ![765-37](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-37.png)
+  ![765-37](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-37.png)
 
 - Logged in as anilkumar.
-  ![765-38](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-38.png)
+  ![765-38](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-38.png)
 
 - to check the shared location you can run ```set``` command in cmd prompt
-  ![765-39](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-39.png)
+  ![765-39](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-39.png)
 
 - NOw do nslookup LOCALAPPDATAPATH in the above image
 - out put shoes the IP address of Active dir
-  ![765-40](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-40.png)
+  ![765-40](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-40.png)
 
 - Copy FSx DNS Name
-  ![765-41](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-41.png)
+  ![765-41](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-41.png)
 
 - Pate in run
   ```
   \\fs-08cd78bfa94551000.madireddy.com
   ```
-  ![765-42](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-42.png)
+  ![765-42](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-42.png)
 
 - Share folder opens , open share
-  ![765-43](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-43.png)
+  ![765-43](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-43.png)
 
 - As you logged in with anilkumar id you wont be able to open reddy folder
-  ![765-44](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-44.png)
+  ![765-44](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-44.png)
 
 - anikumar have access to common data
-  ![765-45](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-45.png)
+  ![765-45](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-45.png)
 
 - anilkumar have access to anilkumar dir and copied few files
-  ![765-46](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-46.png)
+  ![765-46](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-46.png)
 
 - NOw login to AD instance with ```reddy@madireddy.com``` as username
 
-  ![765-47](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-47.png)
+  ![765-47](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-47.png)
 
 - As admin and anilkumar already loggedin it ask for disconnect one to login reddy user
-  ![765-48](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-48.png)
+  ![765-48](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-48.png)
 
 - disconnecting anilkumar Remote desktop.
-  ![765-49](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-49.png)
+  ![765-49](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-49.png)
 
 - Copy FSx DNS Name and Pate in run
   ```
   \\fs-08cd78bfa94551000.madireddy.com
   ```
-  ![765-50](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-50.png)
+  ![765-50](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-50.png)
 
 - Share folder opens , open share.
 - As you logged in with ```reddy``` id you wont be able to open ```anilkumar``` folder
-  ![765-51](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-51.png)
+  ![765-51](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-51.png)
 
 - reddy have access to common data
-  ![765-52](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-52.png)
+  ![765-52](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-52.png)
 
 - reddy have access to reddy dir and copied few files
-  ![765-53](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-53.png)
+  ![765-53](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-53.png)
 
 - Now you can delete FSX. as our test finished and we dont want that any more.
-  ![765-54](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-54.png)
+  ![765-54](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-54.png)
 
 - it will take minutes to delete.
-  ![765-55](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/765-55.png)
+  ![765-55](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/765-55.png)
 
 
 
@@ -4565,16 +4565,16 @@ Now we will discuss about the users & Groups.
 - Like restricting on only specific regions.
 - Like restricting to only few services in AWS it may be any service.
 - Now come to AWS Organizations > AWS accounts > Policies
-  ![837](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/837.png)
+  ![837](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/837.png)
 
 - Click on Service control Policies and enable it.
-  ![838](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/838.png)
+  ![838](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/838.png)
 
 - Click on Create policy.
-  ![839](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/839.png)
+  ![839](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/839.png)
 
 - Fill Policy Name and Description.
-  ![840](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/840.png)
+  ![840](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/840.png)
 
   ```
   {
@@ -4650,37 +4650,37 @@ Now we will discuss about the users & Groups.
   }
   ```
 - Fill the above code in and click on Create Policy button.
-  ![841](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/841.png)
+  ![841](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/841.png)
 
 - After creating the policy.
-  ![842](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/842.png)
+  ![842](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/842.png)
 
 - Now go to AWS accounts and attach this policy to one Account.
 - Open the slave1 account and add it
-  ![843](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/843.png)
+  ![843](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/843.png)
 
 - Under Ploicies > attach
-  ![844](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/844.png)
+  ![844](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/844.png)
 
 - Select our Policy and click on attach policy.
-  ![845](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/845.png)
+  ![845](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/845.png)
 
 - After attaching policy.
-  ![846](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/846.png)
+  ![846](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/846.png)
 
 - Remove the FullAWSAccess policy.
-  ![847](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/847.png)
+  ![847](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/847.png)
 
 - After removing it looks.
-  ![848](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/848.png)
+  ![848](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/848.png)
 
 - Now login to slave account and check for service access as per policy
-  ![849](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/849.png)
+  ![849](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/849.png)
 
-  ![850](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/850.png)
+  ![850](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/850.png)
 
 - Now again if you want to restore remove our SCP and add Fullaccess policy.
-  ![851](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/851.png)
+  ![851](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/851.png)
 
 - This way you can restrict the services in Accounts
 
@@ -4688,12 +4688,12 @@ Now we will discuss about the users & Groups.
 
 - first from AD we need to disconnect the Identity center
 - Now you can delete the AD
-  ![852](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/852.png)
-  ![853](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/853.png)
-  ![854](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/854.png)
-  ![855](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/855.png)
-  ![856](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/856.png)
-  ![857](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/857.png)
+  ![852](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/852.png)
+  ![853](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/853.png)
+  ![854](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/854.png)
+  ![855](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/855.png)
+  ![856](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/856.png)
+  ![857](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/857.png)
 
 
 # 23. AWS Elastic File Systems (EFS):
@@ -4714,72 +4714,72 @@ Now we will discuss about the users & Groups.
   apt install default-jdk -y
   
   ```
-  ![858](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/858.png)
+  ![858](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/858.png)
 
 - EBS is limited to Availability Zone but EFS has no Availability Zone Limitations.
 - Come to EFS > Create file system
-  ![859](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/859.png)
+  ![859](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/859.png)
 
 - Fill in the details like Name and VPC
 
-  ![860](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/860.png)
+  ![860](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/860.png)
 
 - Select Regional, disable backup and click on Next.
-  ![861](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/861.png)
-  ![862](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/862.png)
+  ![861](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/861.png)
+  ![862](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/862.png)
 
 - Select VPC and Subnets, clcik on Next.
-  ![863](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/863.png)
+  ![863](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/863.png)
 
 - Now skip and click on Next.
-  ![864](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/864.png)
+  ![864](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/864.png)
 
 - Review all and click on crceate EFS button.
-  ![865](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/865.png)
+  ![865](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/865.png)
 
 - After creating file system.
-  ![866](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/866.png)
+  ![866](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/866.png)
 
 - Now Connect to the two instances
-  ![867](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/867.png)
+  ![867](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/867.png)
 
 - Now run These commands in both instances
   ```
   mkdir -p /var/lib/jenkins
   ```
-  ![869](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/869.png)
+  ![869](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/869.png)
 
 - Now copy the DNS Name in EFS which we created.
-  ![868](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/868.png)
+  ![868](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/868.png)
 
 - Now add the DNS of EFS in ```/etc/fstab```, then even the server reboots it will not unmount.
   ```
   fs-04d0d5a49bda2f948.efs.us-east-1.amazonaws.com:/   	/var/lib/jenkins/   	nfs
   ```
-  ![870](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/870.png)
+  ![870](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/870.png)
 
 - If you do ``` df -h ``` in both servers still file system is not created.
-  ![871](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/871.png)
+  ![871](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/871.png)
 
 - do ``` mount -a ``` if will apply the fstab changes.
-  ![872](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/872.png)
+  ![872](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/872.png)
 
 - If you do ``` df -h ``` in both servers you can see file system is created.
 - it looks in the below format.
   ```
   fs-04d0d5a49bda2f948.efs.us-east-1.amazonaws.com:/  8.0E     0  8.0E   0% /var/lib/jenkins
   ```
-  ![873](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/873.png)
+  ![873](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/873.png)
 
 - Now you type ``` watch ls ``` command under ```/var/lib/jenkins```
 - to see the changes that we make in another server
 - if you create or delete the files in one location automatically in another location also it will get effect
 - as it is the shared location in linux servers.
-  ![874](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/874.png)
+  ![874](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/874.png)
 
 - I have created few files in 2nd server under ```/var/lib/jenkins```
 - But automatically in 1st server also files created.
-  ![875](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/875.png)
+  ![875](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/875.png)
 
 ## Jenkins Installation
 
@@ -4793,7 +4793,7 @@ Now we will discuss about the users & Groups.
   sudo apt-get update
   sudo apt-get install jenkins -y
   ```
-  ![876](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/876.png)
+  ![876](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/876.png)
 
 ## JenkinsConfiguration
 
@@ -4802,18 +4802,18 @@ Now we will discuss about the users & Groups.
   http://98.82.19.60:8080
   ```
 - Fill in the password and login
-  ![877](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/877.png)
-  ![878](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/878.png)
-  ![879](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/879.png)
-  ![880](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/880.png)
-  ![881](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/881.png)
-  ![882](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/882.png)
+  ![877](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/877.png)
+  ![878](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/878.png)
+  ![879](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/879.png)
+  ![880](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/880.png)
+  ![881](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/881.png)
+  ![882](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/882.png)
 
 ## Jenkins Job Creation
 
 - Now Create one job and run it.
-  ![883](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/883.png)
-  ![884](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/884.png)
+  ![883](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/883.png)
+  ![884](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/884.png)
   ```
   #!/bin/bash
   for i in {1..10}
@@ -4821,70 +4821,70 @@ Now we will discuss about the users & Groups.
   echo $(date)
   done  
   ```
-  ![885](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/885.png)
-  ![886](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/886.png)
-  ![887](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/887.png)
+  ![885](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/885.png)
+  ![886](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/886.png)
+  ![887](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/887.png)
 
 - Now install the jenkins in second server also by same steps
 - and login to the jenkins and if you see the test job will be there.
 - which means files sharing between two servers happenning
-  ![888](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/888.png)
+  ![888](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/888.png)
 
 - If you run job for few more times to see changes in second jenkins console you need to restart the jenkins
   ```
   http://98.81.75.40:8080/restart
   ```
-  ![889](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/889.png)
-  ![890](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/890.png)
+  ![889](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/889.png)
+  ![890](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/890.png)
 
 - Genarally we use EFS for centralised logs, Database dumps, etc.,
 
 # AWS Backup:
 
 - Now Goto AWS Backup
-  ![891](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/891.png)
+  ![891](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/891.png)
 
 - AWS Backup > Vault > Create new Vault
-  ![892](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/892.png)
+  ![892](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/892.png)
 
 - Fill In the Details as shown and click on Create button.
-  ![893](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/893.png)
+  ![893](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/893.png)
 
 - After vault creation it shows like below.
-  ![894](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/894.png)
+  ![894](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/894.png)
 
 - Now for the Jenkins-01 and Jenkins-02 instances create tags as shown.
-  ![895](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/895.png)
-  ![896](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/896.png)
+  ![895](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/895.png)
+  ![896](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/896.png)
 
 - NOw got to AWS Backup > Protected Resources.
 - Click on Create on demand backup button.
-  ![897](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/897.png)
+  ![897](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/897.png)
 
 - Fill in the deatils as shown below.
 - Click on create on demand button backup button.
-  ![898](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/898.png)
+  ![898](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/898.png)
 
 - After on emand Backup it looks like below.
-  ![899](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/899.png)
+  ![899](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/899.png)
 
 - Backup job Completed under AWS BAckup > jobs > BAckup jobs
-  ![900](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/900.png)
-  ![901](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/901.png)
+  ![900](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/900.png)
+  ![901](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/901.png)
 
 - NOw create backu plan
-  ![902](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/902.png)
-  ![903](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/903.png)
-  ![904](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/904.png)
-  ![905](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/905.png)
-  ![906](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/906.png)
+  ![902](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/902.png)
+  ![903](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/903.png)
+  ![904](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/904.png)
+  ![905](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/905.png)
+  ![906](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/906.png)
 
 - Now if you want you restore under AWS BAckup > Protected Resources as shown.
-  ![907](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/907.png)
-  ![908](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/908.png)
-  ![909](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/909.png)
-  ![910](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/910.png)
-  ![911](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/911.png)
+  ![907](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/907.png)
+  ![908](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/908.png)
+  ![909](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/909.png)
+  ![910](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/910.png)
+  ![911](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/911.png)
 
 
 # 24. AWS Simple Storage Service (S3):
@@ -4896,33 +4896,33 @@ Now we will discuss about the users & Groups.
 ## S3 Bucket Creation:
 
 - Clcik on create bucket
-  ![912](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/912.png)
+  ![912](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/912.png)
 
 - Fill in the details and click on Create bucket button.
-  ![913](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/913.png)
-  ![914](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/914.png)
-  ![915](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/915.png)
+  ![913](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/913.png)
+  ![914](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/914.png)
+  ![915](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/915.png)
 
 - After bucket creation.
-  ![916](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/916.png)
+  ![916](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/916.png)
 
 ## S3 Data Upload:
 
 - Click on Upload button
-  ![917](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/917.png)
+  ![917](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/917.png)
 
 - Fill in the details and click on upload button.
-  ![918](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/918.png)
+  ![918](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/918.png)
 
 - Select Standard storage class as it is best one in performance.
-  ![919](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/919.png)
-  ![920](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/920.png)
+  ![919](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/919.png)
+  ![920](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/920.png)
 
 - Afte the upload it looks.
-  ![921](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/921.png)
+  ![921](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/921.png)
 
 - For S3 objects or files will have unique url so bucket name is unique.
-  ![922](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/922.png)
+  ![922](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/922.png)
 
 ### index.html
 
@@ -4946,13 +4946,13 @@ Now we will discuss about the users & Groups.
 
 - Using the above code create one html file.
 - If you open it in browser images will not be accessed.
-  ![923](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/923.png)
+  ![923](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/923.png)
 
 - Through Direct URL also cant be accessed
   ```
   https://s3.amazonaws.com/madireddyanil.in/912.png
   ```
-  ![924](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/924.png)
+  ![924](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/924.png)
 
 - You need to grant public access to the objects in S3 bucket.
 - Goto BUcket > Permissions > Bucket policy > Paste the code below.
@@ -4972,24 +4972,24 @@ Now we will discuss about the users & Groups.
       ]
   }
   ```
-  ![925](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/925.png)
+  ![925](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/925.png)
 
 - Copy the BUcket ARN Name.
-  ![926](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/926.png)
+  ![926](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/926.png)
 
 - Include that in S3 BUcket policy for Public access code and paste the code and save changes
-  ![927](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/927.png)
-  ![928](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/928.png)
+  ![927](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/927.png)
+  ![928](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/928.png)
 
 - Now you will be able to access the images in public in browser.
-  ![929](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/929.png)
+  ![929](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/929.png)
 
 ### Monuting s3 in Instance:
 
 - Now if you want to connect s3 to the instance
 - Launch Amazon Linux instance
 - Configure AWS CLI in it and access the S3
-  ![930](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/930.png)
+  ![930](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/930.png)
 
 - Now we will try to mount the s3 into this Instance by 3rd party tools.
 - Use below link for dcoumentation
@@ -5002,27 +5002,27 @@ Now we will discuss about the users & Groups.
   sudo yum install ./mount-s3.rpm
   mount-s3 --version
   ```
-  ![931](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/931.png)
-  ![932](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/932.png)
+  ![931](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/931.png)
+  ![932](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/932.png)
 
 - Now make dir for s3 and mount it using below command
   ```
   mkdir /madireddyanil.in
   mount-s3 madireddyanil.in /maddireddyanil.in
   ```
-  ![933](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/933.png)
+  ![933](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/933.png)
 
 - Listing s3 in server
-  ![934](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/934.png)
+  ![934](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/934.png)
 
 - Created some file in server location.
-  ![935](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/935.png)
+  ![935](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/935.png)
   ```
   touch /madireddyanil.in/s3-dummy{1..10}
   ```
 
 - Now it will reflect in S3 in browser.
-  ![936](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/936.png)
+  ![936](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/936.png)
 
 - If you want to sync two buckets use bucket command
   ```
@@ -5032,93 +5032,93 @@ Now we will discuss about the users & Groups.
 ## Bucket Properties
 
 - Bucket versioning enabling
-  ![937](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/937.png)
+  ![937](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/937.png)
 
 - Enabling Static Website hosting.
-  ![938](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/938.png)
+  ![938](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/938.png)
 
 - Uploading the website into the S3
-  ![939](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/500-939/939.png)
-  ![940](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/940.png)
+  ![939](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/500-939/939.png)
+  ![940](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/940.png)
 
 - Copy the static url.
   ```
   http://madireddyanil.in.s3-website-us-east-1.amazonaws.com
   ```
-  ![941](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/941.png)
-  ![942](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/942.png)
+  ![941](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/941.png)
+  ![942](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/942.png)
 
 - Browse it to get the app.
-  ![943](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/943.png)
+  ![943](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/943.png)
 
 - Before doing it you need to create the another bucket with name ```www.madireddyanil.in```
 - now upload the app in ```www.madireddyanil.in``` s3 bucket and start the Distribution process.
 - But i used the ```madireddyanil.in``` bucket instaed of it we should use the ```www.madireddyanil.in``` bucket
 - Here infront of S3 bucket you cannot keep load balancer so we user cloud front.
 - Click on Create a CloudFront distribution button
-  ![944](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/944.png)
+  ![944](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/944.png)
 
 - Select Domain, Name, Origin access is origin access control settings and click on Create new OAC button.
-  ![945](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/945.png)
-  ![946](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/946.png)
+  ![945](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/945.png)
+  ![946](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/946.png)
 
 - Select Https under viewer protocol policy.
-  ![947](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/947.png)
+  ![947](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/947.png)
 
 - Disable WAF, Select the certificate if no cert create one and validate.
 - and also write the alternate domains as ```www.madireddyanil.in``` and ```cdn.madireddyanil.in```
-  ![948](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/948.png)
+  ![948](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/948.png)
 
 - Default root to index.html and clcik on Create Distribution button.
-  ![949](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/949.png)
+  ![949](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/949.png)
 
 - Now copy the policy
-  ![950](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/950.png)
+  ![950](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/950.png)
 
 - Delete old policy
-  ![951](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/951.png)
+  ![951](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/951.png)
 
 - Update the copied policy in S3 and save changes
-  ![952](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/952.png)
+  ![952](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/952.png)
 
 - Now copy the Domain Name of Distribution.
-  ![953](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/953.png)
+  ![953](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/953.png)
 
 - Browse it in browser to test the application from Content delivery network
-  ![954](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/954.png)
+  ![954](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/954.png)
 
 - Create a record in the Route53 with ```www.madireddyanil.in``` and ```cdn.madireddyanil.in```
-  ![955](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/955.png)
-  ![956](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/956.png)
+  ![955](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/955.png)
+  ![956](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/956.png)
 
 - Now browse with ```www.madireddyanil.in``` and test the app
-  ![957](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/957.png)
+  ![957](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/957.png)
 
 - Now Browse with ```cdn.madireddyanil.in``` and test the app
-  ![958](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/958.png)
+  ![958](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/958.png)
 
 - Now we will redirect the madireddyanil.in bucket to the ```www.madireddyanil.in bucket.```
 - Click on madireddyanil.in bucket no need to put any data in this bucket you can delete it anyway.
-  ![959](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/959.png)
+  ![959](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/959.png)
 
 - Give the redirection to ```www.madireddyanil.in``` bucket.
-  ![960](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/960.png)
+  ![960](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/960.png)
 
 - Now create the record for naked domain.
-  ![961](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/961.png)
+  ![961](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/961.png)
 
 - Now browse with ```madireddyanil.in``` it should be redirected to the ```www.madireddyanil.in``` bucket and cdn
   distribution.
-  ![962](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/962.png)
+  ![962](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/962.png)
 
 - To get the error page
-  ![963](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/963.png)
-  ![964](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/964.png)
-  ![965](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/965.png)
-  ![966](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/966.png)
+  ![963](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/963.png)
+  ![964](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/964.png)
+  ![965](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/965.png)
+  ![966](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/966.png)
 
 - Once you get error you will this page.
-  ![967](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/967.png)
+  ![967](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/967.png)
 
 
 # Replication
@@ -5126,33 +5126,33 @@ Now we will discuss about the users & Groups.
 ## Configuring the Replication:
 
 - create a madireddyanil-replication bucket and use this for replication
-  ![968](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/968.png)
-  ![969](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/969.png)
-  ![970](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/970.png)
+  ![968](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/968.png)
+  ![969](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/969.png)
+  ![970](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/970.png)
 
 - create a madireddyanil bucket and use this for Source
-  ![971](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/971.png)
-  ![972](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/972.png)
-  ![973](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/973.png)
+  ![971](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/971.png)
+  ![972](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/972.png)
+  ![973](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/973.png)
 
 - After creating two buckets
-  ![974](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/974.png)
+  ![974](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/974.png)
 
 - Now in madireddyanil bucket under management
-  ![975](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/975.png)
+  ![975](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/975.png)
 
 - Clcik on Replication rule button to create replication rule
-  ![976](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/976.png)
+  ![976](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/976.png)
 
 - Fill in the details.
 
-  ![977](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/977.png)
-  ![978](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/978.png)
-  ![979](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/979.png)
-  ![980](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/980.png)
-  ![981](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/981.png)
-  ![982](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/982.png)
-  ![983](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/983.png)
+  ![977](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/977.png)
+  ![978](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/978.png)
+  ![979](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/979.png)
+  ![980](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/980.png)
+  ![981](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/981.png)
+  ![982](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/982.png)
+  ![983](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/983.png)
 - Make sure the IAM roles which you select for replications should have below given in Roles > Trusted relationships
 - make sure you add under services s3 and ec2 one correctly.
   ```
@@ -5174,10 +5174,10 @@ Now we will discuss about the users & Groups.
   }
   ```
 - Now once you copy files into madireddyanil bucket
-  ![984](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/984.png)
+  ![984](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/984.png)
 
 - Replication will happen after some time as below.
-  ![985](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/985.png)
+  ![985](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/985.png)
 
 # Bucket POlicies
 
@@ -5206,14 +5206,14 @@ Now we will discuss about the users & Groups.
       ]
   }
   ```
-  ![986](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/986.png)
-  ![987](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/987.png)
+  ![986](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/986.png)
+  ![987](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/987.png)
 
 - Now when you on your VPN it will not access it as IP Changed
-  ![988](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/988.png)
+  ![988](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/988.png)
 
 - After VPN off Our IP will restore so it give access for our IP.
-  ![989](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/989.png)
+  ![989](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/989.png)
 
 - To copy the files from another account instance to the another account s3
 - assign a role to the instance, add that role in the s3 bucket policy like below.
@@ -5253,9 +5253,9 @@ Now we will discuss about the users & Groups.
   ```
 
 - Update bucket policy with the above code and try copying the files to s3 bucket.
-  ![990](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/990.png)
-  ![991](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/991.png)
-  ![992](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/992.png)
+  ![990](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/990.png)
+  ![991](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/991.png)
+  ![992](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/992.png)
 
   ### Command to display only file names
   ```
@@ -5297,30 +5297,30 @@ Now we will discuss about the users & Groups.
 
 - Before Creating Database we need to create the ```Subnetgroup```
 - Come to Amazon RDS > Subnetgroup > Create DB Subnet group
-  ![994](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/994.png)
+  ![994](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/994.png)
 
 - Fill in the details.
 
-  ![995](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/995.png)
-  ![996](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/996.png)
-  ![997](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/997.png)
+  ![995](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/995.png)
+  ![996](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/996.png)
+  ![997](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/997.png)
 
 - RDS > Database > Create database
-  ![998](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/998.png)
-  ![999](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/999.png)
-  ![1000](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1000.png)
-  ![1001](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1001.png)
-  ![1002](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1002.png)
-  ![1003](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1003.png)
-  ![1004](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1004.png)
-  ![1005](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1005.png)
-  ![1006](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1006.png)
-  ![1007](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1007.png)
-  ![1008](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1008.png)
-  ![1008-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1008-1.png)
+  ![998](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/998.png)
+  ![999](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/999.png)
+  ![1000](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1000.png)
+  ![1001](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1001.png)
+  ![1002](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1002.png)
+  ![1003](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1003.png)
+  ![1004](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1004.png)
+  ![1005](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1005.png)
+  ![1006](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1006.png)
+  ![1007](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1007.png)
+  ![1008](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1008.png)
+  ![1008-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1008-1.png)
 
 - Diagram Demonstrating the Database Architecture
-  ![1009](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1009.png)
+  ![1009](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1009.png)
 
 - Now we need to connect to the database.
 - There are two ways in connecting.
@@ -5339,39 +5339,39 @@ Now we will discuss about the users & Groups.
       ```
 
 - After installing it looks like this when you open the workbench app.
-  ![1010](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1010.png)
+  ![1010](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1010.png)
 
 ## Connecting RDS in WorkBench
 
 - Copy the Database Endpoint.    
-  ![1012](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1012.png)
+  ![1012](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1012.png)
   ```
   demoapp-database-1.cxia00csqptb.us-east-1.rds.amazonaws.com
   ```
 - Click on Plus button
-  ![1013](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1013.png)
+  ![1013](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1013.png)
 
 - Fill in the details, Name, Hostname(RDS Endpoint) and click on test connection.
-  ![1014](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1014.png)
+  ![1014](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1014.png)
 
 - Enter the password and clcik on ok.
-  ![1015](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1015.png)
+  ![1015](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1015.png)
 
 - You will get the successful message.
-  ![1016](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1016.png)
+  ![1016](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1016.png)
 
 - Click ok to finish and add the RDS in the work bench.
-  ![1017](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1017.png)
+  ![1017](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1017.png)
 
 - RDS Added successfully. oprn it.
-  ![1018](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1018.png)
-  ![1019](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1019.png)
+  ![1018](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1018.png)
+  ![1019](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1019.png)
 
 - It looks this way.
-  ![1020](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1020.png)
+  ![1020](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1020.png)
 
 - Under schemas in home page click on Add button.
-  ![1021](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1021.png)
+  ![1021](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1021.png)
 
   ### Data From line 1 to 247
   ```
@@ -5624,11 +5624,11 @@ Now we will discuss about the users & Groups.
   -- Dump completed on 2012-08-07 18:37:36
   ```
 - Now clcik on Execute button.
-  ![1022](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1022.png)
+  ![1022](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1022.png)
 
 
 - Now we can connect through Linux Servers, for that we will launch the Ubuntu server
-  ![1011](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1011.png)
+  ![1011](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1011.png)
 
   ```
   apt install python3 -y
@@ -5683,16 +5683,16 @@ Now we will discuss about the users & Groups.
   INFO:     Waiting for application startup.
   INFO:     Application startup complete.
   ```
-  ![1023](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1023.png)
+  ![1023](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1023.png)
 
 - Now browse with below url
   ```
   http://34.207.96.253:8080
   ```
-  ![1024](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1024.png)
+  ![1024](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1024.png)
 
 - After ping once in browser
-  ![1025](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1025.png)
+  ![1025](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1025.png)
 
 - Now
   ### demo.py
@@ -5732,11 +5732,11 @@ Now we will discuss about the users & Groups.
   http://34.207.96.253:8080
   http://34.207.96.253:8080/docs
   ```
-  ![1026](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1026.png)
+  ![1026](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1026.png)
 
 - Now we will do failover of RDS.
-  ![1027](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1027.png)
-  ![1028](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1028.png)
+  ![1027](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1027.png)
+  ![1028](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1028.png)
   ### app.py
   ```
   import sqlalchemy as sal
@@ -5756,55 +5756,55 @@ Now we will discuss about the users & Groups.
   ```
   watch python3 app.py
   ```
-  ![1029](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1029.png)
+  ![1029](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1029.png)
 
   ```
   nslookup demoapp-database-1.cxia00csqptb.us-east-1.rds.amazonaws.com
   ```
-  ![1030](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1030.png)
-  ![1031](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1031.png)
+  ![1030](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1030.png)
+  ![1031](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1031.png)
 
 
 
 # 25.2 AWS DynamoDB:
 
 - DynamoDB Home
-  ![1032](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1032.png)
+  ![1032](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1032.png)
 
 - DynamoDB > Tables > Create table
-  ![1033](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1033.png)
+  ![1033](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1033.png)
 
 - Fill in the details as below.
-  ![1034](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1034.png)
-  ![1035](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1035.png)
+  ![1034](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1034.png)
+  ![1035](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1035.png)
 
 - After table creation.
-  ![1036](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1036.png)
+  ![1036](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1036.png)
 
 - AWS Lambda creation.
-  ![1037](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1037.png)
+  ![1037](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1037.png)
 
 - Lambda > Functions > Create function
-  ![1038](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1038.png)
-  ![1039](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1039.png)
-  ![1040](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1040.png)
+  ![1038](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1038.png)
+  ![1039](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1039.png)
+  ![1040](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1040.png)
 
 - Now We have created one table and one lambda function so to make access between services we have to create one role.
 - Now under Lambda function > configuration > Permissions
-  ![1041](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1041.png)
+  ![1041](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1041.png)
 
 - There will be one role created, for that role we give Dynamo DB permissions as lambda-function access the DynamoDB
 - So click on the role and open it.
-  ![1042](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1042.png)
+  ![1042](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1042.png)
 
 - Goto attach policies and add the DynamoDB full access.
-  ![1043](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1043.png)
-  ![1044](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1044.png)
-  ![1045](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1045.png)
+  ![1043](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1043.png)
+  ![1044](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1044.png)
+  ![1045](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1045.png)
 
 - Now we will test the role. Lambda functio > Test
 - create new event and save then test.
-  ![1046](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1046.png)
+  ![1046](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1046.png)
 
 - Use the below to test the access.
   ### Test Code:
@@ -5829,10 +5829,10 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1047](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1047.png)
+  ![1047](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1047.png)
 
 - After saving click on test button, if it returns code 200, its success.
-  ![1048](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1048.png)
+  ![1048](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1048.png)
 
 - Now in the above same code change the id to 20 and then save it and test it again.
   ### Test Code:
@@ -5857,7 +5857,7 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1049](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1049.png)
+  ![1049](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1049.png)
 
 - Now in the above same code change the id to 30 and then save it and test it again.
   ### Test Code:
@@ -5882,55 +5882,55 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1050](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1050.png)
+  ![1050](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1050.png)
 
 - Now if you see in the Dynamodb (```Bookstore```) > Explore items you can see some entries which we pushed from lambda.
-  ![1051](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1051.png)
-  ![1052](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1052.png)
+  ![1051](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1051.png)
+  ![1052](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1052.png)
 
 - So as Testing completed we will delete the all entries in bookstore.
-  ![1053](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1053.png)
-  ![1054](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1054.png)
+  ![1053](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1053.png)
+  ![1054](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1054.png)
 
 - Now we need to Expose the above setup to the outside world we setup the API Gateway. as shown in the below diagram.
-  ![1055](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1055.png)
+  ![1055](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1055.png)
 
 - Now We will create the API Gateway.
-  ![1056](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1056.png)
+  ![1056](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1056.png)
 
 - Click on REST API as we are using it for lambda function
-  ![1057](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1057.png)
+  ![1057](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1057.png)
 
 - Fill in the details and create API
-  ![1058](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1058.png)
-  ![1059](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1059.png)
+  ![1058](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1058.png)
+  ![1059](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1059.png)
 
 - Click on create resources and create multiple resources if required as below.
 - we create 3 resources ```orders, payments and books```
-  ![1060](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1060.png)
-  ![1061](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1061.png)
-  ![1062](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1062.png)
-  ![1063](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1063.png)
-  ![1064](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1064.png)
-  ![1065](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1065.png)
-  ![1066](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1066.png)
-  ![1067](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1067.png)
-  ![1068](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1068.png)
+  ![1060](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1060.png)
+  ![1061](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1061.png)
+  ![1062](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1062.png)
+  ![1063](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1063.png)
+  ![1064](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1064.png)
+  ![1065](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1065.png)
+  ![1066](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1066.png)
+  ![1067](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1067.png)
+  ![1068](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1068.png)
 
 - Now under the resource we can create the methods.
 - Now we will create the methods ```PUT, POST and DELETE``` to ```books``` resource.
-  ![1069](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1069.png)
-  ![1070](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1070.png)
-  ![1071](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1071.png)
-  ![1072](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1072.png)
-  ![1073](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1073.png)
-  ![1074](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1074.png)
-  ![1071](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1071.png)
-  ![1075](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1075.png)
-  ![1076](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1076.png)
-  ![1077](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1077.png)
-  ![1071](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1071.png)
-  ![1078](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1078.png)
+  ![1069](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1069.png)
+  ![1070](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1070.png)
+  ![1071](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1071.png)
+  ![1072](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1072.png)
+  ![1073](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1073.png)
+  ![1074](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1074.png)
+  ![1071](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1071.png)
+  ![1075](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1075.png)
+  ![1076](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1076.png)
+  ![1077](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1077.png)
+  ![1071](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1071.png)
+  ![1078](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1078.png)
 
 - Now we will test all 3 methods(```PUT, POST and DELETE```) in ```books``` resource
 
@@ -5960,10 +5960,10 @@ Now we will discuss about the users & Groups.
 }
 ```
 
-![1079](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1079.png)
+![1079](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1079.png)
 
 - Statis code 200 is success.
-  ![1080](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1080.png)
+  ![1080](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1080.png)
 
 ### Testing PUT 2:
 
@@ -5983,10 +5983,10 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1081](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1081.png)
+  ![1081](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1081.png)
 
 - Statis code 200 is success.
-  ![1082](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1082.png)
+  ![1082](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1082.png)
 
 ### Testing PUT 3:
 
@@ -6005,10 +6005,10 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1083](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1083.png)
+  ![1083](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1083.png)
 
 - Statis code 200 is success.
-  ![1084](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1084.png)
+  ![1084](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1084.png)
 
 ### Testing PUT 4:
 
@@ -6028,7 +6028,7 @@ Now we will discuss about the users & Groups.
   }
   ```
 - Statis code 200 is success.
-  ![1085](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1085.png)
+  ![1085](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1085.png)
 
 ### Testing PUT 5:
 
@@ -6046,10 +6046,10 @@ Now we will discuss about the users & Groups.
   }
   ```
 - Statis code 200 is success.
-  ![1086](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1086.png)
+  ![1086](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1086.png)
 
 - Now if you check the DynamoDB > Explore items > bookstore, our Test Methos PUT data is written.
-  ![1087](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1087.png)
+  ![1087](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1087.png)
 
 - Now we will test the POST Method.
   ### Testing POST 1:
@@ -6064,7 +6064,7 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1088](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1088.png)
+  ![1088](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1088.png)
 
   ### Testing POST 2:
   ```
@@ -6078,7 +6078,7 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1089](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1089.png)
+  ![1089](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1089.png)
 
 - Now we will test the DELETE Method.
   ### Testing DELETE 1:
@@ -6093,7 +6093,7 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1090](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1090.png)
+  ![1090](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1090.png)
 
   ### Testing DELETE 2:
   ```
@@ -6107,28 +6107,28 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1091](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1091.png)
+  ![1091](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1091.png)
 
 - Similarly repeat till id 50
 
 - After deleting ids now it empty
-  ![1092](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1092.png)
+  ![1092](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1092.png)
 
 - Now All methods testing is fully successfull, so we will deploy the API
-  ![1093](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1093.png)
-  ![1094](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1094.png)
+  ![1093](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1093.png)
+  ![1094](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1094.png)
 
 - Now Once the stage Dev is created we will test the url shown below.
-  ![1095](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1095.png)
+  ![1095](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1095.png)
 
 - If any issue you can enable cors in the API
-  ![1096](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1096.png)
+  ![1096](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1096.png)
 
 - For testing API we use the Postman tool, copy the url from API > APIs > OurAPI > Stage
-  ![1097](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1097.png)
+  ![1097](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1097.png)
 
 - Paste in the Postman app.
-  ![1098](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1098.png)
+  ![1098](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1098.png)
 
   ### Testing PUT method:
   ```
@@ -6152,12 +6152,12 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1099](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1099.png)
-  ![1100](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1100.png)
-  ![1101](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1101.png)
+  ![1099](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1099.png)
+  ![1100](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1100.png)
+  ![1101](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1101.png)
 
 - Now if you check the explore items in DB
-  ![1102](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1102.png)
+  ![1102](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1102.png)
 
   ### Testing POST method:
   ```
@@ -6171,9 +6171,9 @@ Now we will discuss about the users & Groups.
     }
   }
   ```
-  ![1103](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1103.png)
-  ![1104](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1104.png)
-  ![1105](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1105.png)
+  ![1103](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1103.png)
+  ![1104](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1104.png)
+  ![1105](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1105.png)
 
   ### Testing DELETE method:
   ```
@@ -6188,7 +6188,7 @@ Now we will discuss about the users & Groups.
   }
   ```
 - delete all entries one by on as we deleted earlier.    
-  ![1106](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1106.png)
+  ![1106](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1106.png)
 
 
 # 25.3 Amazon DocumentDB or MangoDB
@@ -6198,19 +6198,19 @@ Now we will discuss about the users & Groups.
 ## Amazon DocumentDB Creation:
 
 - Click on Create button
-  ![1107](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1107.png)
+  ![1107](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1107.png)
 - Before that you should have created Subnet group for DB
-  ![1107-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1107.png)
+  ![1107-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1107.png)
 
 - Fill in the details.
 - No of instances should be 3 we have selected onlt 1
-  ![1108](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1108.png)
-  ![1109](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1109.png)
-  ![1110](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1110.png)
-  ![1111](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1111.png)
-  ![1112](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1112.png)
-  ![1113](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1113.png)
-  ![1114](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1114.png)
+  ![1108](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1108.png)
+  ![1109](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1109.png)
+  ![1110](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1110.png)
+  ![1111](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1111.png)
+  ![1112](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1112.png)
+  ![1113](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1113.png)
+  ![1114](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1114.png)
 
 # AWS ElasticCache
 
@@ -6219,33 +6219,33 @@ Now we will discuss about the users & Groups.
 ## Amazon ElasticCache Creation:
 
 - Subnet group creation for Elastic cache.
-  ![1115](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1115.png)
-  ![1116](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1116.png)
-  ![1117](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1117.png)
-  ![1118](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1118.png)
-  ![1119](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1119.png)
-  ![1120](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1120.png)
+  ![1115](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1115.png)
+  ![1116](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1116.png)
+  ![1117](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1117.png)
+  ![1118](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1118.png)
+  ![1119](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1119.png)
+  ![1120](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1120.png)
 
 - Now elasticCache creation, go to create cluster > Create Redis OSS cache.
-  ![1121](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1121.png)
-  ![1122](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1122.png)
-  ![1123](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1123.png)
-  ![1124](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1124.png)
+  ![1121](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1121.png)
+  ![1122](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1122.png)
+  ![1123](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1123.png)
+  ![1124](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1124.png)
 
 - Now as the above we can do or come back and select the Cluster cache instead of Easy Create
-  ![1125](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1125.png)
-  ![1126](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1126.png)
-  ![1127](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1127.png)
-  ![1128](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1128.png)
-  ![1129](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1129.png)
-  ![1130](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1130.png)
-  ![1131](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1131.png)
-  ![1132](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1132.png)
+  ![1125](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1125.png)
+  ![1126](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1126.png)
+  ![1127](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1127.png)
+  ![1128](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1128.png)
+  ![1129](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1129.png)
+  ![1130](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1130.png)
+  ![1131](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1131.png)
+  ![1132](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1132.png)
 
 - So Document DB and ElasticCache will take time to get ready till then.
 - We need to connect to the DBs right we do that.
 - Now Launch the t2.medium Ubuntu Instance with apt update && apt install unzip -y
-  ![1133](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1133.png)
+  ![1133](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1133.png)
 
 - Now login to the above instance. to install so Mango DB Dependencies.
   ### Installing Mango shell:
@@ -6264,21 +6264,21 @@ Now we will discuss about the users & Groups.
     - If any doubts reach above install url.
     - Now after installing Mango Shell we need to connect to the mangoDB.
     - Copy the certificate in the DocumentDB > Cluster > ourCluster > Connectivity & Security
-      ![1134](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1134.png)
-      ![1135](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1135.png)
+      ![1134](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1134.png)
+      ![1135](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1135.png)
 
     - A pem is created with above command.
-      ![1136](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1136.png)
+      ![1136](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1136.png)
 
     - Connecting to the DB now.
-      ![1137](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1137.png)
-      ![1138](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1138.png)
+      ![1137](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1137.png)
+      ![1138](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1138.png)
 
     - Try Checking Replica sets by using below command
       ```
       rs.status()
       ```
-      ![1139](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1139.png)
+      ![1139](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1139.png)
       ### To Check DB in DB
       ```
       show dbs;
@@ -6292,13 +6292,13 @@ Now we will discuss about the users & Groups.
                   { "_id" : 4, "name" : "Katie", "status": "active", "level": 3, "score":27, "status": "married", "emp": "yes", "kids": 3}
                   ])
       ```
-      ![1140](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1140.png)
+      ![1140](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1140.png)
 
       ### Command to find the details with name
       ```
       db.helo.find({name: "Katie"})
       ```
-      ![1141](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1141.png)
+      ![1141](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1141.png)
 
     - Executing some DB commands in Mango Shell.
       ```
@@ -6306,29 +6306,29 @@ Now we will discuss about the users & Groups.
       use test;
       show collections;
       ```
-      ![1142](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1142.png)
+      ![1142](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1142.png)
 
     - We can use Studio3T to connect to the Document DB via graphically.
     - Download and install the studio3T from below url
       ```
       https://studio3t.com/download/
       ```
-      ![1143](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1143.png)
-      ![1144](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1144.png)
-      ![1145](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1145.png)
-      ![1146](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1146.png)
-      ![1147](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1147.png)
-      ![1148](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1148.png)
-      ![1149](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1149.png)
-      ![1150](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1150.png)
-      ![1151](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1151.png)
-      ![1151-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1151-01.png)
-      ![1151-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1151-02.png)
-      ![1152](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1152.png)
-      ![1153](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1153.png)
-      ![1154](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1154.png)
-      ![1155](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1155.png)
-      ![1156](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1156.png)
+      ![1143](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1143.png)
+      ![1144](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1144.png)
+      ![1145](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1145.png)
+      ![1146](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1146.png)
+      ![1147](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1147.png)
+      ![1148](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1148.png)
+      ![1149](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1149.png)
+      ![1150](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1150.png)
+      ![1151](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1151.png)
+      ![1151-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1151-01.png)
+      ![1151-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1151-02.png)
+      ![1152](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1152.png)
+      ![1153](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1153.png)
+      ![1154](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1154.png)
+      ![1155](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1155.png)
+      ![1156](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1156.png)
 
 - Now Come to redis
 - in the same instance install thhe following.
@@ -6353,8 +6353,8 @@ Now we will discuss about the users & Groups.
   ```
   redis-cli -h redis-elstic.nwaor1.ng.0001.use1.cache.amazonaws.com
   ```
-  ![1157](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1157.png)
-  ![1158](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1158.png)
+  ![1157](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1157.png)
+  ![1158](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1158.png)
 
     
 
@@ -6369,25 +6369,25 @@ Now we will discuss about the users & Groups.
 ## IAM ROLE:
 
 - We will create one role with below permissions and we assign to the Ec2 instances.
-  ![1159](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1159.png)
+  ![1159](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1159.png)
 
 - Now we will launch 2 instances for this demo
-  ![1160](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1160.png)
+  ![1160](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1160.png)
 
 ## INstance Launching
 
 - Now we will create tags for the two instances.
-  ![1163](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1163.png)
-  ![1164](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1164.png)
+  ![1163](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1163.png)
+  ![1164](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1164.png)
 
 ## RUN COMMAND
 
 - Now Come to AWS System Manager > Run Command., Click on Run a Command button.
-  ![1161](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1161.png)
-  ![1162](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1162.png)
+  ![1161](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1161.png)
+  ![1162](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1162.png)
 
 - Select AWS-RunShellScript
-  ![1165](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1165.png)
+  ![1165](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1165.png)
 
 - Provide shell commands to execute.
   ```
@@ -6399,37 +6399,37 @@ Now we will discuss about the users & Groups.
   service nginx start
   systemctl enable nginx
   ```
-  ![1166](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1166.png)
+  ![1166](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1166.png)
 
 - Provide the Tag for which Run command should execute.
-  ![1167](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1167.png)
+  ![1167](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1167.png)
 
 - Disable s3 bucket option and click on Run.
-  ![1168](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1168.png)
+  ![1168](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1168.png)
 
 - Run will start and will be in progess.
-  ![1169](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1169.png)
+  ![1169](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1169.png)
 
 - Command History will look like this.
-  ![1170](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1170.png)
+  ![1170](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1170.png)
 
 - Now when you browse nginx you will get if installed correctly by run command. in both servers.
-  ![1171](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1171.png)
-  ![1172](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1172.png)
+  ![1171](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1171.png)
+  ![1172](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1172.png)
 
 ## Installing Cloudwatch Agent by RunCommand:
 
 ### COPY CLOUDWATCH AGENT:
 
 - AWS Systems Manager > Run Command > Runcommand Button
-  ![1173](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1173.png)
+  ![1173](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1173.png)
 
 - Select AWS-ConfigureAWSPackage which will copy the cloud watch agent into servers.
-  ![1174](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1174.png)
-  ![1175](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1175.png)
-  ![1176](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1176.png)
-  ![1177](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1177.png)
-  ![1178](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1178.png)
+  ![1174](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1174.png)
+  ![1175](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1175.png)
+  ![1176](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1176.png)
+  ![1177](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1177.png)
+  ![1178](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1178.png)
 
 ## CONFIGURING THE COPIED CLOUDWATCH AGENT
 
@@ -6439,49 +6439,49 @@ Now we will discuss about the users & Groups.
 - Server 1 configuration
 - actually you can do it only in one server but i did in 2 servers
 - you can skip the server 2 if needed and follow ```copy to new``` process which explained below
-  ![1179](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1179.png)
-  ![1180](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1180.png)
-  ![1182](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1182.png)
-  ![1184](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1184.png)
-  ![1186](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1186.png)
-  ![1188](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1188.png)
+  ![1179](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1179.png)
+  ![1180](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1180.png)
+  ![1182](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1182.png)
+  ![1184](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1184.png)
+  ![1186](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1186.png)
+  ![1188](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1188.png)
 
 - Server 2 configuration
-  ![1181](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1181.png)
-  ![1183](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1183.png)
-  ![1185](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1185.png)
-  ![1187](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1187.png)
-  ![1189](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1189.png)
+  ![1181](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1181.png)
+  ![1183](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1183.png)
+  ![1185](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1185.png)
+  ![1187](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1187.png)
+  ![1189](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1189.png)
 
 - After the configuration you can see this parameter in parameter store under AWS Systems Manager.
-  ![1190](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1190.png)
-  ![1191](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1191.png)
+  ![1190](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1190.png)
+  ![1191](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1191.png)
 
 - Now you can go to AWS Systems Manager > Runcommand > Command History
 - Select command id which has AWS-ConfigureAWSPackage as Document name and clcik on ```copy to new``` button
 - and select the targets and copy the same config to as many as targets possible if needed.
-  ![1192](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1192.png)
-  ![1193](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1193.png)
-  ![1194](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1194.png)
+  ![1192](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1192.png)
+  ![1193](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1193.png)
+  ![1194](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1194.png)
 
 ## CONFIGURING THE CLOUD WATCH MANAGER AGENT
 
 - Now we will configure the AmazonCloudWatch-ManagerAgent in the two instances.
-  ![1195](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1195.png)
-  ![1196](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1196.png)
-  ![1197](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1197.png)
-  ![1198](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1198.png)
-  ![1199](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1199.png)
-  ![1200](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1200.png)
-  ![1201](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1201.png)
+  ![1195](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1195.png)
+  ![1196](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1196.png)
+  ![1197](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1197.png)
+  ![1198](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1198.png)
+  ![1199](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1199.png)
+  ![1200](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1200.png)
+  ![1201](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1201.png)
 
 - After configure the AmazonCloudWatch-ManagerAgent in the two instances this will be shown in cloudwatch > Metrics
-  ![1202](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1202.png)
+  ![1202](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1202.png)
 
 - This will be shown in shown in Cloudwatch > Log Groups
-  ![1203](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1203.png)
-  ![1204](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1204.png)
-  ![1205](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1205.png)
+  ![1203](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1203.png)
+  ![1204](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1204.png)
+  ![1205](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1205.png)
 
   ## Log Insights
   ### Checking with 404:
@@ -6491,7 +6491,7 @@ Now we will discuss about the users & Groups.
   | filter @message like /404/
   | limit 200
   ```
-  ![1206](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1206.png)
+  ![1206](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1206.png)
 
   ### Checking with IP:
   ```
@@ -6500,16 +6500,16 @@ Now we will discuss about the users & Groups.
   | filter @message like "49.47.233.31"
   | limit 200
   ```
-  ![1207](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1207.png)
+  ![1207](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1207.png)
 
 ## SSM Hybrid Activation:
 
 - This manages the instances which are out side AWS.
-  ![1208](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1208.png)
-  ![1209](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1209.png)
+  ![1208](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1208.png)
+  ![1209](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1209.png)
 
 - You will get activation code and ID
-  ![1210](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1210.png)
+  ![1210](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1210.png)
 
 - Now launch the Azure VM Ubuntu in azure.
 - Use the below commands and install SSM Hybrid
@@ -6537,10 +6537,10 @@ Now we will discuss about the users & Groups.
   cp scorekeeper.js /var/www/html/scorekeeper.js
   echo "<h1>$(cat /etc/hostname)</h1>" >> /var/www/html/index.nginx-debian.html
   ```
-  ![1211](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1211.png)
-  ![1212](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1212.png)
-  ![1213](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1213.png)
-  ![1214](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1214.png)
+  ![1211](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1211.png)
+  ![1212](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1212.png)
+  ![1213](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1213.png)
+  ![1214](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1214.png)
 
 - Now you can browse the azure server nginx.
 
@@ -6548,60 +6548,60 @@ Now we will discuss about the users & Groups.
 
 ## Configuring SNS (Simple Notification Service):
 
-![1215](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1215.png)
+![1215](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1215.png)
 
 - We will configure the Memory Monitor and Disk MOnitor for the instances
-  ![1216](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1216.png)
-  ![1217](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1217.png)
-  ![1218](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1218.png)
-  ![1219](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1219.png)
-  ![1220](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1220.png)
+  ![1216](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1216.png)
+  ![1217](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1217.png)
+  ![1218](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1218.png)
+  ![1219](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1219.png)
+  ![1220](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1220.png)
 
 - Topic Creation and subscription creation.
-  ![1221](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1221.png)
-  ![1222](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1222.png)
-  ![1223](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1223.png)
-  ![1224](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1224.png)
-  ![1225](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1225.png)
-  ![1225-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1225-01.png)
+  ![1221](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1221.png)
+  ![1222](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1222.png)
+  ![1223](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1223.png)
+  ![1224](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1224.png)
+  ![1225](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1225.png)
+  ![1225-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1225-01.png)
 
 - In Pager Duty Integrationg the Slack Extension.
-  ![1226](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1226.png)
+  ![1226](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1226.png)
 
 - Now for two instances we will ```System-Manager-01:```i-087690faf88417e6f(Monitor Memory)
 - ```System-Manager-02:```i-0b343119cbbd2f780(Disk Monitor)
-  ![1226-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1226-01.png)
-  ![1226-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1226-02.png)
+  ![1226-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1226-01.png)
+  ![1226-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1226-02.png)
 - Now we will create alarms for that
-  ![1227](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1227.png)
-  ![1228](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1228.png)
-  ![1229](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1229.png)
-  ![1230](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1230.png)
-  ![1231](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1231.png)
-  ![1232](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1232.png)
-  ![1233](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1233.png)
-  ![1234](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1234.png)
-  ![1235](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1235.png)
-  ![1236](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1236.png)
-  ![1237](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1237.png)
-  ![1238](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1238.png)
-  ![1239](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1239.png)
-  ![1240](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1240.png)
-  ![1241](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1241.png)
-  ![1242](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1242.png)
-  ![1243](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1243.png)
-  ![1244](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1244.png)
-  ![1245](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1245.png)
-  ![1246](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1246.png)
-  ![1247](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1247.png)
-  ![1248](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1248.png)
-  ![1249](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1249.png)
-  ![1250](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1250.png)
-  ![1251](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1251.png)
-  ![1252](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1252.png)
-  ![1253](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1253.png)
-  ![1254](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1254.png)
-  ![1255](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1255.png)
+  ![1227](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1227.png)
+  ![1228](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1228.png)
+  ![1229](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1229.png)
+  ![1230](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1230.png)
+  ![1231](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1231.png)
+  ![1232](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1232.png)
+  ![1233](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1233.png)
+  ![1234](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1234.png)
+  ![1235](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1235.png)
+  ![1236](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1236.png)
+  ![1237](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1237.png)
+  ![1238](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1238.png)
+  ![1239](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1239.png)
+  ![1240](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1240.png)
+  ![1241](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1241.png)
+  ![1242](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1242.png)
+  ![1243](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1243.png)
+  ![1244](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1244.png)
+  ![1245](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1245.png)
+  ![1246](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1246.png)
+  ![1247](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1247.png)
+  ![1248](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1248.png)
+  ![1249](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1249.png)
+  ![1250](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1250.png)
+  ![1251](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1251.png)
+  ![1252](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1252.png)
+  ![1253](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1253.png)
+  ![1254](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1254.png)
+  ![1255](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1255.png)
 
 
 # 27. AWS Infrastructure As A Code:
@@ -6870,20 +6870,20 @@ Now we will discuss about the users & Groups.
   }
   ```
 
-![1257](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1257.png)
-![1258](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1258.png)
-![1259](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1259.png)
-![1260](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1260.png)
-![1261](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1261.png)
-![1262](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1262.png)
-![1263](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1263.png)
-![1264](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1264.png)
-![1265](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1265.png)
-![1266](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1266.png)
-![1267](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1267.png)
-![1268](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1268.png)
-![1269](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1269.png)
-![1270](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1270.png)
+![1257](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1257.png)
+![1258](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1258.png)
+![1259](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1259.png)
+![1260](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1260.png)
+![1261](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1261.png)
+![1262](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1262.png)
+![1263](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1263.png)
+![1264](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1264.png)
+![1265](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1265.png)
+![1266](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1266.png)
+![1267](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1267.png)
+![1268](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1268.png)
+![1269](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1269.png)
+![1270](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1270.png)
 
 - Now we have added one subnet additionally
   ### Updated-Stack-o1.json
@@ -7179,13 +7179,13 @@ Now we will discuss about the users & Groups.
   }
   ```
 
-  ![1271](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1271.png)
-  ![1272](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1272.png)
-  ![1273](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1273.png)
-  ![1274](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1274.png)
-  ![1275](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1275.png)
-  ![1276](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1276.png)
-  ![1277](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1277.png)
+  ![1271](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1271.png)
+  ![1272](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1272.png)
+  ![1273](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1273.png)
+  ![1274](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1274.png)
+  ![1275](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1275.png)
+  ![1276](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1276.png)
+  ![1277](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1277.png)
 
 # StackSets in CloudFormation:
 
@@ -7196,47 +7196,47 @@ Now we will discuss about the users & Groups.
   https://s3.amazonaws.com/cloudformation-stackset-sample-templates-us-east-1/AWSCloudFormationStackSetAdministrationRole.yml
   ```
 - We need to do this in Master account.
-  ![1278](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1278.png)
-  ![1279](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1279.png)
-  ![1280](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1280.png)
-  ![1281](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1281.png)
-  ![1282](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1282.png)
-  ![1283](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1283.png)
-  ![1284](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1284.png)
+  ![1278](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1278.png)
+  ![1279](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1279.png)
+  ![1280](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1280.png)
+  ![1281](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1281.png)
+  ![1282](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1282.png)
+  ![1283](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1283.png)
+  ![1284](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1284.png)
 
 - Now Do it in Slave2 Account
   ### AWSCloudFormationStackSetExecutionRole.yml
   ```
   https://s3.amazonaws.com/cloudformation-stackset-sample-templates-us-east-1/AWSCloudFormationStackSetExecutionRole.yml
   ```
-  ![1286](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1286.png)
-  ![1285](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1285.png)
-  ![1284](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1284.png)
+  ![1286](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1286.png)
+  ![1285](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1285.png)
+  ![1284](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1284.png)
 
 - Similarly Now Do it in Slave1 Account
   ### AWSCloudFormationStackSetExecutionRole.yml
   ```
   https://s3.amazonaws.com/cloudformation-stackset-sample-templates-us-east-1/AWSCloudFormationStackSetExecutionRole.yml
   ```
-  ![1286](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1286.png)
-  ![1287](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1287.png)
-  ![1284](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1284.png)
+  ![1286](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1286.png)
+  ![1287](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1287.png)
+  ![1284](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1284.png)
 
 - EXTRA
-  ![1288](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1288.png)
-  ![1289](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1289.png)
-  ![1290](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1290.png)
-  ![1291](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1291.png)
-  ![1292](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1292.png)
-  ![1293](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1293.png)
-  ![1294](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1294.png)
-  ![1295](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1295.png)
-  ![1296](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1296.png)
-  ![1297](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1297.png)
+  ![1288](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1288.png)
+  ![1289](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1289.png)
+  ![1290](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1290.png)
+  ![1291](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1291.png)
+  ![1292](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1292.png)
+  ![1293](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1293.png)
+  ![1294](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1294.png)
+  ![1295](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1295.png)
+  ![1296](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1296.png)
+  ![1297](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1297.png)
 
 ## Creating Stack Set In Root Account.
 
-![1298](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1298.png)
+![1298](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1298.png)
 
 ### AWS-Sample-Infra.json
 
@@ -7548,12 +7548,12 @@ Now we will discuss about the users & Groups.
   }
   ```
 
-![1299](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1299.png)
-![1300](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1300.png)
-![1301](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1301.png)
-![1302](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1302.png)
-![1303](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1303.png)
-![1304](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1304.png)
+![1299](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1299.png)
+![1300](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1300.png)
+![1301](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1301.png)
+![1302](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1302.png)
+![1303](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1303.png)
+![1304](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1304.png)
 
 - Now your VPC and Instace will get created in 2 account please check.
 
@@ -8050,11 +8050,11 @@ Now we will discuss about the users & Groups.
       }
   }
   ```
-  ![1304-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1304-01.png)
+  ![1304-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1304-01.png)
 
 - Now create Stack
-  ![1305](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1305.png)
-  ![1306](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1306.png)
+  ![1305](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1305.png)
+  ![1306](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1306.png)
 
   ### vpc-ec2-parent-nested.json
   ```
@@ -8111,16 +8111,16 @@ Now we will discuss about the users & Groups.
       }
   }
   ```
-  ![1307](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1307.png)
-  ![1308](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1308.png)
-  ![1309](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1309.png)
-  ![1310](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1310.png)
-  ![1311](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1311.png)
-  ![1312](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1312.png)
-  ![1313](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1313.png)
-  ![1314](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1314.png)
-  ![1315](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1315.png)
-  ![1316](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1316.png)
+  ![1307](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1307.png)
+  ![1308](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1308.png)
+  ![1309](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1309.png)
+  ![1310](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1310.png)
+  ![1311](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1311.png)
+  ![1312](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1312.png)
+  ![1313](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1313.png)
+  ![1314](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1314.png)
+  ![1315](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1315.png)
+  ![1316](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1316.png)
 
 ### DISADVANTAGES:
 
@@ -8398,10 +8398,10 @@ Limitations with Cloudformation:
 ## 1. Virtual machines vs Containers:
 
 - Sample diagram demonstrating the Virtual machines vs Containers.
-  ![1317](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1317.png)
+  ![1317](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1317.png)
 
 - Explonation Diagram
-  ![1318](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1318.png)
+  ![1318](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1318.png)
 
 - Launching the ubuntu instance for docker installation
   ```
@@ -8413,7 +8413,7 @@ Limitations with Cloudformation:
   ifconfig
   ```
 - Intially try ifconfig
-  ![1319](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1319.png)
+  ![1319](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1319.png)
 
   ```
   curl https://get.docker.com | bash
@@ -8421,14 +8421,14 @@ Limitations with Cloudformation:
   ```
 
 - Docker installed successfully.
-  ![1321](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1321.png)
+  ![1321](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1321.png)
 
   ```
   ifconfig
   ```
 
 - After docker installation try ifconfig
-  ![1320](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1320.png)
+  ![1320](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1320.png)
 
 - Sample docker run
   ```
@@ -8441,9 +8441,9 @@ Limitations with Cloudformation:
     - -p --> port number in:Expose
     - nginx:latest --> image
 
-  ![1322](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1322.png)
+  ![1322](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1322.png)
 
-  ![1323](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1323.png)
+  ![1323](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1323.png)
   ```
   docker ps
   ```
@@ -8454,7 +8454,7 @@ Limitations with Cloudformation:
   root@ip-10-1-1-226:~#
   ```
 - Now if you browse with Publicip:80 you can get nginx.
-  ![1324](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1324.png)
+  ![1324](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1324.png)
 
 - Now Sample Docker file.
 - you can find this in sampleDockerBuild dir in this repo
@@ -8505,10 +8505,10 @@ Limitations with Cloudformation:
 
 ## Amazon Elastic Container Registry (ECR):
 
-![1325](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1325.png)
-![1326](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1326.png)
-![1327](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1327.png)
-![1328](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1328.png)
+![1325](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1325.png)
+![1326](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1326.png)
+![1327](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1327.png)
+![1328](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1328.png)
 
 - Install AWS CLI to push the images to Amazon Elastic Container Registry
   ```
@@ -8523,28 +8523,28 @@ Limitations with Cloudformation:
   ```
 
 - Now Open the Registry.
-  ![1329](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1329.png)
-  ![1330](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1330.png)
+  ![1329](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1329.png)
+  ![1330](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1330.png)
 
 - Now we have to rename to tags to match the registry.
-  ![1331](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1331.png)
-  ![1332](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1332.png)
-  ![1333](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1333.png)
+  ![1331](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1331.png)
+  ![1332](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1332.png)
+  ![1333](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1333.png)
 
 ## Amazon Elastic Container Services (ECS):
 
 ## 1. Fargate:
 
 - Now We create fargate
-  ![1334](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1334.png)
-  ![1335](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1335.png)
-  ![1336](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1336.png)
+  ![1334](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1334.png)
+  ![1335](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1335.png)
+  ![1336](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1336.png)
 
 - Now after creating the fargate we need to do the task definition
   ### Role Creation
-  ![1342-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1342-01.png)
-  ![1342-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1342-02.png)
-  ![1342-03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1342-03.png)
+  ![1342-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1342-01.png)
+  ![1342-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1342-02.png)
+  ![1342-03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1342-03.png)
   ### ECSFargateAllowExecuteCommand
   ```
   {
@@ -8621,26 +8621,26 @@ Limitations with Cloudformation:
 
 - Now here we need to change the Image name to our image, and need to create the log-group
 - under cloud watch create one log-group.
-  ![1337](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1337.png)
-  ![1338](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1338.png)
-  ![1339](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1339.png)
+  ![1337](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1337.png)
+  ![1338](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1338.png)
+  ![1339](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1339.png)
 
-  ![1340](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1340.png)
-  ![1341](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1341.png)
-  ![1342](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1342.png)
-  ![1343](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1343.png)
-  ![1344](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1344.png)
-  ![1345](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1345.png)
-  ![1346](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1346.png)
-  ![1347](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1347.png)
-  ![1348](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1348.png)
-  ![1349](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1349.png)
-  ![1350](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1350.png)
-  ![1351](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1351.png)
-  ![1352](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1352.png)
-  ![1353](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1353.png)
-  ![1354](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1354.png)
-  ![1355](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1355.png)
+  ![1340](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1340.png)
+  ![1341](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1341.png)
+  ![1342](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1342.png)
+  ![1343](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1343.png)
+  ![1344](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1344.png)
+  ![1345](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1345.png)
+  ![1346](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1346.png)
+  ![1347](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1347.png)
+  ![1348](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1348.png)
+  ![1349](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1349.png)
+  ![1350](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1350.png)
+  ![1351](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1351.png)
+  ![1352](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1352.png)
+  ![1353](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1353.png)
+  ![1354](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1354.png)
+  ![1355](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1355.png)
 
 - Now if you update the task definition of something , but we do in environment update.
   ### updating nginx_fargate.json
@@ -8692,15 +8692,15 @@ Limitations with Cloudformation:
     }
   ```
 - Now we can update the task definition in console.
-  ![1356](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1356.png)
-  ![1357](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1357.png)
-  ![1358](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1358.png)
-  ![1359](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1359.png)
-  ![1360](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1360.png)
+  ![1356](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1356.png)
+  ![1357](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1357.png)
+  ![1358](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1358.png)
+  ![1359](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1359.png)
+  ![1360](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1360.png)
 
 - Click on Update button
 - After update old one will get deleted and three more tasks will create here
-  ![1361](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1361.png)
+  ![1361](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1361.png)
 
 - Again try to browse the application from Amazon Elastic Container Service > Clusters > devClusterFargate01 >
   Services >application > Tasks > openanytask > Configuration > Network binding > Externallink
@@ -8709,76 +8709,76 @@ Limitations with Cloudformation:
 
 ### ECS Cluster Creation:
 
-![1362](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1362.png)
-![1363](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1363.png)
-![1364](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1364.png)
-![1365](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1365.png)
-![1366](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1366.png)
-![1366-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1366-01.png)
-![1366-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1366-02.png)
-![1366-03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1366-03.png)
-![1366-04](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1366-04.png)
+![1362](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1362.png)
+![1363](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1363.png)
+![1364](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1364.png)
+![1365](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1365.png)
+![1366](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1366.png)
+![1366-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1366-01.png)
+![1366-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1366-02.png)
+![1366-03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1366-03.png)
+![1366-04](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1366-04.png)
 
 ### Task Definition Creation for ECS EC2:
 
-![1367](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1367.png)
-![1368](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1368.png)
-![1369](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1369.png)
-![1370](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1370.png)
+![1367](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1367.png)
+![1368](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1368.png)
+![1369](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1369.png)
+![1370](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1370.png)
 
 ### Dummy user CReation for the ECS EC2:
 
-![1370-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1370-01.png)
-![1370-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1370-02.png)
-![1370-03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1370-03.png)
-![1370-04](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1370-04.png)
-![1370-05](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1370-05.png)
+![1370-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1370-01.png)
+![1370-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1370-02.png)
+![1370-03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1370-03.png)
+![1370-04](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1370-04.png)
+![1370-05](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1370-05.png)
 
 ### CReating Task For ECS EC2 Cluster:
 
-![1371](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1371.png)
-![1372](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1372.png)
-![1373](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1373.png)
-![1374](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1374.png)
-![1375](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1375.png)
-![1376](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1376.png)
-![1376-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1376-01.png)
-![1377](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1377.png)
-![1378](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1378.png)
+![1371](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1371.png)
+![1372](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1372.png)
+![1373](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1373.png)
+![1374](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1374.png)
+![1375](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1375.png)
+![1376](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1376.png)
+![1376-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1376-01.png)
+![1377](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1377.png)
+![1378](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1378.png)
 
 - if you click on stop all then its all gone app wont be working
-  ![1379](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1379.png)
+  ![1379](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1379.png)
 
 - so we create the services in cluster.
 - for this we create the one role.
-  ![1380](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1380.png)
+  ![1380](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1380.png)
 
 ### Service CReation in ECS Cluster:
 
-![1381](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381.png)
-![1381-00](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-00.png)
-![1381-00-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-00-01.png)
-![1381-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-01.png)
-![1381-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-02.png)
-![1381-03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-03.png)
-![1381-04](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-04.png)
-![1381-05](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-05.png)
-![1381-06](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-06.png)
-![1381-07](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-07.png)
-![1381-08](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-08.png)
-![1381-09](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1381-09.png)
-![1382](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1382.png)
-![1383](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1383.png)
-![1384](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1384.png)
-![1385](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1385.png)
-![1386](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1386.png)
-![1387](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1387.png)
-![1388](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1388.png)
+![1381](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381.png)
+![1381-00](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-00.png)
+![1381-00-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-00-01.png)
+![1381-01](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-01.png)
+![1381-02](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-02.png)
+![1381-03](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-03.png)
+![1381-04](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-04.png)
+![1381-05](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-05.png)
+![1381-06](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-06.png)
+![1381-07](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-07.png)
+![1381-08](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-08.png)
+![1381-09](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1381-09.png)
+![1382](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1382.png)
+![1383](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1383.png)
+![1384](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1384.png)
+![1385](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1385.png)
+![1386](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1386.png)
+![1387](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1387.png)
+![1388](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1388.png)
 
 - Now if you try to delete the tasks in the Cluster then services will automatically bring up the tasks
-  ![1389](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1389.png)
-  ![1390](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1390.png)
-  ![1391](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1391.png)
+  ![1389](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1389.png)
+  ![1390](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1390.png)
+  ![1391](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1391.png)
 
 - First delete Service then Cluster
 
@@ -8819,7 +8819,7 @@ Limitations with Cloudformation:
 ### 4. Configure the AWS CLI:
 
 - Create one Admin CLI user and Create access key
-  ![1392](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1392.png)
+  ![1392](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1392.png)
 - configure the AWS CLI in server
   ```
   aws configure
@@ -8996,11 +8996,11 @@ Limitations with Cloudformation:
       [1]+  Done                    eksctl create cluster -f eksctl-ipv4-cluster.yml
       ```
 - ***Sample Diagram Explaining the Kubernetes Architecture***
-  ![1393](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1393.png)
+  ![1393](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1393.png)
 
 - Resources created after deploying kubernetes cluster
-  ![1394](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1394.png)
-  ![1395](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1395.png)
+  ![1394](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1394.png)
+  ![1395](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1395.png)
 
 - Checking Nodes in Kubernetes Cluster
     - ***Command:***
@@ -9181,7 +9181,7 @@ Limitations with Cloudformation:
   http://ec2-3-19-55-183.us-east-2.compute.amazonaws.com:31111
   
   ```
-  ![1396](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1396.png)
+  ![1396](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1396.png)
 
 - Checking deploy
     - ***Command:***
@@ -9217,7 +9217,7 @@ Limitations with Cloudformation:
       root@ip-10-1-1-246:~# kubectl edit deploy myapp1
       deployment.apps/myapp1 edited
       ```
-  ![1397](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1397.png)
+  ![1397](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1397.png)
 
 - Just change the grep and ping the url you can see the load balancing.
   ```
@@ -9991,19 +9991,19 @@ Limitations with Cloudformation:
 ## 32.1. EventBridge:
 
 - Open Event Bridge
-  ![1398](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1398.png)
+  ![1398](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1398.png)
 - If you see in cloud Trail Every event will be recorded.
-  ![1399](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1399.png)
+  ![1399](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1399.png)
 
 ### 32.1.1. Volume Creation:
 
 - Click on Create volume button
-  ![1400](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1400.png)
-  ![1401](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1401.png)
-  ![1402](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1402.png)
-  ![1403](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1403.png)
+  ![1400](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1400.png)
+  ![1401](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1401.png)
+  ![1402](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1402.png)
+  ![1403](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1403.png)
 - After volume creation you can see the event recorded.
-  ![1404](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1404.png)
+  ![1404](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1404.png)
 - Now if you list volumes in CLI
   ***Command:***
   ```
@@ -10116,8 +10116,8 @@ Limitations with Cloudformation:
 ### 32.1.2. AWS Lambda Creation:
 
 - Click on ```Create a function``` button
-  ![1405](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1405.png)
-  ![1406](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1406.png)
+  ![1405](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1405.png)
+  ![1406](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1406.png)
 - Add the below code in the function.
   ***Delete-EBS-Volume.py***
   ```
@@ -10143,54 +10143,54 @@ Limitations with Cloudformation:
           print(f"The Volume {vid} don't belong to gp2 or gp3 and hence will be deleted.")
           client.delete_volume( VolumeId=vid)
   ```
-  ![1407](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/940-1407/1407.png)
+  ![1407](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/940-1407/1407.png)
 
 ### 32.1.3. Lambda Role Permission providing:
 
 - Giving permissions to the role which is attached to lambda.
-  ![1408](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1408.png)
-  ![14089](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1409.png)
-  ![1410](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1410.png)
-  ![1411](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1411.png)
+  ![1408](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1408.png)
+  ![14089](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1409.png)
+  ![1410](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1410.png)
+  ![1411](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1411.png)
 
 ### 32.1.4. Amazon EventBridge Rules Creation:
 
 - Click on ```Create rule``` button
-  ![1412](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1412.png)
-  ![1413](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1413.png)
-  ![1414](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1414.png)
-  ![1415](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1415.png)
-  ![1416](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1416.png)
-  ![1417](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1417.png)
-  ![1418](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1418.png)
-  ![1419](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1419.png)
-  ![1420](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1420.png)
+  ![1412](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1412.png)
+  ![1413](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1413.png)
+  ![1414](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1414.png)
+  ![1415](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1415.png)
+  ![1416](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1416.png)
+  ![1417](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1417.png)
+  ![1418](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1418.png)
+  ![1419](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1419.png)
+  ![1420](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1420.png)
 
 - Log groups will be created
-  ![1425](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1425.png)
+  ![1425](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1425.png)
 - Changing the lambda time out to 1 min as it is mentioned in python code
-  ![1424](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1424.png)
-  ![1426](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1426.png)
-  ![1427](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1427.png)
+  ![1424](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1424.png)
+  ![1426](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1426.png)
+  ![1427](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1427.png)
 
 ### 32.1.5. Testing the Event Bridge:
 
 - Now create a volume and see then the volume will get deleted
-  ![1421](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1421.png)
-  ![1422](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1422.png)
-  ![1423](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1423.png)
-  ![1428](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1428.png)
+  ![1421](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1421.png)
+  ![1422](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1422.png)
+  ![1423](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1423.png)
+  ![1428](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1428.png)
 
 ## 32.2. Scheduled Events:
 
 ### 32.2.1 Lambda Function Creation:
 
 - Click on ```Create function``` button.
-  ![1429](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1429.png)
-  ![1430](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1430.png)
+  ![1429](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1429.png)
+  ![1430](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1430.png)
 
 - Create volumes for testing the function.
-  ![1430-1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1430-1.png)
+  ![1430-1](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1430-1.png)
 
 - paste the below code for Testing the function.
 
@@ -10223,24 +10223,24 @@ Limitations with Cloudformation:
           else:
               print(f'NO UNATTACHED VOLUME TO DELETE IN REGION {reg}')
   ```
-  ![1431](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1431.png)
-  ![1432](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1432.png)
-  ![1433](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1433.png)
-  ![1434](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1434.png)
+  ![1431](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1431.png)
+  ![1432](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1432.png)
+  ![1433](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1433.png)
+  ![1434](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1434.png)
 
 ### 32.2.2 Scheduling the Function:
 
 - Click on create rule.
-  ![1435](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1435.png)
-  ![1436](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1436.png)
-  ![1437](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1437.png)
-  ![1438](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1438.png)
-  ![1439](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1439.png)
-  ![1440](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1440.png)
-  ![1441](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1441.png)
-  ![1442](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1442.png)
-  ![1443](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1443.png)
-  ![1444](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Notes-Images/1408-1444/1444.png)
+  ![1435](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1435.png)
+  ![1436](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1436.png)
+  ![1437](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1437.png)
+  ![1438](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1438.png)
+  ![1439](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1439.png)
+  ![1440](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1440.png)
+  ![1441](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1441.png)
+  ![1442](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1442.png)
+  ![1443](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1443.png)
+  ![1444](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/1408-1444/1444.png)
 - Now create ther few volumes which are unattached all will be deleted in few min as scheduled.
 
   
