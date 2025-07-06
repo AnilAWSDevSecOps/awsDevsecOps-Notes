@@ -8,7 +8,7 @@
 
 - Launch the new instance with the below script.  
   ***Launch Script:***
-  ```
+  ```bash
   #!/bin/bash
   sudo hostnamectl set-hostname shellscripting
   sudo apt update
@@ -544,7 +544,7 @@
 - Now these can be configured in the user level with installing ```direnv```
 
   ***Command:***
-  ```
+  ```bash
   # Download the latest direnv release
   curl -sfL https://github.com/direnv/direnv/releases/latest/download/direnv.linux-amd64 -o direnv
   
