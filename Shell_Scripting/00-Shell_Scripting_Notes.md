@@ -233,7 +233,7 @@
   +----[SHA256]-----+
   ```
 - Now add the public keys in git under Settings > SSH and GPG Keys
-  ![001](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/001.png)
+  ![001](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/001.png)
 - Now Configure the Existing repo as below.  
   ***Commands:***
   ```
@@ -860,7 +860,7 @@
     - ***Modulus (%):*** Binary operation used to find remainder of two operands.
     - ***Increment Operator (++):*** Unary operator used to increase the value of operand by one.
     - ***Decrement Operator (- -):*** Unary operator used to decrease the value of a operand by one.
-    - ![006](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/006.png)
+    - ![006](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/006.png)
       ```shell
       #!/bin/bash
 
@@ -908,7 +908,7 @@
       otherwise return false.
     - ***‘>=’ Operator:*** Greater than or equal to operator returns true if first operand is greater than or equal to
       second operand otherwise returns false
-    - ![007](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/007.png)
+    - ![007](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/007.png)
       ```shell
       #!/bin/bash
 
@@ -968,7 +968,7 @@
       the operands are true. It returns false only if both operands are false.
     - ***Not Equal to (!):*** This is a unary operator which returns true if the operand is false and returns false if
       the operand is true.
-    - ![005](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/005.png)
+    - ![005](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/005.png)
       ```shell
       #!/bin/bash
 
@@ -1054,7 +1054,7 @@
       then it returns true otherwise false.
     - ***-s operator:*** This operator checks the size of the given file. If the size of given file is greater than 0
       then it returns true otherwise it is false.
-    - ![009](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/009.png)
+    - ![009](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/009.png)
       ```shell
       #!/bin/bash
 
@@ -1184,7 +1184,7 @@
   curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST 1 2 3"}'  https://hooks.slack.com/services/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
   ```
 - Now after using above curl command
-  ![002](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/002.png)
+  ![002](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/002.png)
 - Now we will integrate this in Script for Memory Notification  
   ***11-MemUtilSlackNotify.sh***
   ```shell
@@ -1237,10 +1237,10 @@
   ```
 - Here you can see the alert notification for memory high.
 - Now Execute the above code to get notification.
-  ![003](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/003.png)
+  ![003](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/003.png)
 - To get the ec2 ip address automatically we can configure it as below.
 - Right click on Instance > Instance Settings > Modify metadata options >
-  ![004](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/004.png)
+  ![004](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/004.png)
   ***Command:***
   ```
   ubuntu@shellscripting:~/WorkSpace/DevSecOps2024/01-ShellScripting$ curl http://169.254.169.254/latest/meta-data
@@ -1316,7 +1316,7 @@
   ```
 - for crontab queries reach crontab guru ```https://crontab.guru```
 - Now Boolean Operators  
-  ![005](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/005.png)
+  ![005](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/005.png)
 - Now we will weite an example for ```$?```  
   ***12-NginxStatus.sh***
   ```shell
@@ -1561,7 +1561,7 @@
    The password for omen3 is India@2024(
    ```
 
-![010](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/010.png)
+![010](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/010.png)
 
 ## 2.7. Regular Expressions in SHELL:
 
@@ -1648,7 +1648,7 @@
       passwd: password changed.
       The password for anil8088 is India@2024)
       ```
-      ![011](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/011.png)
+      ![011](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/011.png)
 
 ## 2.8. Functions in Shell:
 
