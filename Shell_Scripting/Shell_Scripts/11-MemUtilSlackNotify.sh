@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script to find the memory utilization of the system
-WebHook='https://hooks.slack.com/services/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'
+WebHook='https://hooks.slack.com/services/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'
 HostName=$(uname -n)
 # HostName=$(curl -sL http://169.254.169.254/latest/meta-data/local-hostname)
 Total_Mem=$(free -m | grep Mem | awk '{print $2}')
