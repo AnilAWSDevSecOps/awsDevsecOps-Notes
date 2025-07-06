@@ -1,1 +1,1 @@
-# **Shell_Scripting_Notes_images**
+# Shell_Scripting_Notes_images
