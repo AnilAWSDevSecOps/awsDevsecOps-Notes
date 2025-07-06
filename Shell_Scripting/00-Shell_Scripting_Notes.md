@@ -1174,14 +1174,14 @@
 
 - Go to slack > Apps > Incomming Webhooks > Add to slack > Select Channel > hook-link-created > copy link
   ```
-  https://hooks.slack.com/services/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
+  https://hooks.slack.com/services/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
   
   ```
 - We need to test the above webhook with curl.  
   ***Command:***
   ```
-  curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST ALERT"}'  https://hooks.slack.com/services/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
-  curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST 1 2 3"}'  https://hooks.slack.com/services/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
+  curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST ALERT"}'  https://hooks.slack.com/services/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
+  curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST 1 2 3"}'  https://hooks.slack.com/services/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
   ```
 - Now after using above curl command
   ![002](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/002.png)
