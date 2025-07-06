@@ -543,7 +543,7 @@
 - if you add these two in the .bashrc the last one will be considered. but not the both.
 - Now these can be configured in the user level with installing ```direnv```
 
-  ***Command:***
+  ***Command: To Install in Amazon Linux***
   ```bash
   # Download the latest direnv release
   curl -sfL https://github.com/direnv/direnv/releases/latest/download/direnv.linux-amd64 -o direnv
