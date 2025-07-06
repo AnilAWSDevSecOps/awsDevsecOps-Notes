@@ -1,0 +1,17 @@
+#!/bin/bash
+# Parameters passing
+echo "The script name is: $0"
+echo "The first parameter is: $1"
+echo "The second parameter is: $2"
+echo "The third parameter is: $3"
+echo "The fourth parameter is: $4"
+echo "The fifth parameter is: $5"
+echo "The sixth parameter is: $6"
+echo "The parameters are: $@"
+echo "The parameters are: $*"
+echo "The number of parameters are: $#"
+echo "The process id is: $$"
+echo "The last process id is: $!"
+echo "The exit status is: $?"
+echo "The current working directory is: $PWD"
+echo "The home directory is: $HOME"
