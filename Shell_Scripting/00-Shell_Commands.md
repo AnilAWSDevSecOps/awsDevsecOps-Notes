@@ -365,7 +365,12 @@
     ```shell
     # Command to update the username and password in the passwd file
     echo "username:password" | sudo chpasswd
+    echo "$USER:$PASSWORD" | sudo chpasswd
 
     # Command to update multiple entries.
     echo -e "user1:pass1\nuser2:pass2" | sudo chpasswd
+
+    # Command to extract one Special char by shuffling the list of given special chars.
+    echo '!@#$%^&*()_+=' | fold -w1 | shuf | head -c1
+    
     ```
