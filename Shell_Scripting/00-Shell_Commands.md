@@ -352,6 +352,9 @@
     ```shell
     # Command to display content of file with line numbers
     cat 08-findMemUtil.sh |awk '{print NR,$0}'
+
+    # Command to find the and extract only username from passwd file
+    cat /etc/passwd | grep -i -w cloudshell-user|cut -d ":" -f 1
     ```
 - ## 11. NETSTAT Command
     ```shell
