@@ -1650,6 +1650,52 @@
       ```
       ![011](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/011.png)
 
+      ***20-userAutoRegEx.sh***
+      ```shell
+      #!/bin/bash
+      
+      WebHook="${SLACK_WEBHOOK_URL}"  # Set this as an environment variable
+      
+      if [ $# -gt 0 ]; then
+          for USER in "$@"; do
+              if [[ $USER =~ ^[a-z]{4}[0-9]{4}$ ]]; then
+                  if getent passwd "$USER" > /dev/null; then
+                      echo "User $USER already exists, try another username"
+                  else
+                      echo "Creating user $USER"
+                      sudo useradd -m -s /bin/bash "$USER"
+                      sudo usermod -aG sudo "$USER"
+                      echo "$USER ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$USER > /dev/null
+                      sudo chmod 440 /etc/sudoers.d/$USER
+      
+                      specialChar=$(echo '!@#$%^&*()_+=' | fold -w1 | shuf | head -c1)
+                      PASSWORD="India@$(date +%Y)${specialChar}"
+                      echo "$USER:$PASSWORD" | sudo chpasswd
+                      sudo passwd -e "$USER"
+                      echo "Password for $USER is $PASSWORD"
+      
+                      if [[ -n "$WebHook" ]]; then
+                          curl -X POST "$WebHook" -sL \
+                               -H 'Content-type: application/json' \
+                               --data "{\"text\":\"User: $USER created. Password: $PASSWORD. Reset immediately.\"}" > /dev/null
+                      else
+                          echo "Warning: SLACK_WEBHOOK_URL is not set"
+                      fi
+                  fi
+              else
+                  echo "Invalid username $USER. Must be 4 lowercase letters followed by 4 digits (e.g., abcd1234)"
+              fi
+          done
+      else
+          echo "You provided $# arguments. Please provide at least one username."
+      fi
+      ```
+      ***Next Steps:***
+      ```
+      Replace the hardcoded webhook with an environment variable:
+      export SLACK_WEBHOOK_URL='your-url'
+      Use the safer sudoers approach via /etc/sudoers.d
+      ```
 ## 2.8. Functions in Shell:
 
 - Suntax of the function in shell script.  
