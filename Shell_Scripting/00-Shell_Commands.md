@@ -360,6 +360,12 @@
     ```shell
     # Command to fetch port number listening or not
     netstat -antp|grep PORTNUMBER
+
+    # Command to list the port numbers in system which are listening
+    netstat -tuln|grep LISTEN|awk '{print $4}'|awk -F':' '{print $NF}'
+
+    # Command to list the port numbers in system which are listening and fitering our port
+    netstat -tuln|grep LISTEN|awk '{print $4}'|awk -F':' '{print $NF}'|grep PORTNUMBER
     ```
 - ## 12. ECHO Command
     ```shell
