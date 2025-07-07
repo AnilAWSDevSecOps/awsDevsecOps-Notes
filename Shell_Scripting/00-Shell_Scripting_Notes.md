@@ -1516,7 +1516,7 @@
    # expire the password and force the user to change it on first login
    # Make sure user is in the sudo group
    #!/bin/bash
-   WebHook='https://hooks.slack.com/services/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'
+   WebHook='https://hooks.slack.com/services/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'
    #USER=$1
    if [ $# -gt 0 ]; then
        for USER in $@; do
@@ -1593,7 +1593,7 @@
       # expire the password and force the user to change it on first login
       # Make sure user is in the sudo group
       #!/bin/bash
-      WebHook='https://hooks.slack.com/services/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'
+      WebHook='https://hooks.slack.com/services/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'
       #USER=$1
       if [ $# -gt 0 ]; then
           for USER in $@; do
