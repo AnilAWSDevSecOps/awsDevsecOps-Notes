@@ -361,3 +361,11 @@
     # Command to fetch port number listening or not
     netstat -antp|grep PORTNUMBER
     ```
+- ## 12. ECHO Command
+    ```shell
+    # Command to update the username and password in the passwd file
+    echo "username:password" | sudo chpasswd
+
+    # Command to update multiple entries.
+    echo -e "user1:pass1\nuser2:pass2" | sudo chpasswd
+    ```
