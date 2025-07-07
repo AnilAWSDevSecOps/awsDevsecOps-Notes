@@ -348,3 +348,8 @@
     # command to replace the path structure
     sed 's|/data/projectA/|/archive/projectB/|g' file.txt
     ```
+- ## 10. CAT Command
+    ```shell
+    # Command to display content of file with line numbers
+    cat 08-findMemUtil.sh |awk '{print NR,$0}'
+    ```
