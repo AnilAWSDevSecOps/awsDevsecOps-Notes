@@ -1174,14 +1174,14 @@
 
 - Go to slack > Apps > Incomming Webhooks > Add to slack > Select Channel > hook-link-created > copy link
   ```
-  https://hooks.slack.com/services/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
+  https://hooks.slack.com/services/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
   
   ```
 - We need to test the above webhook with curl.  
   ***Command:***
   ```
-  curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST ALERT"}'  https://hooks.slack.com/services/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
-  curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST 1 2 3"}'  https://hooks.slack.com/services/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
+  curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST ALERT"}'  https://hooks.slack.com/services/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
+  curl -X POST -H 'Content-type: application/json' --data '{"text": "TEST 1 2 3"}'  https://hooks.slack.com/services/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
   ```
 - Now after using above curl command
   ![002](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/002.png)
@@ -1190,7 +1190,7 @@
   ```shell
   #!/bin/bash
   # Script to find the memory utilization of the system
-  WebHook='https://hooks.slack.com/services/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'
+  WebHook='https://hooks.slack.com/services/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'
   Total_Mem=$(free -m | grep Mem | awk '{print $2}')
   Available_Mem=$(free -m | grep Mem | awk '{print $7}')
   Used_Mem=$(($Total_Mem - $Available_Mem))
