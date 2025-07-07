@@ -1650,8 +1650,16 @@
       ```
       ![011](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Shell_Scripting/Shell_Scripting_Notes_images/011.png)
 
-      ***20-userAutoRegEx.sh***
+      ***20-1-userAutoRegEx.sh***
       ```shell
+      # Validates Input: Ensures usernames match the regex pattern.
+      # Checks for Existing Users: Verifies if the user already exists.
+      # Creates Users: Adds user with home directory and bash shell.
+      # Grants sudo Access: Adds user to sudoers with no password required.
+      # Sets and Expires Passwords: Sets an auto-generated password and forces password reset at first login.
+      # Slack Notification: Sends a Slack message via WebHook with the new credentials.
+
+
       #!/bin/bash
       
       WebHook="${SLACK_WEBHOOK_URL}"  # Set this as an environment variable
