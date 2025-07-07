@@ -353,3 +353,8 @@
     # Command to display content of file with line numbers
     cat 08-findMemUtil.sh |awk '{print NR,$0}'
     ```
+- ## 11. NETSTAT Command
+    ```shell
+    # Command to fetch port number listening or not
+    netstat -antp|grep PORTNUMBER
+    ```
