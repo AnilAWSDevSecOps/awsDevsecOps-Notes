@@ -1,2 +1,2 @@
-# 01-ShellScripting:
-- This Directory consiste of ShellScripting code and its Notes.
+# Shell_Scripts:
+- This Directory consiste of ShellScripts.
