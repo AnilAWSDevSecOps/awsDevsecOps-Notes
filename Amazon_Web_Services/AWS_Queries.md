@@ -1,6 +1,6 @@
 # AWS Queries:
 
-## 1. LISTING 
+## 1. Listing
 ```bash
 
 # Regions
