@@ -2948,7 +2948,7 @@ Recursion Example Results
   
   ```
 - Now browse the application with IP:8000  
-  ![012](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/012.png)
+  ![012](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Python_Scripting/Notes-Images/01-499/012.png)
 
 - Now we will update this with the pokemon and vpc list and see
   ***23-fastAPIapp.py***
@@ -3003,16 +3003,16 @@ Recursion Example Results
   http://3.82.28.32:8000/pokemon
 
   ```
-  ![013](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/013.png)
+  ![013](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Python_Scripting/Notes-Images/01-499/013.png)
   ```
   http://3.82.28.32:8000/vpcs/us-east-1
 
   ```
-  ![014](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/014.png)
+  ![014](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Python_Scripting/Notes-Images/01-499/014.png)
 
 - Now to make front end look wise good we need to add few things.
   ```
   http://3.82.28.32:8000/docs
 
   ```
-  ![015](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/015.png)
+  ![015](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Python_Scripting/Notes-Images/01-499/015.png)
