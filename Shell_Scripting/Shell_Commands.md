@@ -380,3 +380,7 @@
     echo '!@#$%^&*()_+=' | fold -w1 | shuf | head -c1
     
     ```
+- ## 13. PS Command
+    ```shell
+    ps -ef|grep $(netstat -antp|grep PORT_NUMBER|grep LISTEN|grep tcp|awk '{Print $7}'|cut -d "/" -f 1)
+    ```
