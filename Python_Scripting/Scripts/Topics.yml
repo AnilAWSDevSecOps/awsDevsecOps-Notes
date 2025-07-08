@@ -1,0 +1,68 @@
+1. Installing Python on Windows Machines.
+2. Installing VSCode as IDE.
+3. Verify Python Installation From Powershell and Install Following Modules using Python PIP.
+   python --version
+   pip --version
+   a. virtualenv
+   b. IPython
+   c. python-dotenv
+   d. requests
+   e. uuid
+   Install packages using requirements.txt file.
+   BeautifulSoup==3.2.0
+   PyYAML==3.09
+
+4. Default Python Console vs IPython
+
+5. Creating Python Virtual Environments for Multiple Projects.
+python -m venv C:\awsproject\
+python -m venv C:\azureproject\
+Note: We dont have Virtual Environments in Shell Scripting.
+
+6. Installing Python Dependencies based on projects using PIP.
+
+7. Declaring Variables & Accessing them in Python.
+   a = int(10) or a = 10
+   b = str(hello) or b = "hello" or b = 'hello'
+   print(a),print(b)
+
+8. Diffrence between Print vs Return
+   Print is used only for debug and dont return the value. But prints on the screen which is useful for testing.
+   Return is the value which is generated after the function execution and the value can be assigned to a variable.
+
+9. Python Data types
+Text Type: 	str
+Numeric Types: 	int, float, complex
+Sequence Types: 	list, tuple, range
+Set Types: 	set, frozenset
+
+Mapping Type: 	dict
+Boolean Type: 	bool
+None Type: 	NoneType
+Binary Types: 	bytes, bytearray, memoryview
+
+10. If & For Loops.
+11. Iterating through Dictionary.
+12. List Enumeration & List Comprehension.
+
+13. Creating and Using Functions as first class objects.
+14. Understanding Python Boto3 Module and initiating session.
+15. Understanding Classes and Methods.
+
+15. Working with Env variables in Python.
+https://github.com/theskumar/python-dotenv
+https://www.python-engineer.com/posts/dotenv-python/
+https://www.freecodecamp.org/news/python-env-vars-how-to-get-an-environment-variable-in-python/
+
+
+
+
+def avg(a,b,c):
+  sum = a+b+c
+  avg = sum/3
+  average = round(avg,2)
+  print(f'The Marks are {a} {b} {c} and the average is {average}')
+
+
+
+clouds = ["aws","azure","gcp:,"oci"]

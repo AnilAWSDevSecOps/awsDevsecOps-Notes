@@ -1,0 +1,10 @@
+virtualenv
+IPython
+python-dotenv
+requests
+###In-built Modules###
+uuid
+time
+json
+os
+sys

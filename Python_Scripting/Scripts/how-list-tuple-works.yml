@@ -1,0 +1,56 @@
+HOW LISTS WORK
+==============
+aws_regions = ["us-east-1","us-east-2","us-west-1",'us-west-2']
+type(aws_regions)
+LIST is mutable means, the items in the list can be appended or removed using append,pop,remove. 
+LIST can be emptied using clear attribute.
+sys.getsizeof(aws_regions) - Size of list in bytes.
+
+
+HOW TUPLE WORK
+==============
+aws_regions = ("us-east-1","us-east-2","us-west-1",'us-west-2')
+type(aws_regions)
+TUPLE is immutable means it cannot be altered.
+
+
+#List Enumeration:
+for count,cloud in enumerate(clouds):
+  print(f'The Name Of The Cloud In The Index {count} Is {cloud}.')
+
+#Regions List without List Comprehension
+
+import boto3
+conn_ec2 = boto3.client('ec2',region_name="us-east-1")
+conn_ec2.describe_regions().get('Regions')
+regions_list = []
+for region in conn_ec2.describe_regions().get('Regions'):
+  regions_list.append(region['RegionName'])
+print(regions_list)
+
+#Regions List Using List Comprehension
+import boto3
+conn_ec2 = boto3.client('ec2',region_name="us-east-1")
+regions_list = [ region['RegionName'] for region in conn_ec2.describe_regions().get('Regions') ]
+
+
+#Find object details
+a = "hello123"
+a.isalnum()
+a.isnumeric()
+a.isalpha()
+a.isdigit()
+a.isdecimal()
+a.upper()
+a.lower()
+a.isupper()
+a.islower()
+
+stu = ["one","two","three","one","two","three","one","two","three","four","five","four"]
+#Find element is in the list.
+find "one" in stu
+#Find how many times element is repeated
+stu.count("one")
+
+#Using Regular Expressions in Python
+import re
