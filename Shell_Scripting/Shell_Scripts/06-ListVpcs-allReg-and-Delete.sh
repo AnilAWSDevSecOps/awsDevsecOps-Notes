@@ -9,7 +9,7 @@ for region in $regions; do
     # Fetch all non-default VPCs in the region
     vpc_ids=$(aws ec2 describe-vpcs \
         --region "$region" \
-        --query "Vpcs[].VpcId" \
+        --query "Vpcs[?IsDefault==\`false\`].VpcId" \
         --output text)
 
     for vpc_id in $vpc_ids; do
