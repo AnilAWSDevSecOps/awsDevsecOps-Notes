@@ -1,3 +1,6 @@
-# 01-AWS-2024:
-- This Repository is for Documenting the AWS Course Material.
-- Amazon_Web_Services - has Total AWS Contents.
+# awsDevsecOps-Notes:
+- This Repository is for Documenting the awsDevSecOps Course Material.
+- Amazon_Web_Services           ---- Total AWS Contents.
+- Shell_Scripting               ---- Total Shell_Scripting Content.
+- Python_Scripting              ---- Total Python_Scripting Content.
+- GIT_With_AWS_AZ_Terraform     ---- Total GIT_With_AWS_AZ_Terraform Content.    
