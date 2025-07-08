@@ -6,7 +6,7 @@
 - Download the terraform for windows and keep it in ```C:\Tools``` location.
 - Now ```Run > sysdm.cpl > Advanced > Environmental Variables > Path > Edit > New > C:\Tools``` & Save
 - Now Restart the powershell you can see the terraform in the shell.
-  ![016](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/016.png)
+  ![016](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/016.png)
   ***Command***
   ```
   PS C:\Users\madir\Documents\WorkSpace\DevSecOps2024\02-PythonScripting> terraform --version
@@ -98,19 +98,19 @@
   ```
 - Before the Plan command we need to add the credentials in the system.
 - In Azure Portal ```Azure > Microsoft Entra ID > Manage > App Registrations > New Registration```
-  ![017](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/017.png)
-  ![018](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/018.png)
-  ![019](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/019.png)
+  ![017](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/017.png)
+  ![018](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/018.png)
+  ![019](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/019.png)
 - Secret Creation in the azure for the Authentication.
-  ![020](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/020.png)
-  ![021](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/021.png)
-  ![022](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/022.png)
-  ![023](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/023.png)
+  ![020](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/020.png)
+  ![021](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/021.png)
+  ![022](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/022.png)
+  ![023](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/023.png)
 - Role assignment in the subscription in the azure.
-  ![024](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/024.png)
-  ![025](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/025.png)
-  ![026](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/026.png)
-  ![027](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/027.png)
+  ![024](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/024.png)
+  ![025](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/025.png)
+  ![026](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/026.png)
+  ![027](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/027.png)
 - Now collect all values and assign in the below order
   ```
   Application (client) ID
@@ -299,7 +299,7 @@
     - Any -var and -var-file options on the command line, in the order they are provided.
 - Now State file securing method in azure.
 - in Storage account > Containers > New Container(Private)  >  
-  ![028](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/028.png)
+  ![028](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/028.png)
 - Now we will add the backend details in the terraform providers code.  
   ***01-providers.tf***
   ```tf
@@ -339,7 +339,7 @@
   ```
 - Now we will reinitiate the init, validate and plan commands to store the backend state file.
 - Now if you see the state fiel is moved to container.
-  ![029](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/029.png)
+  ![029](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/029.png)
 - Now if you list the state file you should see the data from container.
   ```
   terraform state list
@@ -605,7 +605,7 @@
   ARM_TENANT_ID="0c6cef32-c913-4983-a793-7c597ef4f82e"
   ARM_SUBSCRIPTION_ID="ae2812b8-a4a2-4fa8-8c4f-b2b0df170677"
   ```
-  ![030](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/030.png)
+  ![030](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/030.png)
 - Now use below code to run the Actions.  
   ***sample.yaml***
   ```yml
@@ -656,9 +656,9 @@
           shell: bash
   ```
 - Now as soon as you push the code into github.
-  ![031](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/031.png)
-  ![032](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/032.png)
-  ![033](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/033.png)
+  ![031](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/031.png)
+  ![032](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/032.png)
+  ![033](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/033.png)
 - Now we will add the extra code for Terraform initialisation.  
   ***sample.yaml***
   ```yml
@@ -726,8 +726,8 @@
           run: terraform plan
           shell: bash
   ```
-  ![034](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/034.png)
-  ![035](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/035.png)
+  ![034](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/034.png)
+  ![035](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/035.png)
 - This code will do terraform init, fmt, validate, plan, apply -auto-approve and finally destroy -auto-approve.  
   ***sample.yaml***
   ```yml
@@ -896,9 +896,9 @@
 ## 4.3 Runner Config in GitHUb Actions:
 
 - Repository Settings > Actions > Runner > new self-hosted runner
-  ![036](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/036.png)
+  ![036](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/036.png)
 - Select Linux and follow the below steps in the ec2 instance.  
-  ![037](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/037.png)
+  ![037](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/037.png)
 - Launch the EC2 instance install the terraform and nodejs
   ```
   wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
@@ -1056,7 +1056,7 @@
   
   ```
 - After starting to confirm it you can check in Settings > Actions > Runner.
-  ![038](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/038.png)
+  ![038](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/038.png)
 - Now use the below code to github action workflow dispatches.  
   ***sample1.yaml***
   ```yml
@@ -1241,10 +1241,10 @@
        terraform destroy --auto-approve
   ```
 - Now Job will be shown in actions workflow, then use it to deploy.
-  ![039](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/039.png)
+  ![039](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/039.png)
 - Here if you select the prod or dev that job will run.
-  ![040](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/040.png)
-  ![041](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/041.png)
+  ![040](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/040.png)
+  ![041](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/041.png)
 - Additionally we have added the drift in above code.  
   ***sample1.yaml***
   ```yml
@@ -1464,14 +1464,14 @@
 - Runner Configuration in gitlab
     - Go to Project -> Settings ->CI/CD -> Expand Runners.
     - Provide the tags and click on create the runner button
-      ![041-0](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/041-0.png)
+      ![041-0](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/041-0.png)
       ```
       $ curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb"
       $ dpkg -i gitlab-runner_amd64.deb
       $ sudo dpkg -i gitlab-runner_amd64.deb
       ```
     - Click on Linux and follow the steps
-      ![042](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/042.png)
+      ![042](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/042.png)
 
       ***Command:***
     - RUN THE COMMAND WITH SUDO.
@@ -1495,10 +1495,10 @@
       
       Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml"
       ```
-      ![043](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/043.png)
+      ![043](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/043.png)
 
     - Runner Registered Successfully now check the runner in the gitlab. By Clicking on Vire Runner Button.
-      ![044](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/044.png)
+      ![044](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/044.png)
     - Check the runner status if not started start it.
       ```shell
       ps -ef|grep -i runner
@@ -1507,15 +1507,15 @@
 - Now we will add the VAriables for SECRET_KEY AND ACCESS_KEYS
 - Go to Project -> Settings ->CI/CD -> Expand Variables > Add Variables.
 - Now generate the token in Terraform in app.terraform.io link
-  ![047](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/047.png)
+  ![047](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/047.png)
 
 - Now add token in variables in Gitlab.  
-  ![045](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/045.png)
-  ![046](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/046.png)
-  ![048](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/048.png)
+  ![045](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/045.png)
+  ![046](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/046.png)
+  ![048](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/048.png)
 - Now upload the pem file in the Gitlab
 - Go to Project -> Settings ->CI/CD -> Expand Secure Files > Upload the pem file.
-  ![049](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/049.png)
+  ![049](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/049.png)
 - To start the pipe line you need to add the pipeline script in the name .gitlab-ci.yml
 - use below code to the yml and for terraform script used REPO: https://gitlab.com/devsecops9465739/gitlabpipeline
   ***.gitlab-ci.yaml***
@@ -1633,21 +1633,21 @@
   ```
 - Now according to the above code when you push the code pipeline starts and PLAN=YES & DESTROY=NO so only applies
 - Now we will go to pipeline Build > Pipelines.
-  ![050](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/050.png)
-  ![051](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/051.png)
+  ![050](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/050.png)
+  ![051](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/051.png)
 
 - Now we will destroy the code by PLAN=NO & DESTROY=YES
-  ![052](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/052.png)
+  ![052](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/052.png)
 
 ## Hashicorp Vault:
 
 - Launch one t2.medium instance from the AWS.
 - Now we will create the role for kms and assign to above instance.
-  ![053](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/053.png)
-  ![054](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/054.png)
-  ![055](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/055.png)
-  ![056](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/056.png)
-  ![057](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/057.png)
+  ![053](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/053.png)
+  ![054](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/054.png)
+  ![055](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/055.png)
+  ![056](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/056.png)
+  ![057](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/057.png)
   ```
   { "Version": "2012-10-17", 
     "Statement": {
@@ -1657,17 +1657,17 @@
     } 
   }
   ```
-  ![058](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/058.png)
-  ![059](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/059.png)
+  ![058](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/058.png)
+  ![059](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/059.png)
 - Now assign it to above created istance. EC2 > Instances > i-0368021bd32777846 > Modify IAM role
-  ![060](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/060.png)
+  ![060](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/060.png)
 - Run the below commands in the ec2 instance.  
   ***Commands:***
   ```shell
   apt update && apt install -y net-tools unzip
   sudo snap install --classic certbot
   ```
-  ![061](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/061.png)
+  ![061](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/061.png)
   ***Command:***
   ```shell
   root@ip-10-1-1-56:~# certbot certonly --manual --preferred-challenges=dns --key-type rsa --email anilreddy.m8@gmail.com --server https://acme-v02.api.letsencrypt.org/directory --agree-tos -d *.madireddyanil.in
@@ -1721,22 +1721,22 @@
    * Donating to EFF:                    https://eff.org/donate-le
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   ```
-  ![069](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/062.png)
-  ![062](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/062.png)
-  ![063](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/063.png)
+  ![069](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/062.png)
+  ![062](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/062.png)
+  ![063](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/063.png)
 
 ### Creating KMS:
 
 - While creating use the KMS role and admin role to manage the KMS.
-  ![064](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/064.png)
-  ![065](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/065.png)
-  ![066](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/066.png)
-  ![067](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/067.png)
-  ![068](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/068.png)
+  ![064](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/064.png)
+  ![065](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/065.png)
+  ![066](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/066.png)
+  ![067](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/067.png)
+  ![068](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/068.png)
 - Now check the version in vaultproject.io/download
   or https://developer.hashicorp.com/vault/install?product_intent=vault
-  ![070](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/070.png)
-  ![071](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/071.png)
+  ![070](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/070.png)
+  ![071](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/071.png)
   ***Commands:***
   ```
   root@ip-10-1-1-56:~# wget https://releases.hashicorp.com/vault/1.17.6/vault_1.17.6_linux_amd64.zip
@@ -1769,9 +1769,9 @@
   ```
 - Now we will create the file below by modifying or adding the above created ```certbot(cert and key)```, above created
   ```KMS keyID```, s3 bucket and api_addr and paste in the below code.
-  ![072](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/072.png)
+  ![072](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/072.png)
 - Now for this configuration we need one s3 bucket.
-  ![073](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/073.png)
+  ![073](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/073.png)
 - Now we will create the ```config.hcl``` file.
   ```
   root@ip-10-1-1-56:~# vi /etc/vault/config.hcl
@@ -1808,7 +1808,7 @@
   disable_sealwrap        = true
   disable_printable_check = true
   ```
-  ![074](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/074.png)
+  ![074](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/074.png)
 - Now we will create the ```vault.service``` file.
   ```
   root@ip-10-1-1-56:~# vi /etc/systemd/system/vault.service
@@ -1886,7 +1886,7 @@
   https://vault.madireddyanil.in:8200
 
   ```
-  ![075](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/075.png)
+  ![075](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/075.png)
 - Now we need to initialise using the command.  
   ***Command:***
   ```
@@ -1908,14 +1908,14 @@
   Recovery key initialized with 5 key shares and a key threshold of 3. Please
   securely distribute the key shares printed above.
   ```
-  ![076](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/076.png)
+  ![076](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/076.png)
 - Now use below from the above initialisation and login in vault.
   ```
   Initial Root Token: hvs.A8d1vizteY2Ec7rv9XqtGLUu
   
   ```
 - Now it looks like this in vault app.
-  ![077](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/077.png)
+  ![077](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/077.png)
 - NOw we will write the terraform code to create the secrtes.
   ***providers.tf***
   ```tf
@@ -2063,8 +2063,8 @@
   $ terraform apply
   ```
 - Now we can see the Vault app in browser. so that secrets engines are created.
-  ![078](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/078.png)
-  ![079](https://github.com/DevopsAllInOne/02-DevSecOps-2024/blob/main/Notes-Images/01-499/079.png)
+  ![078](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/078.png)
+  ![079](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/GIT_With_AWS_AZ_Terraform/Notes_Images/079.png)
   
 
 
