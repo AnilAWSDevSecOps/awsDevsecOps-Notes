@@ -429,7 +429,7 @@
   ![104](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/104.jpg)
 
 - Fill in the details like Bucket type & Bucket name and rest are defaults as photo.
-  ![105](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/105.jpg)
+  ![105](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/105.gif)
   ![106](https://github.com/AnilAWSDevSecOps/awsDevsecOps-Notes/blob/main/Amazon_Web_Services/Notes-Images/01-499/106.jpg)
 
 - Click on Create bucket for creating the s3 bucket.
